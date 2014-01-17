@@ -1,4 +1,4 @@
-umask 002
+umask 022
 
 export LANG=ja_JP.UTF-8
 export TERM='xterm-256color'
