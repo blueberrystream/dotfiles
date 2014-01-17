@@ -94,7 +94,7 @@ alias who=gwho
 alias whoami=gwhoami
 alias yes=gyes
 
-alias ls='gls --color=auto'
+alias ls='ls -G'
 alias ll='ls -lAp'
 alias cp='gcp -i'
 alias mv='gmv -i'
