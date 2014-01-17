@@ -2,9 +2,6 @@ umask 002
 
 export LANG=ja_JP.UTF-8
 export TERM='xterm-256color'
-if [ -f ~/dircolors.256dark ]; then
-	eval $(dircolors -b ~/dircolors.256dark)
-fi
 
 export HISTCONTROL=ignoredups
 
@@ -43,6 +40,9 @@ export PS1
 #	\$ '
 #export PS1
 
+if [ -d ~/local/bin ]; then
+	export PATH=~/local/bin:$PATH
+fi
 if [ -d ~/bin ]; then
 	export PATH=~/bin:$PATH
 fi
@@ -50,8 +50,7 @@ fi
 # http://googlewhacks.blogspot.jp/2008/01/macportscoreutilsg.html
 if [ `uname` = "Darwin" ]; then
 	. ~/.bashrc-alias-gnu
-fi
-if [ -f ~/.bashrc-alias ]; then
+else
 	. ~/.bashrc-alias
 fi
 
@@ -71,4 +70,8 @@ fi
 
 if [ -f ~/.bashrc-function ]; then
 	. ~/.bashrc-function
+fi
+
+if [ -f ~/dircolors.256dark ]; then
+	eval $(dircolors -b ~/dircolors.256dark)
 fi

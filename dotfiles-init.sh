@@ -2,8 +2,11 @@
 
 rm -f ~/.bash_profile
 rm -f ~/.bashrc
-rm -f ~/.bashrc-alias
-rm -f ~/.bashrc-alias-gnu
+if [ `uname` = "Darwin" ]; then
+	rm -f ~/.bashrc-alias-gnu
+else
+	rm -f ~/.bashrc-alias
+fi
 rm -f ~/.bashrc-function
 if [ `uname` = "Linux" ]; then
 	rm -f ~/.bashrc-linux
@@ -17,8 +20,11 @@ rm -f ~/.vimrc
 
 ln -s `pwd`/.bash_profile ~/
 ln -s `pwd`/.bashrc ~/
-ln -s `pwd`/.bashrc-alias ~/
-ln -s `pwd`/.bashrc-alias-gnu ~/
+if [ `uname` = "Darwin" ]; then
+	ln -s `pwd`/.bashrc-alias-gnu ~/
+else
+	ln -s `pwd`/.bashrc-alias ~/
+fi
 ln -s `pwd`/.bashrc-function ~/
 if [ `uname` = "Linux" ]; then
 	ln -s `pwd`/.bashrc-linux ~/
