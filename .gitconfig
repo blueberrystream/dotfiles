@@ -1,0 +1,58 @@
+[user]
+	name = KID the Euforia
+	email = kid0725@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = false
+	quotepath = false
+	editor = vim
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	grep = auto
+	interactive = true
+	ui = true
+[alias]
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+	gen-ignore = !"f() { local s=$1; shift; while [ $# -gt 0 ]; do s="$s,$1"; shift; done; curl "http://gitignore.io/api/$s"; }; f"
+	br = branch
+	bc = checkout -b
+	ci = commit
+	co = checkout
+	di = diff
+	dc = diff --cached
+	s = status --short --branch
+	st = status
+	f = fetch --prune
+	sh = show
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lg = log --graph
+	last = log -1 HEAD
+	info = remote show origin
+	su = submodule update
+	pt = push --tags
+[log]
+	date = local
+[branch]
+	autosetuprebase = always
+[push]
+	default = tracking
+[pull]
+	rebase = true
+[merge]
+	tool = vimdiff
+	ff = false
+[rebase]
+	autosquash = true
+[diff]
+	tool = vimdiff
+[i18n]
+	commitencoding = utf-8
+[tgit]
+	warnnosignedoffby = true
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
