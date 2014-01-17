@@ -15,20 +15,20 @@ rm -f ~/.gitconfig
 rm -f ~/.gitignore
 rm -f ~/.vimrc
 
-ln -s .bash_profile ~/
-ln -s .bashrc ~/
-ln -s .bashrc-alias ~/
-ln -s .bashrc-alias-gnu ~/
-ln -s .bashrc-function ~/
+ln -s `pwd`/.bash_profile ~/
+ln -s `pwd`/.bashrc ~/
+ln -s `pwd`/.bashrc-alias ~/
+ln -s `pwd`/.bashrc-alias-gnu ~/
+ln -s `pwd`/.bashrc-function ~/
 if [ `uname` = "Linux" ]; then
-	ln -s .bashrc-linux ~/
+	ln -s `pwd`/.bashrc-linux ~/
 fi
 if [ `uname` = "Darwin" ]; then
-	ln -s .bashrc-macosx ~/
+	ln -s `pwd`/.bashrc-macosx ~/
 fi
-ln -s .gitconfig ~/
-ln -s .gitignore ~/
-ln -s .vimrc ~/
+ln -s `pwd`/.gitconfig ~/
+ln -s `pwd`/.gitignore ~/
+ln -s `pwd`/.vimrc ~/
 
 # dircolors
 curl -O https://raw2.github.com/seebi/dircolors-solarized/master/dircolors.256dark
