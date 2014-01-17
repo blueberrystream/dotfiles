@@ -65,7 +65,7 @@ endif
 "set listchars=tab:^_,trail:_,extends:>,precedes:<
 "highlight SpecialKey cterm=NONE ctermfg=7 guifg=7
 "highlight JpSpace cterm=underline ctermfg=7 guifg=7
-"au BufRead,BufNew * match JpSpace /@/
+"au BufRead,BufNew * match JpSpace /ã€€/
 
 " Basic
 syntax enable
