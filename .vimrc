@@ -19,9 +19,9 @@ NeoBundle 'Shougo/vimproc'
 
 " My Bundles here:
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'scrooloose/nerdtree.git'
-NeoBundle 'Lokaltog/vim-powerline.git'
-NeoBundle 'tpope/vim-endwise.git'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'tpope/vim-endwise'
 NeoBundle 'altercation/vim-colors-solarized'
 
 " Ruby
@@ -29,7 +29,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 
 " Comment
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'tpope/surround.vim'
+NeoBundle 'tpope/vim-surround'
 
 " Rails
 "NeoBundle 'ujihisa/unite-rake'
