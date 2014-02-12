@@ -12,7 +12,14 @@ NeoBundle 'Shougo/neobundle.vim'
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc.vim', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
 " Sudo
 "NeoBundle 'sudo.vim'
@@ -20,9 +27,9 @@ NeoBundle 'Shougo/vimproc'
 " My Bundles here:
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'itchyny/lightline.vim'
 
 " Ruby
 "NeoBundle 'ruby-matchit'
@@ -165,6 +172,12 @@ let g:tcommentMapLeader1 = '<C-_>'
 let g:tcommentMapLeader2 = '<Leader>'
 let g:tcommentMapLeaderOp1 = 'gc'
 let g:tcommentMapLeaderOp2 = 'gC'
+
+" lightline.vim
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'solarized_dark',
+      \ }
 
 " Setting Local
 if filereadable(expand('~/.vimrc.local'))
