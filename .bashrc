@@ -41,7 +41,7 @@ export PS1
 #	\$ '
 #export PS1
 
-export PROMPT_COMMAND='echo -ne "\033]0;$(whoami)@$(hostname):${PWD/$HOME/~}\007"'
+export PROMPT_COMMAND='echo -ne "\033]0;$(whoami)@${HOSTNAME}:${PWD/$HOME/~}\007"'
 
 if [ -d ~/local/bin ]; then
 	export PATH=~/local/bin:$PATH
