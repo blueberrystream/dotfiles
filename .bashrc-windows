@@ -16,4 +16,6 @@ if [ -f ~/git-completion.bash ]; then
 fi
 export PS1
 
+export PROMPT_COMMAND=
+
 alias ls='ls --color=auto --show-control-chars'
