@@ -55,4 +55,4 @@
 	show = diff-highlight | less
 	diff = diff-highlight | less
 [include]
-	path = .gitconfig-sourcetree
+	path = .gitconfig-local
