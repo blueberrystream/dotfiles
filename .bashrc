@@ -6,18 +6,19 @@ export EDITOR=vim
 
 export HISTCONTROL=ignoredups
 
-PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$]\$ '
-if [ -f ~/git-completion.bash ]; then
-	if [ -f ~/git-prompt.sh ]; then
-		export GIT_PS1_SHOWUPSTREAM=1
-		export GIT_PS1_SHOWUNTRACKEDFILES=1
-		export GIT_PS1_SHOWSTASHSTATE=1
-		export GIT_PS1_SHOWDIRTYSTATE=1
-		. ~/git-prompt.sh
-	fi
-	. ~/git-completion.bash
+PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\$ '
 
-	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
+if [ -f ~/git-completion.bash ]; then
+    . ~/git-completion.bash
+fi
+if [ -f ~/git-prompt.sh ]; then
+    export GIT_PS1_SHOWUPSTREAM=1
+    export GIT_PS1_SHOWUNTRACKEDFILES=1
+    export GIT_PS1_SHOWSTASHSTATE=1
+    export GIT_PS1_SHOWDIRTYSTATE=1
+    . ~/git-prompt.sh
+
+    PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
 fi
 export PS1
 
