@@ -1,6 +1,3 @@
-[user]
-	name = KID the Euforia
-	email = kid0725@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = false
