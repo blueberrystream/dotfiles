@@ -6,6 +6,10 @@ export EDITOR=vim
 
 export HISTCONTROL=ignoredups
 
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\$ '
 
 if [ -f ~/git-completion.bash ]; then
