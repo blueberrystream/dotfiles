@@ -31,6 +31,14 @@
 	info = remote show origin
 	su = submodule update
 	pt = push --tags
+	au = update-index --assume-unchanged
+	noau = update-index --no-assume-unchanged
+	nau = update-index --no-assume-unchanged
+	sw = update-index --skip-worktree
+	nosw = update-index --no-skip-worktree
+	nsw = update-index --no-skip-worktree
+	vau = !git ls-files -v | grep ^[a-z]
+	vsw = !git ls-files -v | grep ^[Ss]
 [log]
 	date = local
 [branch]
