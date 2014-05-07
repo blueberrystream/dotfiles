@@ -20,6 +20,7 @@ if [ `uname` = "Darwin" ]; then
 fi
 rm -f ~/.gitignore
 rm -f ~/.vimrc
+rm -f ~/.tmux.conf
 
 ln -s `pwd`/.bash_profile ~/
 ln -s `pwd`/.bashrc ~/
@@ -41,6 +42,7 @@ if [ `uname` = "Darwin" ]; then
 fi
 ln -s `pwd`/.gitignore ~/
 ln -s `pwd`/.vimrc ~/
+ln -s `pwd`/.tmux.conf ~/
 
 # dircolors
 curl -O https://raw2.github.com/seebi/dircolors-solarized/master/dircolors.256dark
