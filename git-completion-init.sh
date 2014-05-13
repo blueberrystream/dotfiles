@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 curl -kO https://raw2.github.com/git/git/master/contrib/completion/git-prompt.sh
 curl -kO https://raw2.github.com/git/git/master/contrib/completion/git-completion.bash
