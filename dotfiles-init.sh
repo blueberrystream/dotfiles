@@ -1,5 +1,5 @@
 #!/bin/bash
-uname=$uname
+uname=`uname`
 script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
 rm -f ~/.bash_profile
