@@ -7,22 +7,21 @@ export EDITOR=vim
 export HISTCONTROL=ignoredups
 
 if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
+	. /etc/bashrc
 fi
 
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\$ '
-
 if [ -f ~/git-completion.bash ]; then
-    . ~/git-completion.bash
+	. ~/git-completion.bash
 fi
 if [ -f ~/git-prompt.sh ]; then
-    export GIT_PS1_SHOWUPSTREAM=1
-    export GIT_PS1_SHOWUNTRACKEDFILES=1
-    export GIT_PS1_SHOWSTASHSTATE=1
-    export GIT_PS1_SHOWDIRTYSTATE=1
-    . ~/git-prompt.sh
+	export GIT_PS1_SHOWUPSTREAM=1
+	export GIT_PS1_SHOWUNTRACKEDFILES=1
+	export GIT_PS1_SHOWSTASHSTATE=1
+	export GIT_PS1_SHOWDIRTYSTATE=1
+	. ~/git-prompt.sh
 
-    PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
+	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
 fi
 export PS1
 
@@ -55,22 +54,18 @@ if [ -d ~/bin ]; then
 	export PATH=~/bin:$PATH
 fi
 
-# http://googlewhacks.blogspot.jp/2008/01/macportscoreutilsg.html
-if [ `uname` = "Darwin" ]; then
-	. ~/.bashrc-alias-gnu
-else
-	. ~/.bashrc-alias
-fi
-
-if [ `uname` = "MINGW32_NT-6.1" ]; then
-	. ~/.bashrc-windows
-fi
-if [ `uname` = "Linux" ]; then
-	. ~/.bashrc-linux
-fi
-if [ `uname` = "Darwin" ]; then
-	. ~/.bashrc-macosx
-fi
+uname=`uname`
+case $uname in
+	Darwin)
+		. ~/.bashrc-alias-gnu ;
+		. ~/.bashrc-macosx ;;
+	Linux)
+		. ~/.bashrc-alias ;
+		. ~/.bashrc-linux ;;
+	MINGW32*)
+		. ~/.bashrc-alias ;
+		. ~/.bashrc-windows ;;
+esac
 
 if [ -f ~/.bashrc-local ]; then
 	. ~/.bashrc-local
