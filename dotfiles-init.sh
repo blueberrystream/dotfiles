@@ -49,7 +49,7 @@ ln -s $script_dir/.tmux.conf ~/
 ln -s $script_dir/update-dotfiles.sh ~/
 
 # dircolors
-curl -O https://raw2.github.com/seebi/dircolors-solarized/master/dircolors.256dark
+wget https://raw2.github.com/seebi/dircolors-solarized/master/dircolors.256dark
 mv -f dircolors.256dark ~/
 
 # vim
