@@ -47,12 +47,17 @@ export PS1
 
 export PROMPT_COMMAND='echo -ne "\033]0;$(whoami)@${HOSTNAME}:${PWD/$HOME/~}\007"'
 
-if [ -d ~/local/bin ]; then
-	export PATH=~/local/bin:$PATH
-fi
-if [ -d ~/bin ]; then
-	export PATH=~/bin:$PATH
-fi
+function export_path ()
+{
+	if [ -d "$1" ]; then
+		if [[ ! "$PATH" =~ "$1" ]]; then
+			export PATH=$1:$PATH
+		fi
+	fi
+}
+
+export_path ~/local/bin
+export_path ~/bin
 
 uname=`uname`
 case $uname in
