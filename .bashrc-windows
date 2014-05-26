@@ -5,15 +5,15 @@ LS_COLORS='di=00;36:ln=00;32:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:
 export LS_COLORS
 
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[33m\]\h\[\e[00m\]:\[\e[36m\]\W\[\e[00m\]]\$ '
-if [ -f ~/git-completion.bash ]; then
-	. ~/git-completion.bash
+if [ -f $HOME/git-completion.bash ]; then
+	. $HOME/git-completion.bash
 fi
-if [ -f ~/git-prompt.sh ]; then
+if [ -f $HOME/git-prompt.sh ]; then
 	export GIT_PS1_SHOWUPSTREAM=1
 	export GIT_PS1_SHOWUNTRACKEDFILES=1
 	export GIT_PS1_SHOWSTASHSTATE=1
 	export GIT_PS1_SHOWDIRTYSTATE=1
-	. ~/git-prompt.sh
+	. $HOME/git-prompt.sh
 
 	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[33m\]\h\[\e[00m\]:\[\e[36m\]\W\[\e[00m\]$(__git_ps1)]\$ '
 fi

@@ -8,4 +8,4 @@ alias cd..='cd ..'
 alias vi=vim
 alias view='vim -R'
 alias psgrep='ps aux | grep'
-alias reload-bash='source ~/.bash_profile'
+alias reload-bash='source $HOME/.bash_profile'

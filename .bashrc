@@ -11,15 +11,15 @@ if [ -f /etc/bashrc ]; then
 fi
 
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\$ '
-if [ -f ~/git-completion.bash ]; then
-	. ~/git-completion.bash
+if [ -f $HOME/git-completion.bash ]; then
+	. $HOME/git-completion.bash
 fi
-if [ -f ~/git-prompt.sh ]; then
+if [ -f $HOME/git-prompt.sh ]; then
 	export GIT_PS1_SHOWUPSTREAM=1
 	export GIT_PS1_SHOWUNTRACKEDFILES=1
 	export GIT_PS1_SHOWSTASHSTATE=1
 	export GIT_PS1_SHOWDIRTYSTATE=1
-	. ~/git-prompt.sh
+	. $HOME/git-prompt.sh
 
 	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
 fi
@@ -56,30 +56,30 @@ function export_path ()
 	fi
 }
 
-export_path ~/local/bin
-export_path ~/bin
+export_path $HOME/local/bin
+export_path $HOME/bin
 
 uname=`uname`
 case $uname in
 	Darwin)
-		. ~/.bashrc-alias-gnu ;
-		. ~/.bashrc-macosx ;;
+		. $HOME/.bashrc-alias-gnu ;
+		. $HOME/.bashrc-macosx ;;
 	Linux)
-		. ~/.bashrc-alias ;
-		. ~/.bashrc-linux ;;
+		. $HOME/.bashrc-alias ;
+		. $HOME/.bashrc-linux ;;
 	MINGW32*)
-		. ~/.bashrc-alias ;
-		. ~/.bashrc-windows ;;
+		. $HOME/.bashrc-alias ;
+		. $HOME/.bashrc-windows ;;
 esac
 
-if [ -f ~/.bashrc-local ]; then
-	. ~/.bashrc-local
+if [ -f $HOME/.bashrc-local ]; then
+	. $HOME/.bashrc-local
 fi
 
-if [ -f ~/.bashrc-function ]; then
-	. ~/.bashrc-function
+if [ -f $HOME/.bashrc-function ]; then
+	. $HOME/.bashrc-function
 fi
 
-if [ -f ~/dircolors.256dark ]; then
-	eval $(dircolors -b ~/dircolors.256dark)
+if [ -f $HOME/dircolors.256dark ]; then
+	eval $(dircolors -b $HOME/dircolors.256dark)
 fi

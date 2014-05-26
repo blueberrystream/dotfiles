@@ -1,4 +1,4 @@
 #!/bin/bash
-cd ~/Repos/git/codebreak/dotfiles
+cd $HOME/Repos/git/codebreak/dotfiles
 git pull
-. ~/.bash_profile
+. $HOME/.bash_profile
