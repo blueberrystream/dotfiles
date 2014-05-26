@@ -30,6 +30,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'rking/ag.vim'
 
 " Ruby
 "NeoBundle 'ruby-matchit'
