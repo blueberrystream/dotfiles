@@ -1,0 +1,4 @@
+. /usr/local/etc/bash_completion.d/ag.bashcomp.sh
+. /usr/local/etc/bash_completion.d/hg-completion.bash
+. /usr/local/etc/bash_completion.d/tig-completion.bash
+. /usr/local/etc/bash_completion.d/tmux
