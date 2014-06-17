@@ -1,5 +1,8 @@
 alias ls='ls --color=auto'
 alias ll='ls -lAp --color=auto'
+alias lld='ll | grep ^d'
+alias lll='ll | grep ^l'
+alias llf='ll | grep ^-'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
