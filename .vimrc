@@ -78,7 +78,6 @@ endif
 "au BufRead,BufNew * match JpSpace /　/
 
 " Basic
-syntax enable
 set nowrap
 set modeline
 set number
