@@ -87,6 +87,7 @@ filetype on
 filetype indent on
 filetype plugin on
 set nobackup
+set cursorline
 
 " Theme
 set t_Co=256
