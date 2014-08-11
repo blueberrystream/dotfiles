@@ -58,6 +58,7 @@ export_path $HOME/bin
 uname=`uname`
 case $uname in
 	Darwin)
+		. $HOME/.bashrc-alias ;
 		. $HOME/.bashrc-alias-gnu ;
 		. $HOME/.bashrc-macosx ;;
 	Linux)
