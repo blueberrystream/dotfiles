@@ -52,7 +52,6 @@ function export_path ()
 	fi
 }
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export_path $HOME/local/bin
 export_path $HOME/bin
 
