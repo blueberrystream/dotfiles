@@ -1,4 +1,10 @@
-. /usr/local/etc/bash_completion.d/ag.bashcomp.sh
-. /usr/local/etc/bash_completion.d/hg-completion.bash
-. /usr/local/etc/bash_completion.d/tig-completion.bash
-. /usr/local/etc/bash_completion.d/tmux
+export GIT_PS1_SHOWUPSTREAM=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+for file in $(brew --prefix)/etc/bash_completion.d/*; do
+	. ${file}
+done
+
+PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
