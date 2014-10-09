@@ -6,6 +6,9 @@ export EDITOR=vim
 
 export HISTCONTROL=ignoredups
 
+# prohibit C-s
+stty stop undef
+
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\$ '
 if [ -f $HOME/git-completion.bash ]; then
 	. $HOME/git-completion.bash
