@@ -22,6 +22,7 @@ if [ "$uname" = "Darwin" ]; then
 fi
 rm -f $HOME/.gitignore
 rm -f $HOME/.vimrc
+rm -f $HOME/.vimrc-go
 rm -f $HOME/.tmux.conf
 rm -f $HOME/update-dotfiles.sh
 
@@ -45,6 +46,7 @@ if [ "$uname" = "Darwin" ]; then
 fi
 ln -s $script_dir/.gitignore $HOME/
 ln -s $script_dir/.vimrc $HOME/
+ln -s $script_dir/.vimrc-go $HOME/
 ln -s $script_dir/.tmux.conf $HOME/
 ln -s $script_dir/update-dotfiles.sh $HOME/
 

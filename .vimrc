@@ -181,9 +181,16 @@ let g:lightline = {
       \ 'colorscheme': 'solarized_dark',
       \ }
 
+" Setting for golang
+if filereadable(expand('~/.vimrc-go'))
+	source ~/.vimrc-go
+endif
 " Setting Local
 if filereadable(expand('~/.vimrc.local'))
 	source ~/.vimrc.local
+endif
+if filereadable(expand('~/.vimrc-local'))
+	source ~/.vimrc-local
 endif
 
 function! Scouter(file, ...)
