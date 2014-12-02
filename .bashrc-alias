@@ -3,15 +3,25 @@ alias ll='ls -lAp --color=auto'
 alias lld='ll | grep ^d'
 alias lll='ll | grep ^l'
 alias llf='ll | grep ^-'
+
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
+
 alias cd='cdls'
 alias cd..='cd ..'
+
 alias vi=vim
 alias view='vim -R'
+
 alias psgrep='ps aux | grep'
+
 alias reload-bash='source $HOME/.bash_profile'
+
 alias tmux-a='tmux a; if [ $? -eq 1 ]; then tmux -2; fi'
+
 alias eman='env LANG=C man'
+
 alias ag-pager='ag --pager="less -R"'
+
+alias brew-cask-update='brew file cask_upgrade -C'

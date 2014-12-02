@@ -30,9 +30,8 @@ ln -s $script_dir/.bash_profile $HOME/
 ln -s $script_dir/.bashrc $HOME/
 if [ "$uname" = "Darwin" ]; then
 	ln -s $script_dir/.bashrc-alias-gnu $HOME/
-else
-	ln -s $script_dir/.bashrc-alias $HOME/
 fi
+ln -s $script_dir/.bashrc-alias $HOME/
 ln -s $script_dir/.bashrc-function $HOME/
 if [ "$uname" = "Linux" ]; then
 	ln -s $script_dir/.bashrc-linux $HOME/
@@ -51,13 +50,14 @@ ln -s $script_dir/.tmux.conf $HOME/
 ln -s $script_dir/update-dotfiles.sh $HOME/
 
 # dircolors
-wget --no-check-certificate https://raw2.github.com/seebi/dircolors-solarized/master/dircolors.256dark
-mv -f dircolors.256dark $HOME/
+rm -f $HOME/dircolors.256dark
+git clone https://github.com/seebi/dircolors-solarized.git $HOME/Repos/git/github/dircolors-solarized
+ln -s $HOME/Repos/git/github/dircolors-solarized/dircolors.256dark $HOME/
 
 # vim
 mkdir -p $HOME/.vim/bundle
 if [ ! -d $HOME/.vim/bundle/neobundle.vim ]; then
-	git clone git@github.com:Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim
+	git clone https://github.com/Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim
 fi
 mkdir -p $HOME/.unite
 mkdir -p $HOME/.vimswap
