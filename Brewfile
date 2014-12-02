@@ -14,6 +14,7 @@ cask install googleappenginelauncher
 cask install keka
 cask install netnewswire
 cask install skype
+cask install teamviewer
 cask install xquartz
 cask install xtrafinder
 
@@ -127,13 +128,11 @@ install xmlto
 install xz
 install zeromq
 
-# Cask applications
-cask install appcleaner
-
 # App Store applications
 appstore Calculator LCD Mini
 appstore Ds Store Remover
 appstore EasyFind
+appstore Found
 appstore GarageBand
 appstore iMovie
 appstore iPhoto
