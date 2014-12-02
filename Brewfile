@@ -4,8 +4,18 @@
 ## caskroom/cask
 tap caskroom/cask
 install brew-cask
+cask install appcleaner
 cask install bettertouchtool
+cask install clipmenu
+cask install filezilla
+cask install flux
+cask install google-cloud-sdk
+cask install googleappenginelauncher
+cask install keka
+cask install netnewswire
+cask install skype
 cask install xquartz
+cask install xtrafinder
 
 ## caskroom/fonts
 tap caskroom/fonts
@@ -117,6 +127,9 @@ install xmlto
 install xz
 install zeromq
 
+# Cask applications
+cask install appcleaner
+
 # App Store applications
 appstore Calculator LCD Mini
 appstore Ds Store Remover
@@ -133,6 +146,5 @@ appstore Reeder
 appstore SourceTree
 appstore The Unarchiver
 appstore Twitter
-appstore WindowFlow
 appstore Xcode
 appstore YoruFukurou
