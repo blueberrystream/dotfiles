@@ -4,6 +4,7 @@
 ## caskroom/cask
 tap caskroom/cask
 install brew-cask
+cask install bettertouchtool
 cask install xquartz
 
 ## caskroom/fonts
