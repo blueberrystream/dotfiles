@@ -1,6 +1,14 @@
 
 # tap repositories and their packages
 
+## caskroom/cask
+tap caskroom/cask
+install brew-cask
+cask install xquartz
+
+## caskroom/fonts
+tap caskroom/fonts
+
 ## homebrew/boneyard
 tap homebrew/boneyard
 
@@ -11,9 +19,6 @@ install zlib
 
 ## homebrew/php
 tap homebrew/php
-install composer
-install php56-memcached
-install php56 --with-fpm --with-homebrew-curl --with-homebrew-openssl --with-thread-safety --with-fpm --with-homebrew-curl --with-homebrew-openssl --with-thread-safety
 
 ## homebrew/versions
 tap homebrew/versions
@@ -23,9 +28,6 @@ tap josegonzalez/php
 
 ## mcuadros/hhvm
 tap mcuadros/hhvm
-install binutilsfb
-install jemallocfb
-install libdwarf
 
 ## rcmdnk/file
 tap rcmdnk/file
@@ -47,10 +49,11 @@ install cairo
 install cmake
 install coreutils
 install curl
+install czmq
 install docbook
 install docbook-xsl
 install fontconfig
-install fontforge --with-python
+install fontforge
 install freetype
 install gd
 install gdbm
@@ -74,6 +77,7 @@ install libevent
 install libffi
 install libmemcached
 install libpng
+install libsodium
 install libssh2
 install libtiff
 install libtool
@@ -110,15 +114,24 @@ install vim
 install wget
 install xmlto
 install xz
+install zeromq
 
 # App Store applications
 appstore Calculator LCD Mini
 appstore Ds Store Remover
-appstore Found
+appstore EasyFind
+appstore GarageBand
+appstore iMovie
+appstore iPhoto
+appstore Keynote
+appstore LINE
+appstore Numbers
 appstore OneDrive
+appstore Pages
 appstore Reeder
 appstore SourceTree
 appstore The Unarchiver
 appstore Twitter
+appstore WindowFlow
 appstore Xcode
 appstore YoruFukurou
