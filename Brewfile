@@ -148,6 +148,7 @@ appstore LINE
 appstore Numbers
 appstore OneDrive
 appstore Pages
+appstore Pocket
 appstore Reeder
 appstore SourceTree
 appstore The Unarchiver
