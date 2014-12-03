@@ -5,16 +5,22 @@
 tap caskroom/cask
 install brew-cask
 cask install appcleaner
+cask install atom-shell
+cask install atom
 cask install bettertouchtool
 cask install clipmenu
+cask install deeper
 cask install filezilla
 cask install flux
 cask install google-cloud-sdk
 cask install googleappenginelauncher
+cask install hosts
+cask install hyperswitch
 cask install keka
+cask install macdown
 cask install netnewswire
 cask install skype
-cask install teamviewer
+cask install tinkertool
 cask install xquartz
 cask install xtrafinder
 
@@ -26,6 +32,7 @@ tap homebrew/boneyard
 
 ## homebrew/dupes
 tap homebrew/dupes
+install groff
 install rsync
 install zlib
 
