@@ -3,6 +3,7 @@ alias ll='ls -lAp --color=auto'
 alias lld='ll | grep ^d'
 alias lll='ll | grep ^l'
 alias llf='ll | grep ^-'
+alias llgrep='ll | grep'
 
 alias cp='cp -i'
 alias mv='mv -i'
