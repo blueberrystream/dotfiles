@@ -42,6 +42,7 @@
 	vsw = !git ls-files -v | grep ^[Ss]
 	showuser = config --get-regexp "^user"
 	mt = mergetool
+	sm = submodule
 
 [log]
 	date = local
