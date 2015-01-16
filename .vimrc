@@ -5,7 +5,7 @@ if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundle 'Shougo/neobundle.vim'
@@ -68,6 +68,8 @@ if neobundle#exists_not_installed_bundles()
 	echomsg 'Please execute ":NeoBundleInstall" command.'
 	"finish
 endif
+
+call neobundle#end()
 
 " Show Invisible Characters
 "set list
@@ -205,3 +207,5 @@ command! -bar -bang -nargs=? -complete=file Scouter
 \        echo Scouter(empty(<q-args>) ? $MYVIMRC : expand(<q-args>), <bang>0)
 command! -bar -bang -nargs=? -complete=file GScouter
 \        echo Scouter(empty(<q-args>) ? $MYGVIMRC : expand(<q-args>), <bang>0)
+
+NeoBundleCheck
