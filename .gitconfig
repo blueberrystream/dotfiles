@@ -1,3 +1,6 @@
+[user]
+	name = ""
+	email = ""
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = false
@@ -61,8 +64,6 @@
 	tool = vimdiff
 [i18n]
 	commitencoding = utf-8
-[tgit]
-	warnnosignedoffby = true
 [pager]
 	log = diff-highlight | less
 	show = diff-highlight | less
