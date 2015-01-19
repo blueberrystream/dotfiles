@@ -136,4 +136,22 @@ install xz
 install zeromq
 
 # App Store applications
+appstore Calculator LCD Mini
+appstore Ds Store Remover
+appstore EasyFind
+appstore Found
+appstore GarageBand
+appstore iMovie
+appstore iPhoto
+appstore Keynote
+appstore LINE
+appstore Numbers
+appstore OneDrive
+appstore Pages
+appstore Pocket
+appstore Reeder
+appstore SourceTree
+appstore The Unarchiver
+appstore Twitter
 appstore Xcode
+appstore YoruFukurou
