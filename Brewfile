@@ -36,6 +36,9 @@ install groff
 install rsync
 install zlib
 
+## homebrew/homebrew-php
+tap homebrew/homebrew-php
+
 ## homebrew/php
 tap homebrew/php
 
