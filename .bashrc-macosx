@@ -8,7 +8,7 @@ export GIT_PS1_SHOWUPSTREAM=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWDIRTYSTATE=1
-PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
+PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\n\$ '
 
 # brew-warp function http://rcmdnk.github.io/en/blog/2014/11/15/computer-mac-homebrew/
 if [ -f $(brew --prefix)/etc/brew-wrap ];then

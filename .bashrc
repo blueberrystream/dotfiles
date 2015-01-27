@@ -9,7 +9,7 @@ export HISTCONTROL=ignoredups
 # prohibit C-s
 stty stop undef
 
-PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\$ '
+PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\n\$ '
 if [ -f $HOME/git-completion.bash ]; then
 	. $HOME/git-completion.bash
 fi
@@ -20,7 +20,7 @@ if [ -f $HOME/git-prompt.sh ]; then
 	export GIT_PS1_SHOWDIRTYSTATE=1
 	. $HOME/git-prompt.sh
 
-	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\$ '
+	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\n\$ '
 fi
 export PS1
 
