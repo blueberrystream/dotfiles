@@ -22,7 +22,7 @@ NeoBundle 'Shougo/vimproc.vim', {
       \ }
 
 " Sudo
-"NeoBundle 'sudo.vim'
+NeoBundle 'sudo.vim'
 
 " My Bundles here:
 NeoBundle 'Shougo/unite.vim'
