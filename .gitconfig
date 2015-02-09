@@ -1,6 +1,6 @@
 [user]
-	name = ""
-	email = ""
+	name = "Dummy User"
+	email = "dummy@email.address"
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = false
