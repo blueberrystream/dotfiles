@@ -46,6 +46,7 @@
 	showuser = config --get-regexp "^user"
 	mt = mergetool
 	sm = submodule
+	sco = !git checkout $(git branch | peco)
 
 [log]
 	date = local
