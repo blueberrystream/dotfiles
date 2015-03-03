@@ -119,6 +119,7 @@ install oniguruma
 install openssl
 install pango
 install pcre
+install peco
 install pixman
 install pkg-config
 install python
@@ -126,6 +127,7 @@ install re2c
 install readline
 install ruby
 install sqlite
+install subversion
 install tbb
 install the_platinum_searcher
 install the_silver_searcher
