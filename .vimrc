@@ -208,4 +208,7 @@ command! -bar -bang -nargs=? -complete=file Scouter
 command! -bar -bang -nargs=? -complete=file GScouter
 \        echo Scouter(empty(<q-args>) ? $MYGVIMRC : expand(<q-args>), <bang>0)
 
+" for crontab -e on Mac OS X
+let &backupskip="/private/tmp/crontab.*," . &backupskip
+
 NeoBundleCheck
