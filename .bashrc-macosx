@@ -1,7 +1,19 @@
-# load bash completion
-for file in $(brew --prefix)/etc/bash_completion.d/*; do
-	. ${file}
-done
+ if type brew > /dev/null 2>&1; then
+	# load bash completion
+	for file in $(brew --prefix)/etc/bash_completion.d/*; do
+		. ${file}
+	done
+
+	# brew-warp function http://rcmdnk.github.io/en/blog/2014/11/15/computer-mac-homebrew/
+	if [ -f $(brew --prefix)/etc/brew-wrap ];then
+	  source $(brew --prefix)/etc/brew-wrap
+	fi
+
+	# homebrew cask http://rcmdnk.github.io/blog/2014/11/22/computer-mac-homebrew/
+	export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+	alias brew-cask-update='brew file cask_upgrade -C'
+fi
 
 # git prompt
 export GIT_PS1_SHOWUPSTREAM=1
@@ -9,13 +21,3 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWDIRTYSTATE=1
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\n\$ '
-
-# brew-warp function http://rcmdnk.github.io/en/blog/2014/11/15/computer-mac-homebrew/
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
-fi
-
-# homebrew cask http://rcmdnk.github.io/blog/2014/11/22/computer-mac-homebrew/
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-alias brew-cask-update='brew file cask_upgrade -C'
