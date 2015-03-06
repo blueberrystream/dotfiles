@@ -17,3 +17,5 @@ fi
 
 # homebrew cask http://rcmdnk.github.io/blog/2014/11/22/computer-mac-homebrew/
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+alias brew-cask-update='brew file cask_upgrade -C'

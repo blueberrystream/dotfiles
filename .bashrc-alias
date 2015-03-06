@@ -25,8 +25,6 @@ alias eman='env LANG=C man'
 
 alias ag-pager='ag --pager="less -R"'
 
-alias brew-cask-update='brew file cask_upgrade -C'
-
 if type peco > /dev/null 2>&1; then
 	alias ssh-peco='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
 fi
