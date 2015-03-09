@@ -7,7 +7,9 @@ export EDITOR=vim
 export HISTCONTROL=ignoredups
 
 # prohibit C-s
-stty stop undef
+if type dircolors > /dev/null 2>&1; then
+	stty stop undef
+fi
 
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\n\$ '
 if [ -f $HOME/git-completion.bash ]; then
@@ -81,5 +83,7 @@ if [ -f $HOME/.bashrc-function ]; then
 fi
 
 if [ -f $HOME/dircolors.256dark ]; then
-	eval $(dircolors -b $HOME/dircolors.256dark)
+	if type dircolors > /dev/null 2>&1; then
+		eval $(dircolors -b $HOME/dircolors.256dark)
+	fi
 fi
