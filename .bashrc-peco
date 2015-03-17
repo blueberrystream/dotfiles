@@ -1,0 +1,7 @@
+if type peco > /dev/null 2>&1; then
+	alias ssh-peco='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config | peco | awk "{print \$2}")'
+	alias ll-peco='ll | peco | awk "{print \$9}"'
+	alias cd-peco='cd $(ll-peco)'
+	alias vim-peco='vim $(ll-peco)'
+	alias less-peco='less $(ll-peco)'
+fi

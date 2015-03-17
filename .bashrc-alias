@@ -24,7 +24,3 @@ alias tmux-a='tmux a; if [ $? -eq 1 ]; then tmux -2; fi'
 alias eman='env LANG=C man'
 
 alias ag-pager='ag --pager="less -R"'
-
-if type peco > /dev/null 2>&1; then
-	alias ssh-peco='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
-fi

@@ -9,6 +9,7 @@ if [ "$uname" = "Darwin" ]; then
 else
 	rm -f $HOME/.bashrc-alias
 fi
+rm -f $HOME/.bashrc-peco
 rm -f $HOME/.bashrc-function
 if [ "$uname" = "Linux" ]; then
 	rm -f $HOME/.bashrc-linux
@@ -32,6 +33,7 @@ if [ "$uname" = "Darwin" ]; then
 	ln -s $script_dir/.bashrc-alias-gnu $HOME/
 fi
 ln -s $script_dir/.bashrc-alias $HOME/
+ln -s $script_dir/.bashrc-peco $HOME/
 ln -s $script_dir/.bashrc-function $HOME/
 if [ "$uname" = "Linux" ]; then
 	ln -s $script_dir/.bashrc-linux $HOME/

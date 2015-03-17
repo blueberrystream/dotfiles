@@ -78,6 +78,7 @@ if [ -f $HOME/.bashrc-local ]; then
 	. $HOME/.bashrc-local
 fi
 
+. $HOME/.bashrc-peco
 if [ -f $HOME/.bashrc-function ]; then
 	. $HOME/.bashrc-function
 fi
