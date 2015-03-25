@@ -106,6 +106,7 @@ install libtool
 install libxml2
 install libxslt
 install libyaml
+install mackup
 install mcrypt
 install memcached
 install mercurial
