@@ -19,6 +19,8 @@ cask install hyperswitch
 cask install keka
 cask install macdown
 cask install netnewswire
+cask install p4merge
+cask install p4v
 cask install skype
 cask install tinkertool
 cask install xquartz
@@ -51,6 +53,10 @@ tap josegonzalez/php
 ## mcuadros/hhvm
 tap mcuadros/hhvm
 
+## peco/peco
+tap peco/peco
+install peco
+
 ## rcmdnk/file
 tap rcmdnk/file
 install brew-file
@@ -60,6 +66,7 @@ tap sanemat/font
 install ricty
 
 # Other Homebrew packages
+install ag
 install asciidoc
 install autoconf
 install automake
@@ -88,6 +95,7 @@ install gnu-getopt
 install go
 install gobject-introspection
 install harfbuzz
+install hg
 install icu4c
 install imagemagick
 install imap-uw
@@ -106,7 +114,6 @@ install libtool
 install libxml2
 install libxslt
 install libyaml
-install mackup
 install mcrypt
 install memcached
 install mercurial
@@ -123,6 +130,7 @@ install pcre
 install peco
 install pixman
 install pkg-config
+install pt
 install python
 install re2c
 install readline
