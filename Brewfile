@@ -22,7 +22,7 @@ cask install netnewswire
 cask install p4merge
 cask install p4v
 cask install skype
-cask install tinkertool
+#cask install tinkertool
 cask install xquartz
 cask install xtrafinder
 
