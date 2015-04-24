@@ -13,7 +13,7 @@ cask install deeper
 cask install filezilla
 cask install flux
 cask install google-cloud-sdk
-cask install googleappenginelauncher
+cask install googleappengine
 cask install hosts
 cask install hyperswitch
 cask install keka
