@@ -11,20 +11,24 @@ if type dircolors > /dev/null 2>&1; then
 	stty stop undef
 fi
 
-PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\n\$ '
-if [ -f $HOME/git-completion.bash ]; then
-	. $HOME/git-completion.bash
+# for git-prompt
+export GIT_PS1_SHOWUPSTREAM=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWDIRTYSTATE=1
+ 
+# load bash completion
+bash_completion_dir=$HOME/local/etc/bash_completion.d
+if [ -d $bash_completion_dir ]; then
+	for file in $bash_completion_dir/*; do
+		. ${file}
+	done
 fi
-if [ -f $HOME/git-prompt.sh ]; then
-	export GIT_PS1_SHOWUPSTREAM=1
-	export GIT_PS1_SHOWUNTRACKEDFILES=1
-	export GIT_PS1_SHOWSTASHSTATE=1
-	export GIT_PS1_SHOWDIRTYSTATE=1
-	. $HOME/git-prompt.sh
 
+PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\n\$ '
+if [ -f  $bash_completion_dir/git-prompt.sh ]; then
 	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\n\$ '
 fi
-export PS1
 
 #PS1='color-test\n\
 #	\[\e[0;30m\]black 0;30\[\e[00m\]\n\
