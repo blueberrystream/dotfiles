@@ -22,7 +22,6 @@ cask install netnewswire
 cask install p4merge
 cask install p4v
 cask install skype
-#cask install tinkertool
 cask install xquartz
 cask install xtrafinder
 
@@ -37,9 +36,6 @@ tap homebrew/dupes
 install groff
 install rsync
 install zlib
-
-## homebrew/homebrew-php
-tap homebrew/homebrew-php
 
 ## homebrew/php
 tap homebrew/php
@@ -66,7 +62,6 @@ tap sanemat/font
 install ricty
 
 # Other Homebrew packages
-install ag
 install asciidoc
 install autoconf
 install automake
@@ -95,7 +90,6 @@ install gnu-getopt
 install go
 install gobject-introspection
 install harfbuzz
-install hg
 install icu4c
 install imagemagick
 install imap-uw
@@ -127,10 +121,8 @@ install oniguruma
 install openssl
 install pango
 install pcre
-install peco
 install pixman
 install pkg-config
-install pt
 install python
 install re2c
 install readline
@@ -150,6 +142,7 @@ install xz
 install zeromq
 
 # App Store applications
+appstore AnyDo
 appstore Calculator LCD Mini
 appstore Ds Store Remover
 appstore EasyFind
