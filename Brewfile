@@ -63,6 +63,7 @@ tap sanemat/font
 install ricty
 
 # Other Homebrew packages
+install ag
 install asciidoc
 install autoconf
 install automake
@@ -91,6 +92,7 @@ install gnu-getopt
 install go
 install gobject-introspection
 install harfbuzz
+install hg
 install icu4c
 install imagemagick
 install imap-uw
@@ -124,6 +126,7 @@ install pango
 install pcre
 install pixman
 install pkg-config
+install pt
 install python
 install re2c
 install readline
