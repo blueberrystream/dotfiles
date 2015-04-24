@@ -42,6 +42,7 @@ tap homebrew/php
 
 ## homebrew/versions
 tap homebrew/versions
+install ruby21
 
 ## josegonzalez/php
 tap josegonzalez/php
