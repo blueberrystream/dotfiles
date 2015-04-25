@@ -1,6 +1,10 @@
 #!/bin/bash
+set -eu
 
-wget --no-check-certificate https://raw2.github.com/git/git/master/contrib/completion/git-prompt.sh
-wget --no-check-certificate https://raw2.github.com/git/git/master/contrib/completion/git-completion.bash
-mv -f git-prompt.sh $HOME/
-mv -f git-completion.bash $HOME/
+repo_dir=$HOME/Repos/git/github/git
+bash_completion_dir=$HOME/local/etc/bash_completion.d
+
+git clone git@github.com:git/git.git $repo_dir
+
+ln -s $repo_dir/contrib/completion/git-prompt.sh $bash_completion_dir/
+ln -s $repo_dir/contrib/completion/git-completion.bash $bash_completion_dir/
