@@ -63,3 +63,8 @@ if [ ! -d $HOME/.vim/bundle/neobundle.vim ]; then
 fi
 mkdir -p $HOME/.unite
 mkdir -p $HOME/.vimswap
+
+# tmux
+if [ ! -d $HOME/.tmux/plugins/tpm ]; then
+	git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+fi
