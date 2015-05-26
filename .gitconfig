@@ -47,7 +47,7 @@
 	mt = mergetool
 	sm = submodule
 	sco = !git checkout $(git branch | peco)
-
+	contains = branch -r --contains
 [log]
 	date = local
 [branch]
