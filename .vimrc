@@ -191,9 +191,6 @@ endif
 if filereadable(expand('~/.vimrc.local'))
 	source ~/.vimrc.local
 endif
-if filereadable(expand('~/.vimrc-local'))
-	source ~/.vimrc-local
-endif
 
 function! Scouter(file, ...)
 	let pat = '^\s*$\|^\s*"'
