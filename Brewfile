@@ -5,7 +5,6 @@
 tap caskroom/cask
 install brew-cask
 cask install appcleaner
-cask install atom-shell
 cask install atom
 cask install bettertouchtool
 cask install clipmenu
