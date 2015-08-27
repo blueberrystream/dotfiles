@@ -1,28 +1,31 @@
 
 # tap repositories and their packages
 
+## --repair
+tap --repair
+
 ## caskroom/cask
 tap caskroom/cask
-install brew-cask
-cask install appcleaner
-cask install atom
-cask install bettertouchtool
-cask install clipmenu
-cask install deeper
-cask install filezilla
-cask install flux
-cask install google-cloud-sdk
-cask install googleappengine
-cask install hosts
-cask install hyperswitch
-cask install keka
-cask install macdown
-cask install netnewswire
-cask install p4merge
-cask install p4v
-cask install skype
-cask install xquartz
-cask install xtrafinder
+brew brew-cask
+cask appcleaner
+cask atom
+cask bettertouchtool
+cask clipmenu
+cask deeper
+cask filezilla
+cask flux
+cask google-cloud-sdk
+cask googleappengine
+cask hosts
+cask hyperswitch
+cask keka
+cask macdown
+cask netnewswire
+cask p4merge
+cask p4v
+cask skype
+cask xquartz
+cask xtrafinder
 
 ## caskroom/fonts
 tap caskroom/fonts
@@ -32,16 +35,16 @@ tap homebrew/boneyard
 
 ## homebrew/dupes
 tap homebrew/dupes
-install groff
-install rsync
-install zlib
+brew groff
+brew rsync
+brew zlib
 
 ## homebrew/php
 tap homebrew/php
 
 ## homebrew/versions
 tap homebrew/versions
-install ruby21
+brew ruby21
 
 ## josegonzalez/php
 tap josegonzalez/php
@@ -51,98 +54,101 @@ tap mcuadros/hhvm
 
 ## peco/peco
 tap peco/peco
-install peco
+brew peco
 
 ## rcmdnk/file
 tap rcmdnk/file
-install brew-file
+brew brew-file
 
 ## sanemat/font
 tap sanemat/font
-install ricty
+brew ricty
 
 # Other Homebrew packages
-install ag
-install asciidoc
-install autoconf
-install automake
-install bash
-install bison
-install boost
-install bsdmake
-install cairo
-install cmake
-install coreutils
-install curl
-install czmq
-install docbook
-install docbook-xsl
-install fontconfig
-install fontforge
-install freetype
-install gd
-install gdbm
-install gettext
-install gflags
-install git
-install glib
-install glog
-install gnu-getopt
-install go
-install gobject-introspection
-install harfbuzz
-install hg
-install icu4c
-install imagemagick
-install imap-uw
-install jpeg
-install jq
-install libarchive
-install libelf
-install libevent
-install libffi
-install libmemcached
-install libpng
-install libsodium
-install libssh2
-install libtiff
-install libtool
-install libxml2
-install libxslt
-install libyaml
-install mcrypt
-install memcached
-install mercurial
-install mhash
-install mysql
-install mysql-connector-c++
-install nginx
-install nkf
-install objective-caml
-install oniguruma
-install openssl
-install pango
-install pcre
-install pixman
-install pkg-config
-install pt
-install python
-install re2c
-install readline
-install ruby
-install sqlite
-install subversion
-install tbb
-install the_platinum_searcher
-install the_silver_searcher
-install tig
-install tmux
-install unixodbc
-install vim
-install wget
-install xmlto
-install xz
-install zeromq
+brew ag
+brew asciidoc
+brew autoconf
+brew automake
+brew bash
+brew bison
+brew boost
+brew bsdmake
+brew cairo
+brew cmake
+brew coreutils
+brew curl
+brew czmq
+brew docbook
+brew docbook-xsl
+brew fontconfig
+brew fontforge
+brew freetype
+brew gd
+brew gdbm
+brew gettext
+brew gflags
+brew git
+brew glib
+brew glog
+brew gnu-getopt
+brew go
+brew gobject-introspection
+brew harfbuzz
+brew hg
+brew icu4c
+brew imagemagick
+brew imap-uw
+brew jpeg
+brew jq
+brew libarchive
+brew libelf
+brew libevent
+brew libffi
+brew libmemcached
+brew libpng
+brew libsodium
+brew libssh2
+brew libtiff
+brew libtool
+brew libxml2
+brew libxslt
+brew libyaml
+brew mcrypt
+brew memcached
+brew mercurial
+brew mhash
+brew mysql
+brew mysql-connector-c++
+brew nginx
+brew nkf
+brew objective-caml
+brew oniguruma
+brew openssl
+brew pango
+brew pcre
+brew pixman
+brew pkg-config
+brew pt
+brew python
+brew re2c
+brew readline
+brew ruby
+brew sqlite
+brew subversion
+brew tbb
+brew the_platinum_searcher
+brew the_silver_searcher
+brew tig
+brew tmux
+brew unixodbc
+brew vim
+brew wget
+brew xmlto
+brew xz
+brew zeromq
+
+# Cask applications
+cask atom-shell
 
 # App Store applications
 appstore AnyDo
