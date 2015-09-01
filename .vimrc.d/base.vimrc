@@ -14,11 +14,11 @@ filetype on
 filetype indent on
 filetype plugin on
 augroup filetypedetect
-au! BufRead,BufNewFile *.lib setfiletype php
-au! BufRead,BufNewFile *.yml setfiletype yaml
-au BufRead,BufNewFile *.php setfiletype php
-au BufNewFile,BufRead *.less set filetype=less
-autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
+  au! BufRead,BufNewFile *.lib setfiletype php
+  au! BufRead,BufNewFile *.yml setfiletype yaml
+  au BufRead,BufNewFile *.php setfiletype php
+  au BufNewFile,BufRead *.less set filetype=less
+  autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
 augroup end
 
 " backup
@@ -33,6 +33,8 @@ set fileencodings=utf-8,euc-jp,shift-jis,japan
 set t_Co=256
 set background=dark
 colorscheme solarized
+highlight LineNr ctermfg=4
+highlight CursorLineNr ctermfg=3
 
 " indent
 set noautoindent
@@ -53,9 +55,23 @@ set hlsearch
 " show matching bracket
 set showmatch
 
+" show white space
+set list
+set listchars=tab:>\ ,extends:<
+
 " highlight zenkaku space
-highlight ZenkakuSpace cterm=underline ctermfg=lightgreen guibg=darkgray
-match ZenkakuSpace /　/
+function! ZenkakuSpace()
+  highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
+endfunction
+
+if has('syntax')
+  augroup ZenkakuSpace
+    autocmd!
+    autocmd ColorScheme * call ZenkakuSpace()
+    autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
+  augroup END
+  call ZenkakuSpace()
+endif
 
 " vim diff color
 hi DiffAdd    ctermfg=cyan ctermbg=black

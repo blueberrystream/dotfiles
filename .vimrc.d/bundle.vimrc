@@ -19,19 +19,25 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ }
+
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'sudo.vim'
-NeoBundle 'scrooloose/nerdtree'
+
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'bronson/vim-trailing-whitespace'
+
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'itchyny/lightline.vim'
+
 NeoBundle 'rking/ag.vim'
 
 " ruby
 NeoBundle 'ruby-matchit'
 NeoBundle 'thinca/vim-ref'
 " rails
+NeoBundle 'tpope/vim-rails'
 NeoBundle 'ujihisa/unite-rake'
 NeoBundle 'basyura/unite-rails'
 " slim
@@ -54,16 +60,11 @@ NeoBundle 'tpope/vim-surround'
 
 " go
 set rtp+=$GOROOT/misc/vim
-" gocode
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 set completeopt=menu,preview
-" golint
 exe "set rtp+=" . globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
-
 NeoBundleLazy 'Blackrush/vim-gocode', {"autoload": {"filetypes": ['go']}}
 NeoBundleLazy 'dgryski/vim-godef', {"autoload": {"filetypes": ['go']}}
-
-" auto format on saving
 auto BufWritePre *.go Fmt
 
 " code template
@@ -74,10 +75,10 @@ NeoBundle 'scrooloose/syntastic'
 
 " installation check
 if neobundle#exists_not_installed_bundles()
-	echomsg 'Not installed bundles : ' .
-		\ string(neobundle#get_not_installed_bundle_names())
-	echomsg 'Please execute ":NeoBundleInstall" command.'
-	"finish
+  echomsg 'Not installed bundles : ' .
+    \ string(neobundle#get_not_installed_bundle_names())
+  echomsg 'Please execute ":NeoBundleInstall" command.'
+  "finish
 endif
 
 call neobundle#end()

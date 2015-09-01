@@ -12,3 +12,6 @@ set pastetoggle=<F11>
 
 " escape highlight mode with Esc x3
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" toggle number
+nmap <silent> <F10> :<C-u>setlocal number!<CR>
