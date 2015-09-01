@@ -16,4 +16,4 @@ ln -s $repo_dir/contrib/completion/git-completion.bash $bash_completion_dir/
 if [ ! -d $local_bin ]; then
 	mkdir -p $local_bin
 fi
-ln -s $repo_dir/contrib/diff-highlight/diff-highlight 
+ln -s $repo_dir/contrib/diff-highlight/diff-highlight $local_bin/ 
