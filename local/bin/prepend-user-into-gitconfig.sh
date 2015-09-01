@@ -31,7 +31,6 @@ mv "$config" "$backup_config"
 echo "[user]" >> "$config"
 echo -e "\tname = \"KID the Euforia\"" >> "$config"
 echo -e "\temail = $email" >> "$config"
-echo "" >> "$config"
 
 # put original contents
 cat "$backup_config" >> "$config"

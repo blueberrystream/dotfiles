@@ -67,24 +67,25 @@ export_path $HOME/bin
 uname=`uname`
 case $uname in
 	Darwin)
-		. $HOME/.bashrc-alias ;
-		. $HOME/.bashrc-alias-gnu ;
-		. $HOME/.bashrc-macosx ;;
+		. $HOME/.bashrc.d/alias ;
+		. $HOME/.bashrc.d/alias-gnu ;
+		. $HOME/.bashrc.d/macosx ;;
 	Linux)
-		. $HOME/.bashrc-alias ;
-		. $HOME/.bashrc-linux ;;
+		. $HOME/.bashrc.d/alias ;
+		. $HOME/.bashrc.d/linux ;;
 	MINGW32*)
-		. $HOME/.bashrc-alias ;
-		. $HOME/.bashrc-windows ;;
+		. $HOME/.bashrc.d/alias ;
+		. $HOME/.bashrc.d/windows ;;
 esac
 
-if [ -f $HOME/.bashrc-local ]; then
-	. $HOME/.bashrc-local
+if [ -f $HOME/.bashrc.d/local ]; then
+	. $HOME/.bashrc.d/local
 fi
-
-. $HOME/.bashrc-peco
-if [ -f $HOME/.bashrc-function ]; then
-	. $HOME/.bashrc-function
+if [ -f $HOME/.bashrc.d/peco ]; then
+  . $HOME/.bashrc.d/peco
+fi
+if [ -f $HOME/.bashrc.d/function ]; then
+	. $HOME/.bashrc.d/function
 fi
 
 if [ -f $HOME/dircolors.256dark ]; then

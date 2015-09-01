@@ -1,6 +1,4 @@
-*~
-.DS_Store
-bin
-build
-target
-Thumbs.db
+/.bashrc.d/local
+/.tmux.conf.d/local
+/.vimrc.d/local.vimrc
+
