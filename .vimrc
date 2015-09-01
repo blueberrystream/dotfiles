@@ -34,27 +34,34 @@ NeoBundle 'rking/ag.vim'
 "NeoBundle 'terryma/vim-multiple-cursors'
 
 " Ruby
-"NeoBundle 'ruby-matchit'
+NeoBundle 'ruby-matchit'
+NeoBundle 'thinca/vim-ref'
+
+" Rails
+NeoBundle 'ujihisa/unite-rake'
+NeoBundle 'basyura/unite-rails'
+
+" Slim
+NeoBundle 'slim-template/vim-slim'
+
+" JSON
+NeoBundle 'elzr/vim-json'
+
+" Markdown
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+
+" Dockerfile
+NeoBundle 'ekalinin/Dockerfile.vim'
 
 " Comment
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tpope/vim-surround'
 
-" Rails
-"NeoBundle 'ujihisa/unite-rake'
-"NeoBundle 'basyura/unite-rails'
-
-" CoffeeScript
-"NeoBundle 'kchmck/vim-coffee-script'
-
-" Titanium Mobile
-"NeoBundle 'pekepeke/titanium-vim.git'
-
-" PHP
-"NeoBundle 'beyondwords/vim-twig.git'
-
+syntax enable
 filetype plugin indent on     " Required!
-"
+
 " Brief help
 " :NeoBundleList          - list configured bundles
 " :NeoBundleInstall(!)    - install bundles
@@ -71,13 +78,6 @@ endif
 
 call neobundle#end()
 
-" Show Invisible Characters
-"set list
-"set listchars=tab:^_,trail:_,extends:>,precedes:<
-"highlight SpecialKey cterm=NONE ctermfg=7 guifg=7
-"highlight JpSpace cterm=underline ctermfg=7 guifg=7
-"au BufRead,BufNew * match JpSpace /　/
-
 " Basic
 set nowrap
 set modeline
@@ -92,7 +92,6 @@ set cursorline
 
 " Theme
 set t_Co=256
-syntax enable
 set background=dark
 colorscheme solarized
 
@@ -112,51 +111,25 @@ set pastetoggle=<F11>
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-" Move cursor like FPS
-noremap <S-a> h
-noremap <S-s> j
-noremap <S-d> l
-noremap <S-w> k
-
-" Binary edit (vim -b)
-augroup BinaryXXD
-	autocmd!
-	autocmd BufReadPre *.bin let &binary =1
-	autocmd BufReadPost * if &binary | silent %!xxd -g 1
-	autocmd BufReadPost * set ft=xxd | endif
-	autocmd BufWritePre * if &binary | %!xxd -r | endif
-	autocmd BufWritePost * if &binary | silent %!xxd -g 1
-	autocmd BufWritePost * set nomod | endif
-augroup END
-
 " SwapFile Directory
 set directory=$HOME/.vimswap
 
 " Indent
-set autoindent
+set noautoindent
 set nosmartindent
-set nocindent
+set cindent
 set indentexpr=""
 set ruler
-set backspace=2
+set backspace=start,eol,indent
 
 " Global Indent (Default)
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set noexpandtab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
 
 " {} Match Shows
 set showmatch
-
-" File Type
-augroup filetypedetect
-	au! BufRead,BufNewFile *.lib setfiletype php
-	au! BufRead,BufNewFile *.yml setfiletype yaml
-	au BufRead,BufNewFile *.php setfiletype php
-	au BufNewFile,BufRead *.less set filetype=less
-	autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
-augroup end
 
 " VIM Diff
 hi DiffAdd    ctermfg=cyan ctermbg=black
