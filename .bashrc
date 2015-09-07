@@ -3,6 +3,7 @@ umask 022
 export LANG=ja_JP.UTF-8
 export TERM='xterm-256color'
 export EDITOR=vim
+export LESS='-R'
 
 export HISTCONTROL=ignoredups
 
@@ -16,7 +17,7 @@ export GIT_PS1_SHOWUPSTREAM=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWDIRTYSTATE=1
- 
+
 # load bash completion
 bash_completion_dir=$HOME/local/etc/bash_completion.d
 if [ -d $bash_completion_dir ]; then

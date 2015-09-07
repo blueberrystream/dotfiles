@@ -4,6 +4,7 @@ alias lld='ll | grep ^d'
 alias lll='ll | grep ^l'
 alias llf='ll | grep ^-'
 alias llgrep='ll | grep'
+alias llless='ll | less'
 
 alias cp='cp -i'
 alias mv='mv -i'
