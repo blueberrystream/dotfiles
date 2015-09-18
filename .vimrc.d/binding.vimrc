@@ -1,7 +1,6 @@
 " tab
 nmap <silent> <F4> :tabnew<CR>
-nmap <silent> <F5> :tabp<CR>
-nmap <silent> <F6> :tabn<CR>
+nmap <silent> <F5> :tabn<CR>
 
 " paste mode switch
 set pastetoggle=<F11>
