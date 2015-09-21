@@ -4,10 +4,16 @@ syntax enable
 " basic
 set nowrap
 set modeline
-set cursorline
 set number
 set foldmethod=marker
 set ambiwidth=double
+set lazyredraw
+set ttyfast
+set scrolloff=5
+set textwidth=0
+set formatoptions=lmoq
+set showcmd
+set showmode
 
 " file types
 filetype on
@@ -55,23 +61,24 @@ set hlsearch
 " show matching bracket
 set showmatch
 
-" show white space
+" invisible characters
 set list
-set listchars=tab:>\ ,extends:<
+set listchars=tab:>.,extends:>,precedes:<
+set display=uhex
+highlight ZenkakuSpace cterm=underline ctermfg=lightgreen guibg=darkgray
+match ZenkakuSpace /　/
 
-" highlight zenkaku space
-function! ZenkakuSpace()
-  highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
-endfunction
+" cursor line
+set cursorline
+augroup cch
+autocmd! cch
+autocmd WinLeave * set nocursorline
+autocmd WinEnter,BufRead * set cursorline
+augroup END
 
-if has('syntax')
-  augroup ZenkakuSpace
-    autocmd!
-    autocmd ColorScheme * call ZenkakuSpace()
-    autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
-  augroup END
-  call ZenkakuSpace()
-endif
+hi clear CursorLine
+hi CursorLine gui=underline
+highlight CursorLine ctermbg=black guibg=black
 
 " vim diff color
 hi DiffAdd    ctermfg=cyan ctermbg=black
