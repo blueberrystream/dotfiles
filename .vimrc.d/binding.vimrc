@@ -15,4 +15,4 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " toggle number
 nmap <silent> <F10> :<C-u>setlocal number!<CR>
 
-nmap <silent> <F11> :echo expand("%:p")<CR>
+nmap <silent> <F12> :echo expand("%:p")<CR>
