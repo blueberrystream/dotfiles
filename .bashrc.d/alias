@@ -13,6 +13,7 @@ alias rm='rm -i'
 alias cd='cdls'
 alias cd..='cd ..'
 
+alias vim='vim -p'
 alias vi=vim
 alias view='vim -R'
 
@@ -27,3 +28,5 @@ alias eman='env LANG=C man'
 alias ag-pager='ag --pager="less -R"'
 
 alias b2d=boot2docker
+
+alias pt='pt -S'
