@@ -1,9 +1,6 @@
 
 # tap repositories and their packages
 
-## --repair
-tap --repair
-
 ## caskroom/cask
 tap caskroom/cask
 brew brew-cask
@@ -46,9 +43,6 @@ tap homebrew/php
 tap homebrew/versions
 brew ruby21
 
-## josegonzalez/php
-tap josegonzalez/php
-
 ## mcuadros/hhvm
 tap mcuadros/hhvm
 
@@ -65,7 +59,6 @@ tap sanemat/font
 brew ricty
 
 # Other Homebrew packages
-brew ag
 brew asciidoc
 brew autoconf
 brew automake
@@ -94,7 +87,6 @@ brew gnu-getopt
 brew go
 brew gobject-introspection
 brew harfbuzz
-brew hg
 brew icu4c
 brew imagemagick
 brew imap-uw
@@ -121,15 +113,15 @@ brew mysql
 brew mysql-connector-c++
 brew nginx
 brew nkf
-brew nodejs
+brew node
 brew objective-caml
+brew ocaml
 brew oniguruma
 brew openssl
 brew pango
 brew pcre
 brew pixman
 brew pkg-config
-brew pt
 brew python
 brew re2c
 brew readline
@@ -148,8 +140,10 @@ brew xmlto
 brew xz
 brew zeromq
 
-# Cask applications
-cask atom-shell
+# Below applications were installed by Cask,
+# but do not have corresponding casks.
+
+#cask atom-shell (!)
 
 # App Store applications
 appstore AnyDo
@@ -157,15 +151,12 @@ appstore Calculator LCD Mini
 appstore EasyFind
 appstore Found
 appstore GarageBand
-appstore iMovie
-appstore iPhoto
-appstore Keynote
 appstore LINE
-appstore Numbers
+appstore Monosnap
 appstore OneDrive
-appstore Pages
 appstore Pocket
 appstore Reeder
+appstore Slack
 appstore The Unarchiver
 appstore Twitter
 appstore YoruFukurou
