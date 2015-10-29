@@ -121,6 +121,7 @@ brew mysql
 brew mysql-connector-c++
 brew nginx
 brew nkf
+brew nodejs
 brew objective-caml
 brew oniguruma
 brew openssl
@@ -153,7 +154,6 @@ cask atom-shell
 # App Store applications
 appstore AnyDo
 appstore Calculator LCD Mini
-appstore Ds Store Remover
 appstore EasyFind
 appstore Found
 appstore GarageBand
@@ -166,8 +166,6 @@ appstore OneDrive
 appstore Pages
 appstore Pocket
 appstore Reeder
-appstore SourceTree
 appstore The Unarchiver
 appstore Twitter
-appstore Xcode
 appstore YoruFukurou
