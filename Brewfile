@@ -24,9 +24,6 @@ cask skype
 cask xquartz
 cask xtrafinder
 
-## caskroom/fonts
-tap caskroom/fonts
-
 ## homebrew/boneyard
 tap homebrew/boneyard
 
