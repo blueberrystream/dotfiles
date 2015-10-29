@@ -122,6 +122,7 @@ brew pango
 brew pcre
 brew pixman
 brew pkg-config
+brew pt
 brew python
 brew re2c
 brew readline
@@ -139,11 +140,6 @@ brew wget
 brew xmlto
 brew xz
 brew zeromq
-
-# Below applications were installed by Cask,
-# but do not have corresponding casks.
-
-#cask atom-shell (!)
 
 # App Store applications
 appstore AnyDo
