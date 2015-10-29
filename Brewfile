@@ -31,7 +31,6 @@ tap homebrew/boneyard
 tap homebrew/dupes
 brew groff
 brew rsync
-brew zlib
 
 ## homebrew/php
 tap homebrew/php
@@ -119,7 +118,6 @@ brew pango
 brew pcre
 brew pixman
 brew pkg-config
-brew pt
 brew python
 brew re2c
 brew readline
@@ -137,6 +135,7 @@ brew wget
 brew xmlto
 brew xz
 brew zeromq
+brew zlib
 
 # App Store applications
 appstore AnyDo
@@ -152,4 +151,5 @@ appstore Reeder
 appstore Slack
 appstore The Unarchiver
 appstore Twitter
+appstore Xcode
 appstore YoruFukurou
