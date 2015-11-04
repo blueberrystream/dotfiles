@@ -25,7 +25,7 @@ NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'sudo.vim'
 
-NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'bronson/vim-trailing-whitespace'
 
 NeoBundle 'altercation/vim-colors-solarized'
@@ -35,7 +35,7 @@ NeoBundle 'rking/ag.vim'
 
 " ruby
 NeoBundle 'ruby-matchit'
-NeoBundle 'thinca/vim-ref'
+NeoBundle 'tpope/vim-endwise'
 " rails
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'ujihisa/unite-rake'
@@ -43,20 +43,17 @@ NeoBundle 'basyura/unite-rails'
 " slim
 NeoBundle 'slim-template/vim-slim'
 
+" php
+NeoBundle 'beyondwords/vim-twig'
+
 " json
 NeoBundle 'elzr/vim-json'
-
-" markdown
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
 
 " Dockerfile
 NeoBundle 'ekalinin/Dockerfile.vim'
 
 " comment
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'tpope/vim-surround'
 
 " go
 set rtp+=$GOROOT/misc/vim
@@ -66,9 +63,6 @@ exe "set rtp+=" . globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
 NeoBundleLazy 'Blackrush/vim-gocode', {"autoload": {"filetypes": ['go']}}
 NeoBundleLazy 'dgryski/vim-godef', {"autoload": {"filetypes": ['go']}}
 auto BufWritePre *.go Fmt
-
-" code template
-NeoBundle 'mattn/sonictemplate-vim'
 
 " check syntax
 NeoBundle 'scrooloose/syntastic'
