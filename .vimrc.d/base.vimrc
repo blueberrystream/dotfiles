@@ -60,6 +60,7 @@ set hlsearch
 
 " show matching bracket
 set showmatch
+au BufWinEnter *.php set mps-=<:>
 
 " invisible characters
 set list
