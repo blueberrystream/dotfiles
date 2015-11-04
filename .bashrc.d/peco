@@ -1,7 +1,19 @@
 if type peco > /dev/null 2>&1; then
-	alias ssh-peco='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config | peco | awk "{print \$2}")'
-	alias ll-peco='ll | peco | awk "{print \$9}"'
-	alias cd-peco='cd $(ll-peco)'
-	alias vim-peco='vim $(ll-peco)'
-	alias less-peco='less $(ll-peco)'
+  alias ssh-peco='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config | peco | awk "{print \$2}")'
+  alias ll-peco='ll | peco | awk "{print \$9}"'
+  alias cd-peco='cd $(ll-peco)'
+  alias vim-peco='vim $(ll-peco)'
+  alias less-peco='less $(ll-peco)'
+
+  if type pt > /dev/null 2>&1; then
+    function pt-vim() {
+      vim $(pt "$@" | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+    }
+  fi
+
+  if type tree > /dev/null 2>&1; then
+    function tree-vim() {
+      vim $(tree -afi | peco | xargs echo)
+    }
+  fi
 fi
