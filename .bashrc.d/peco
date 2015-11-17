@@ -16,4 +16,14 @@ if type peco > /dev/null 2>&1; then
       vim $(tree -afi | peco | xargs echo)
     }
   fi
+
+  if type git > /dev/null 2>&1; then
+    function git-changed-files() {
+      git st --short | peco | awk '{print $2}'
+    }
+
+    alias vim-git-st='vim $(git-changed-files)'
+    alias git-add-st='git add $(git-changed-files)'
+    alias git-co-st='git co $(git-changed_files)'
+  fi
 fi
