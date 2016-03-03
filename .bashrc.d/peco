@@ -26,4 +26,12 @@ if type peco > /dev/null 2>&1; then
     alias git-add-st='git add $(git-changed-files)'
     alias git-co-st='git co $(git-changed_files)'
   fi
+
+  if type tmux > /dev/null 2>&1; then
+    function tmux-ls() {
+      tmux ls | peco | awk '{print $1}'
+    }
+
+    alias tmux-peco='tmux a -t $(tmux-ls)'
+  fi
 fi
