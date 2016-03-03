@@ -67,6 +67,7 @@
   autosquash = true
 [diff]
   tool = vimdiff
+  algorithm = histogram
 [i18n]
   commitencoding = utf-8
 [pager]
