@@ -31,4 +31,4 @@ alias ag-pager='ag --pager="less -R"'
 
 alias b2d=boot2docker
 
-alias pt='pt -S'
+alias pt='pt -S --home-ptignore'
