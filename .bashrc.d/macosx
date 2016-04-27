@@ -14,6 +14,3 @@
 
 	alias brew-cask-update='brew file cask_upgrade -C'
 fi
-
-# git prompt
-PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\n\$ '
