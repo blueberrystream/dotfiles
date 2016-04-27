@@ -26,10 +26,9 @@ if [ -d $bash_completion_dir ]; then
 	done
 fi
 
-PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]]\n\$ '
-if [ -f  $bash_completion_dir/git-prompt.sh ]; then
-	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\n\$ '
-fi
+PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]\
+`if [ -f $bash_completion_dir/git-prompt.sh ]; then echo $(__git_ps1); fi`]\n\
+`if [ \$? = "0" ]; then echo "\e[0;33m\]"; else echo "\[\e[0;35m\]"; fi`从×  ｜ ＿ ｜×从 < \[\e[00m\]'
 
 #PS1='color-test\n\
 #	\[\e[0;30m\]black 0;30\[\e[00m\]\n\
@@ -48,8 +47,8 @@ fi
 #	\[\e[1;35m\]light purple 1;35\[\e[00m\]\n\
 #	\[\e[1;33m\]yellow 1;33\[\e[00m\]\n\
 #	\[\e[1;37m\]white 1;37\[\e[00m\]\n\
-#	\$ '
-#export PS1
+#	\[\e[0;33m\]从× ｜ ＿ ｜×从 < \[\e[00m\]'
+export PS1
 
 export PROMPT_COMMAND='echo -ne "\033]0;$(whoami)@${HOSTNAME}:${PWD/$HOME/~}\007"'
 
