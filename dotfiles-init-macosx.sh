@@ -38,11 +38,11 @@ fi
 # vim
 mkdir -p $HOME/.vim/bundle
 if [ ! -d $HOME/.vim/bundle/neobundle.vim ]; then
-	git clone https://github.com/Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim
+  git clone https://github.com/Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim
 fi
 mkdir -p $HOME/.unite
 
 # tmux
 if [ ! -d $HOME/.tmux/plugins/tpm ]; then
-	git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+  git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 fi

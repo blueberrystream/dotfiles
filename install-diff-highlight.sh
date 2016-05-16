@@ -8,6 +8,6 @@ if [ ! -d $repo_dir ]; then
 fi
 
 if [ ! -d $local_bin ]; then
-	mkdir -p $local_bin
+  mkdir -p $local_bin
 fi
 ln -s $repo_dir/contrib/diff-highlight/diff-highlight $local_bin/ 
