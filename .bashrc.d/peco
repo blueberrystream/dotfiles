@@ -28,7 +28,11 @@ if type peco > /dev/null 2>&1; then
   fi
 
   if type tmux > /dev/null 2>&1; then
-    alias tmux-peco='tmux a -t $(tmux ls | peco | awk "{print $1}")'
+    function tmux-ls() {
+      tmux ls | peco | awk '{print $1}'
+    }
+
+    alias tmux-peco='tmux a -t $(tmux-ls)'
   fi
 
   if type reptyr > /dev/null 2>&1; then
