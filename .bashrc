@@ -64,6 +64,10 @@ function export_path ()
 export_path $HOME/local/bin
 export_path $HOME/bin
 
+if [ -f $HOME/local/etc/enhancd/enhancd.sh ]; then
+  source $HOME/local/etc/enhancd/enhancd.sh
+fi
+
 uname=`uname`
 case $uname in
   Darwin)
@@ -77,10 +81,6 @@ case $uname in
     . $HOME/.bashrc.d/alias ;
     . $HOME/.bashrc.d/windows ;;
 esac
-
-if [ -f $HOME/local/etc/enhancd/enhancd.sh ]; then
-  source $HOME/local/etc/enhancd/enhancd.sh
-fi
 
 if [ -f $HOME/.bashrc.d/local ]; then
   . $HOME/.bashrc.d/local

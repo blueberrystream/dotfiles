@@ -1,5 +1,11 @@
-function cdls() { \cd "$*"; ll; }
-function md { mkdir $*; cd "$*"; }
+function cdls() {
+  if type cd::cd > /dev/null 2>&1; then
+    cd::cd "$*";
+  else
+    \cd "$*";
+  fi
+  ll;
+}
 
 if type jq > /dev/null 2>&1; then
 	function jqless {
