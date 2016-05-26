@@ -2,7 +2,7 @@
 
 xcode-select --install
 
-./homebrew-init.sh
-./dotfiles-init-macosx.sh
-./install-diff-highlight.sh
-./install-prepend-user-into-gitconfig.sh
+./scripts/homebrew-init.sh
+./scripts/dotfiles-init-macosx.sh
+./scripts/install-diff-highlight.sh
+./scripts/install-git-prepend-user-section.sh
