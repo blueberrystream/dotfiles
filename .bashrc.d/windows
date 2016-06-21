@@ -6,16 +6,16 @@ export LS_COLORS
 
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[33m\]\h\[\e[00m\]:\[\e[36m\]\W\[\e[00m\]]\$ '
 if [ -f $HOME/git-completion.bash ]; then
-	. $HOME/git-completion.bash
+  . $HOME/git-completion.bash
 fi
 if [ -f $HOME/git-prompt.sh ]; then
-	export GIT_PS1_SHOWUPSTREAM=1
-	export GIT_PS1_SHOWUNTRACKEDFILES=1
-	export GIT_PS1_SHOWSTASHSTATE=1
-	export GIT_PS1_SHOWDIRTYSTATE=1
-	. $HOME/git-prompt.sh
+  export GIT_PS1_SHOWUPSTREAM=1
+  export GIT_PS1_SHOWUNTRACKEDFILES=1
+  export GIT_PS1_SHOWSTASHSTATE=1
+  export GIT_PS1_SHOWDIRTYSTATE=1
+  . $HOME/git-prompt.sh
 
-	PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[33m\]\h\[\e[00m\]:\[\e[36m\]\W\[\e[00m\]$(__git_ps1)]\$ '
+  PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[33m\]\h\[\e[00m\]:\[\e[36m\]\W\[\e[00m\]$(__git_ps1)]\$ '
 fi
 export PS1
 

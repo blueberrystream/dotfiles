@@ -1,9 +1,9 @@
 if [ -f /etc/profile ]; then
-	. /etc/profile
+  . /etc/profile
 fi
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+  . /etc/bashrc
 fi
 if [ -f $HOME/.bashrc ]; then
-	. $HOME/.bashrc
+  . $HOME/.bashrc
 fi

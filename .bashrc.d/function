@@ -8,11 +8,11 @@ function cdls() {
 }
 
 if type jq > /dev/null 2>&1; then
-	function jqless {
-		jq -C $* | less -R;
-	}
+  function jqless {
+    jq -C $* | less -R;
+  }
 
-	if type peco > /dev/null 2>&1; then
-		alias jqless-peco='jqless . $(ll-peco)'
-	fi
+  if type peco > /dev/null 2>&1; then
+    alias jqless-peco='jqless . $(ll-peco)'
+  fi
 fi
