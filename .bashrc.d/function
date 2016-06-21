@@ -1,6 +1,6 @@
 function cdls() {
-  if type cd::cd > /dev/null 2>&1; then
-    cd::cd "$*";
+  if type ecd > /dev/null 2>&1; then
+    ecd "$*";
   else
     \cd "$*";
   fi

@@ -65,6 +65,7 @@ export_path $HOME/local/bin
 export_path $HOME/bin
 
 if [ -f $HOME/local/etc/enhancd/enhancd.sh ]; then
+  export ENHANCD_COMMAND=ecd
   source $HOME/local/etc/enhancd/enhancd.sh
 fi
 
