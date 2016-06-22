@@ -10,5 +10,4 @@ fi
 if [ ! -d $local_bin ]; then
   mkdir -p $local_bin
 fi
-ln -s $repo_dir/contrib/diff-highlight/diff-highlight $local_bin/
-ls -al $local_bin/
+ln -sv $repo_dir/contrib/diff-highlight/diff-highlight $local_bin/
