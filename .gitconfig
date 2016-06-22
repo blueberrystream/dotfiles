@@ -68,6 +68,7 @@
 [diff]
   tool = vimdiff
   algorithm = histogram
+  compactionHeuristic = true
 [i18n]
   commitencoding = utf-8
 [pager]
