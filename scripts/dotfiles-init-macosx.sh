@@ -17,7 +17,6 @@ ln -s $script_dir/.bashrc $HOME/
 ln -s $script_dir/.bashrc.d $HOME/
 ln -s $script_dir/.gitconfig $HOME/
 ln -s $script_dir/.gitconfig-sourcetree $HOME/
-ln -s $script_dir/_gitignore $HOME/.gitignore
 ln -s $script_dir/.vimrc $HOME/
 ln -s $script_dir/.vimrc.d $HOME/
 ln -s $script_dir/.tmux.conf $HOME
