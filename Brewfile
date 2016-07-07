@@ -30,10 +30,12 @@ tap homebrew/core
 brew asciidoc
 brew autoconf
 brew automake
+brew axel
 brew bash
 brew bison
 brew boost
 brew bsdmake
+brew caddy
 brew cairo
 brew cmake
 brew coreutils
@@ -91,6 +93,7 @@ brew pcre
 brew peco
 brew pixman
 brew pkg-config
+brew postgresql
 brew python
 brew re2c
 brew readline
@@ -129,6 +132,10 @@ brew brew-file
 
 tap sanemat/font
 brew ricty
+
+# Other Homebrew packages
+brew nodejs
+brew npm
 
 # App Store applications
 appstore 944960179 AnyDo
