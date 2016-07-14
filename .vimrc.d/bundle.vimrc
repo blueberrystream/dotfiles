@@ -30,6 +30,7 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'miyakogi/seiya.vim'
 
 NeoBundle 'rking/ag.vim'
 
@@ -98,3 +99,6 @@ let g:tcommentMapLeader1 = '<C-_>'
 let g:tcommentMapLeader2 = '<Leader>'
 let g:tcommentMapLeaderOp1 = 'gc'
 let g:tcommentMapLeaderOp2 = 'gC'
+
+" Seiya
+let g:seiya_auto_enable = 1
