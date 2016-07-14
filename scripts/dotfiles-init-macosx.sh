@@ -5,6 +5,7 @@ rm -f $HOME/.bash_profile
 rm -f $HOME/.bashrc
 rm -rf $HOME/.bashrc.d
 rm -f $HOME/.gitconfig
+rm -f $HOME/.git-commit.template
 rm -f $HOME/.gitconfig-sourcetree
 rm -f $HOME/.gitignore
 rm -f $HOME/.vimrc
@@ -16,6 +17,7 @@ ln -s $script_dir/.bash_profile $HOME/
 ln -s $script_dir/.bashrc $HOME/
 ln -s $script_dir/.bashrc.d $HOME/
 ln -s $script_dir/.gitconfig $HOME/
+ln -s $script_dir/.git-commit.template $HOME/
 ln -s $script_dir/.gitconfig-sourcetree $HOME/
 ln -s $script_dir/.vimrc $HOME/
 ln -s $script_dir/.vimrc.d $HOME/
