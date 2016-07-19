@@ -76,6 +76,6 @@
   show = diff-highlight | less
   diff = diff-highlight | less
 [include]
-  path = .gitconfig-local
+  path = ~/.gitconfig-local
 [commit]
-  template = .git-commit.template
+  template = ~/.git-commit.template
