@@ -6,9 +6,9 @@ alias llf='ll | grep ^-'
 alias llgrep='ll | grep'
 alias llless='ll | less'
 
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -iv'
 
 alias cd='cdls'
 alias cd..='cd ..'
@@ -30,3 +30,5 @@ alias eman='env LANG=C man'
 alias ag-pager='ag --pager="less -R"'
 
 alias pt='pt -S --home-ptignore'
+
+alias low-priority='ionice -c 2 -n 7 nice -n 19'
