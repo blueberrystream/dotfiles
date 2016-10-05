@@ -91,7 +91,7 @@ let g:vim_markdown_folding_disabled=1
 " lightline
 set laststatus=2
 let g:lightline = {
-\ 'colorscheme': 'solarized_dark',
+\ 'colorscheme': 'solarized',
 \ }
 
 " tcomment

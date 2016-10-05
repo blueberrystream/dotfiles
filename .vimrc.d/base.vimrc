@@ -20,11 +20,11 @@ filetype on
 filetype indent on
 filetype plugin on
 augroup filetypedetect
-  au! BufRead,BufNewFile *.lib setfiletype php
-  au! BufRead,BufNewFile *.yml setfiletype yaml
-  au BufRead,BufNewFile *.php setfiletype php
-  au BufNewFile,BufRead *.less set filetype=less
-  autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
+  autocmd BufRead,BufNewFile *.yml setfiletype yaml
+  autocmd BufRead,BufNewFile *.php setfiletype php
+  autocmd BufRead,BufNewFile *.less setfiletype less
+  autocmd BufRead,BufNewFile *.erb setfiletype eruby.html
+  autocmd BufRead,BufNewFile Guardfile setfiletype ruby
 augroup end
 
 " backup
