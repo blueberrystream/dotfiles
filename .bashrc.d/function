@@ -9,7 +9,7 @@ function cdls() {
 
 if type jq > /dev/null 2>&1; then
   function jqless {
-    jq -C $* | less -R;
+    jq -C $* | less;
   }
 
   if type peco > /dev/null 2>&1; then
