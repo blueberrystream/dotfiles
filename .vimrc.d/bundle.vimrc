@@ -46,6 +46,7 @@ NeoBundle 'slim-template/vim-slim'
 
 " php
 NeoBundle 'beyondwords/vim-twig'
+NeoBundle 'jwalton512/vim-blade'
 
 " json
 NeoBundle 'elzr/vim-json'
@@ -57,13 +58,16 @@ NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'tomtom/tcomment_vim'
 
 " go
-set rtp+=$GOROOT/misc/vim
-exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
-set completeopt=menu,preview
-exe "set rtp+=" . globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
-NeoBundleLazy 'Blackrush/vim-gocode', {"autoload": {"filetypes": ['go']}}
-NeoBundleLazy 'dgryski/vim-godef', {"autoload": {"filetypes": ['go']}}
-auto BufWritePre *.go Fmt
+"set rtp+=$GOROOT/misc/vim
+"exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+"set completeopt=menu,preview
+"exe "set rtp+=" . globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
+"NeoBundleLazy 'Blackrush/vim-gocode', {"autoload": {"filetypes": ['go']}}
+"NeoBundleLazy 'dgryski/vim-godef', {"autoload": {"filetypes": ['go']}}
+"auto BufWritePre *.go Fmt
+
+" handlebars
+NeoBundle 'mustache/vim-mustache-handlebars'
 
 " check syntax
 NeoBundle 'scrooloose/syntastic'

@@ -6,5 +6,5 @@ source ~/.vimrc.d/binding.vimrc
 
 " local setting
 if filereadable(expand('~/.vimrc.d/local.vimrc'))
-	source ~/.vimrc.d/local.vimrc
+  source ~/.vimrc.d/local.vimrc
 endif
