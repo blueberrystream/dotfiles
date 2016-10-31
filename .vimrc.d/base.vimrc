@@ -14,6 +14,8 @@ set textwidth=0
 set formatoptions=lmoq
 set showcmd
 set showmode
+set ignorecase
+set smartcase
 
 " file types
 filetype on
