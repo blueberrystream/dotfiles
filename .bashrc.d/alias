@@ -27,7 +27,7 @@ alias eman='env LANG=C man'
 
 alias ag-pager='ag --pager=less'
 
-alias pt='pt -S --home-ptignore'
+alias pt='pt -S --home-ptignore --hidden --follow'
 
 alias low-priority='ionice -c 2 -n 7 nice -n 19'
 
