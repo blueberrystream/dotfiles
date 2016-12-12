@@ -27,6 +27,7 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.less setfiletype less
   autocmd BufRead,BufNewFile *.erb setfiletype eruby.html
   autocmd BufRead,BufNewFile Guardfile setfiletype ruby
+  autocmd BufRead,BufNewFile *.scala setfiletype scala
 augroup end
 
 " backup

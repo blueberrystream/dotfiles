@@ -27,6 +27,7 @@ NeoBundle 'sudo.vim'
 
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'itchyny/lightline.vim'
@@ -53,6 +54,9 @@ NeoBundle 'elzr/vim-json'
 
 " Dockerfile
 NeoBundle 'ekalinin/Dockerfile.vim'
+
+" scala
+NeoBundle 'derekwyatt/vim-scala'
 
 " comment
 NeoBundle 'tomtom/tcomment_vim'
