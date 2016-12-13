@@ -32,3 +32,5 @@ alias pt='pt -S --home-ptignore --hidden --follow'
 alias low-priority='ionice -c 2 -n 7 nice -n 19'
 
 alias mysqldump-hacci='mysqldump --extended_insert --single-transaction --quote-names --flush-logs --order-by-primary'
+
+alias crontab='crontab -i'
