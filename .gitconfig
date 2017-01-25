@@ -55,6 +55,7 @@
   rbc = rebase --continue
   rba = rebase --abort
   wip = commit -m wip
+  pu = !"git push -u origin $(git branch --contain=@ | awk '{print $2}')"
 [log]
   date = local
 [branch]
