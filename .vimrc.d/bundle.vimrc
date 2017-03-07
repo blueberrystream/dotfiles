@@ -44,6 +44,8 @@ NeoBundle 'ujihisa/unite-rake'
 NeoBundle 'basyura/unite-rails'
 " slim
 NeoBundle 'slim-template/vim-slim'
+" CoffeeScript
+NeoBundle 'kchmck/vim-coffee-script'
 
 " php
 NeoBundle 'beyondwords/vim-twig'
