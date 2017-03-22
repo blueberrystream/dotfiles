@@ -1,0 +1,29 @@
+#!/bin/bash
+
+name_p="KID the Euforia"
+name_c="Fumihito Hachinohe"
+email_p="kid0725+github@gmail.com"
+email_c="hachinohe@fact-real.com"
+
+PS3="Personal? Company?: "
+select PORC in "Personal" "Company"
+do
+  case $REPLY in
+    1)
+      name=$name_p
+      email=$email_p
+      break
+      ;;
+    2)
+      name=$name_c
+      email=$email_c
+      break
+      ;;
+    *)
+      continue
+  esac
+done
+
+# put user section
+git config --local user.name $name
+git config --local user.email $email
