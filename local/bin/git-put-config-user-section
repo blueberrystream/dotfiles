@@ -25,5 +25,5 @@ do
 done
 
 # put user section
-git config --local user.name $name
-git config --local user.email $email
+git config --local user.name "$name"
+git config --local user.email "$email"
