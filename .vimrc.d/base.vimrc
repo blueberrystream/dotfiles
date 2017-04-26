@@ -75,17 +75,13 @@ match ZenkakuSpace /　/
 " cursor line
 set cursorline
 augroup cch
-autocmd! cch
-autocmd WinLeave * set nocursorline
-autocmd WinEnter,BufRead * set cursorline
-augroup END
-
-hi clear CursorLine
-hi CursorLine gui=underline
-highlight CursorLine ctermbg=black guibg=black
+  autocmd! cch
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter,BufRead * set cursorline
+augroup end
 
 " vim diff color
-hi DiffAdd    ctermfg=cyan ctermbg=black
+hi DiffAdd ctermfg=cyan ctermbg=black
 hi DiffChange ctermfg=white ctermbg=darkcyan
 hi DiffDelete ctermfg=red ctermbg=darkgray
-hi DiffText   ctermfg=white ctermbg=darkgray
+hi DiffText ctermfg=white ctermbg=darkgray
