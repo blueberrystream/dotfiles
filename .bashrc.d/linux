@@ -15,6 +15,10 @@ if type anyenv > /dev/null 2>&1; then
   eval "$(anyenv init -)"
 fi
 
+if type direnv > /dev/null 2>&1; then
+  eval "$(direnv hook bash)"
+fi
+
 export GOPATH=$HOME/local/gopath
 export_path $GOPATH/bin
 
