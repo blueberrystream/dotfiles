@@ -101,7 +101,8 @@ alias whoami=gwhoami
 alias yes=gyes
 
 alias ls='gls --color=auto'
-alias ll='gls -lAp --color=auto'
-alias cp='gcp -i'
-alias mv='gmv -i'
-alias rm='grm -i'
+alias ll='gls -lAp --color=auto --group-directories-first'
+
+alias cp='gcp -iv'
+alias mv='gmv -iv'
+alias rm='grm -iv'
