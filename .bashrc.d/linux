@@ -1,15 +1,3 @@
-# Setup ssh-agent
-ssh_agent_file=$HOME/.ssh/.ssh-agent
-if [ -f $ssh_agent_file ]; then
-  . $ssh_agent_file
-fi
-if [ -z "$SSH_AGENT_PID" ] || ! kill -0 $SSH_AGENT_PID; then
-  ssh-agent | sed 's/^echo/#echo/' > $ssh_agent_file
-  chmod 600 $ssh_agent_file
-  . $ssh_agent_file
-fi
-ssh-add -l >& /dev/null || ssh-add
-
 net_tools_deprecated_message () {
   echo -n 'net-tools コマンドはもう非推奨ですよ？おじさんなんじゃないですか？ '
 }

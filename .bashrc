@@ -83,10 +83,12 @@ case $uname in
   Darwin)
     . $HOME/.bashrc.d/alias ;
     . $HOME/.bashrc.d/alias-gnu ;
-    . $HOME/.bashrc.d/macosx ;;
+    . $HOME/.bashrc.d/macosx ;
+    . $HOME/.bashrc.d/ssh-agent ;;
   Linux)
     . $HOME/.bashrc.d/alias ;
-    . $HOME/.bashrc.d/linux ;;
+    . $HOME/.bashrc.d/linux ;
+    . $HOME/.bashrc.d/ssh-agent ;;
   MINGW32*)
     . $HOME/.bashrc.d/alias ;
     . $HOME/.bashrc.d/windows ;;
