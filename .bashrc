@@ -92,6 +92,18 @@ case $uname in
     . $HOME/.bashrc.d/windows ;;
 esac
 
+export_path $HOME/.anyenv/bin
+eval "$(anyenv init -)"
+
+if type direnv > /dev/null 2>&1; then
+  eval "$(direnv hook bash)"
+fi
+
+export GOPATH=$HOME/local/gopath
+export_path $GOPATH/bin
+
+[[ -f $HOME/.cda/cda/cda.sh ]] && . $HOME/.cda/cda/cda.sh
+
 if [ -f $HOME/.bashrc.d/local ]; then
   . $HOME/.bashrc.d/local
 fi

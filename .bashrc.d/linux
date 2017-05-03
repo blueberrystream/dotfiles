@@ -10,20 +10,6 @@ if [ -z "$SSH_AGENT_PID" ] || ! kill -0 $SSH_AGENT_PID; then
 fi
 ssh-add -l >& /dev/null || ssh-add
 
-if type anyenv > /dev/null 2>&1; then
-  export_path $HOME/.anyenv/bin
-  eval "$(anyenv init -)"
-fi
-
-if type direnv > /dev/null 2>&1; then
-  eval "$(direnv hook bash)"
-fi
-
-export GOPATH=$HOME/local/gopath
-export_path $GOPATH/bin
-
-[[ -f $HOME/.cda/cda/cda.sh ]] && . $HOME/.cda/cda/cda.sh
-
 net_tools_deprecated_message () {
   echo -n 'net-tools コマンドはもう非推奨ですよ？おじさんなんじゃないですか？ '
 }
