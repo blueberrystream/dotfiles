@@ -73,9 +73,9 @@ function export_path ()
 export_path $HOME/local/bin
 export_path $HOME/bin
 
-if [ -f $HOME/local/etc/enhancd/enhancd.sh ]; then
+if [ -f $HOME/.enhancd/enhancd/init.sh ]; then
   export ENHANCD_COMMAND=ecd
-  source $HOME/local/etc/enhancd/enhancd.sh
+  source $HOME/.enhancd/enhancd/init.sh
 fi
 
 uname=`uname`
@@ -94,8 +94,10 @@ case $uname in
     . $HOME/.bashrc.d/windows ;;
 esac
 
-export_path $HOME/.anyenv/bin
-eval "$(anyenv init -)"
+if [ -f HOME/.anyenv/bin/anyenv ]; then
+  export_path $HOME/.anyenv/bin
+  eval "$(anyenv init -)"
+fi
 
 if type direnv > /dev/null 2>&1; then
   eval "$(direnv hook bash)"

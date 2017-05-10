@@ -1,5 +1,4 @@
 /.bashrc.d/local
 /.tmux.conf.d/local
 /.vimrc.d/local.vimrc
-
-Gemfile.lock
+/Gemfile.lock

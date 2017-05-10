@@ -9,6 +9,7 @@ alias llless='ll | less'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
+alias ln='ln -v'
 
 alias cd='cdls'
 alias cd..='cd ..'
