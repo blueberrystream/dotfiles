@@ -94,7 +94,7 @@ case $uname in
     . $HOME/.bashrc.d/windows ;;
 esac
 
-if [ -f HOME/.anyenv/bin/anyenv ]; then
+if [ -f $HOME/.anyenv/bin/anyenv ]; then
   export_path $HOME/.anyenv/bin
   eval "$(anyenv init -)"
 fi
