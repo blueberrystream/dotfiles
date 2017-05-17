@@ -30,6 +30,8 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.scala setfiletype scala
 augroup end
 
+autocmd FileType gitcommit set tw=0
+
 " backup
 set nobackup
 set noswapfile
