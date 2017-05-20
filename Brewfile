@@ -79,6 +79,7 @@ brew mercurial
 brew mhash
 brew nginx
 brew nkf
+brew node
 brew ocaml
 brew oniguruma
 brew openssl
@@ -108,6 +109,7 @@ brew webp
 brew wget
 brew xmlto
 brew xz
+brew yarn
 brew zeromq
 brew zlib
 
