@@ -15,3 +15,5 @@ brew file set_repo -r blueberrystream/dotfiles
 brew file install
 
 brew doctor
+
+ln -s /usr/local/bin/lesspipe.sh $HOME/local/bin/lesspipe.sh

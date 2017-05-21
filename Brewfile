@@ -60,6 +60,7 @@ brew imagemagick
 brew imap-uw
 brew jpeg
 brew jq
+brew lesspipe
 brew libarchive
 brew libelf
 brew libevent
@@ -118,6 +119,9 @@ brew brew-file
 
 tap sanemat/font
 brew ricty
+
+# Other Homebrew packages
+brew postgres
 
 # Cask applications
 cask clipmenu
