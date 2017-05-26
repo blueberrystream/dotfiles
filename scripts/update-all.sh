@@ -8,4 +8,7 @@ $script_dir/install-cda.sh
 $script_dir/install-diff-highlight.sh
 $script_dir/install-dircolors.sh
 $script_dir/install-enhancd.sh
-[[ $uname == 'Linux' ]] && $script_dir/install-git-completion.sh
+if [[ $uname == 'Linux' ]]; then
+  $script_dir/install-git-completion.sh
+  $script_dir/install-lesspipe.sh
+fi

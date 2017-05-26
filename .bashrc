@@ -3,7 +3,10 @@ umask 022
 export LANG=ja_JP.UTF-8
 export TERM='xterm-256color'
 export EDITOR=vim
-export LESS='-g -i -M -R -S -W -z-4'
+export PAGER=less
+
+# http://qiita.com/delphinus/items/b04752bb5b64e6cc4ea9
+export LESS='-g -i -M -R -S -W -z-4 -x2 -j10'
 export LESS_TERMCAP_mb=$'\E[01;31m'      # Begins blinking.
 export LESS_TERMCAP_md=$'\E[01;31m'      # Begins bold.
 export LESS_TERMCAP_me=$'\E[0m'          # Ends mode.
@@ -11,8 +14,9 @@ export LESS_TERMCAP_se=$'\E[0m'          # Ends standout-mode.
 export LESS_TERMCAP_so=$'\E[00;47;30m'   # Begins standout-mode.
 export LESS_TERMCAP_ue=$'\E[0m'          # Ends underline.
 export LESS_TERMCAP_us=$'\E[01;32m'      # Begins underline.
-LESSOPEN="|$HOME/local/bin/lesspipe.sh %s"; export LESSOPEN
-export PAGER=less
+if type lesspipe.sh > /dev/null; then
+  export LESSOPEN='| $HOME/local/bin/lesspipe.sh %s'
+fi
 
 export HISTCONTROL=ignoredups
 
