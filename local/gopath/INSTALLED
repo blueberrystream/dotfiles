@@ -3,6 +3,7 @@ errcheck
 gcli
 go-bindata
 gox
+httpstat
 lltsv
 memo
 terminal-parrot
