@@ -112,3 +112,6 @@ let g:tcommentMapLeaderOp2 = 'gC'
 
 " Seiya
 let g:seiya_auto_enable = 1
+
+" nerdtree
+let NERDTreeShowHidden = 1
