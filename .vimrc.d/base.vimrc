@@ -16,6 +16,8 @@ set showcmd
 set showmode
 set ignorecase
 set smartcase
+set mouse=a
+set ttymouse=xterm2
 
 " file types
 filetype on
