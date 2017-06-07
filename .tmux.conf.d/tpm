@@ -2,6 +2,7 @@ set -g @tpm_plugins ' \
   tmux-plugins/tpm \
   tmux-plugins/tmux-resurrect \
   tmux-plugins/tmux-copycat \
+  nhdaly/tmux-better-mouse-mode \
 '
 
 # Initializes TMUX plugin manager.
