@@ -17,6 +17,7 @@ rm -f $HOME/.git-commit.template
 rm -f $HOME/.gitignore
 rm -f $HOME/.vimrc
 rm -rf $HOME/.vimrc.d
+rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -rf $HOME/.tmux.conf.d
 
@@ -28,7 +29,8 @@ ln -s $script_dir/.git-commit.template $HOME/
 [[ $uname == 'Darwin' ]] && ln -s $script_dir/.gitconfig-sourcetree $HOME/
 ln -s $script_dir/.vimrc $HOME/
 ln -s $script_dir/.vimrc.d $HOME/
-ln -s $script_dir/.tmux.conf $HOME
+ln -s $script_dir/.tigrc $HOME/
+ln -s $script_dir/.tmux.conf $HOME/
 ln -s $script_dir/.tmux.conf.d $HOME/
 
 touch $HOME/.bashrc.d/local

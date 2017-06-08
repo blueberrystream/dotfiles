@@ -1,0 +1,14 @@
+set main-view = id date:default author:full commit-title:yes,graph,refs,overflow=no
+
+# UI display settings
+set tab-size = 4
+
+# Settings controlling how content is read from Git
+set ignore-space = at-eol
+set diff-context = 6
+set diff-highlight = true
+
+# Misc
+set refresh-interval = 1
+set ignore-case = true
+set mouse = true
