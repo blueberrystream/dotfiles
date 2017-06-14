@@ -1,5 +1,6 @@
 
 errcheck
+fillin
 gcli
 go-bindata
 gox
