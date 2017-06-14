@@ -63,8 +63,6 @@ PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__gi
 #  \[\e[0;33m\]从× ｜ ＿ ｜×从 < \[\e[00m\]'
 export PS1
 
-export PROMPT_COMMAND='echo -ne "\033]0;$(whoami)@${HOSTNAME}:${PWD/$HOME/~}\007"'
-
 function export_path ()
 {
   if [ -d "$1" ]; then
@@ -112,15 +110,9 @@ export_path $GOPATH/bin
 
 [[ -f $HOME/.cda/cda/cda.sh ]] && . $HOME/.cda/cda/cda.sh
 
-if [ -f $HOME/.bashrc.d/local ]; then
-  . $HOME/.bashrc.d/local
-fi
-if [ -f $HOME/.bashrc.d/peco ]; then
-  . $HOME/.bashrc.d/peco
-fi
-if [ -f $HOME/.bashrc.d/function ]; then
-  . $HOME/.bashrc.d/function
-fi
+[[ -f $HOME/.bashrc.d/local ]] && . $HOME/.bashrc.d/local
+[[ -f $HOME/.bashrc.d/peco ]] && . $HOME/.bashrc.d/peco
+[[ -f $HOME/.bashrc.d/function ]] && . $HOME/.bashrc.d/function
 
 if [ -f $HOME/dircolors.256dark ]; then
   if type dircolors > /dev/null 2>&1; then
@@ -130,7 +122,7 @@ fi
 
 ### Bash-it https://github.com/Bash-it/bash-it ###
 # Path to the bash it configuration
-export BASH_IT="/home/hachinohe/.bash_it"
+export BASH_IT=$HOME/.bash_it
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -178,4 +170,4 @@ export SCM_CHECK=true
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Load Bash It
-source "$BASH_IT"/bash_it.sh
+source $BASH_IT/bash_it.sh
