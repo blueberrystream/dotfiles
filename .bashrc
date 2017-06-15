@@ -90,7 +90,8 @@ case $uname in
   Linux)
     . $HOME/.bashrc.d/alias ;
     . $HOME/.bashrc.d/linux ;
-    . $HOME/.bashrc.d/ssh-agent ;;
+    . $HOME/.bashrc.d/ssh-agent ;
+    . $HOME/.bashrc.d/gpg-agent ;;
   MINGW32*)
     . $HOME/.bashrc.d/alias ;
     . $HOME/.bashrc.d/windows ;;
