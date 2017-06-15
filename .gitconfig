@@ -19,7 +19,7 @@
   gen-ignore = !"f() { local s=$1; shift; while [ $# -gt 0 ]; do s="$s,$1"; shift; done; curl "http://gitignore.io/api/$s"; }; f"
   br = branch
   bc = checkout -b
-  ci = commit
+  ci = commit -s
   co = checkout
   di = diff --word-diff
   dc = diff --cached
@@ -83,3 +83,7 @@
   path = ~/.gitconfig-local
 [commit]
   template = ~/.git-commit.template
+[status]
+  showUntrackedFiles = all
+[transfer]
+  fsckObjects = true
