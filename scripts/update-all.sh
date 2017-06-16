@@ -16,3 +16,4 @@ fi
 
 $script_dir/go-get.sh
 $script_dir/npm-install.sh
+$script_dir/gem-install.sh
