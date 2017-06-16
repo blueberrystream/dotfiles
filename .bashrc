@@ -86,7 +86,8 @@ case $uname in
     . $HOME/.bashrc.d/alias ;
     . $HOME/.bashrc.d/alias-gnu ;
     . $HOME/.bashrc.d/macosx ;
-    . $HOME/.bashrc.d/ssh-agent ;;
+    . $HOME/.bashrc.d/ssh-agent ;
+    . $HOME/.bashrc.d/gpg-agent ;;
   Linux)
     . $HOME/.bashrc.d/alias ;
     . $HOME/.bashrc.d/linux ;
