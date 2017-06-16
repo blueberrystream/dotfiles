@@ -15,5 +15,6 @@ if [ ! -d $install_dir ]; then
     gem git go grunt gulp npm rake ssh system tmux
   bash-it enable plugin base
 else
+  source $BASH_IT/bash_it.sh
   bash-it update
 fi
