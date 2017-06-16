@@ -22,6 +22,7 @@ cask skype
 cask xquartz
 
 tap homebrew/core
+brew adns
 brew apr
 brew apr-util
 brew asciidoc
@@ -50,7 +51,9 @@ brew gflags
 brew git
 brew glib
 brew glog
+brew gmp
 brew gnu-getopt
+brew gnutls
 brew gobject-introspection
 brew groff
 brew harfbuzz
@@ -62,15 +65,22 @@ brew jpeg
 brew jq
 brew lesspipe
 brew libarchive
+brew libassuan
 brew libelf
 brew libevent
 brew libffi
+brew libgcrypt
+brew libgpg-error
+brew libksba
 brew libmemcached
 brew libpng
 brew libsodium
 brew libssh2
+brew libtasn1
 brew libtiff
 brew libtool
+brew libunistring
+brew libusb
 brew libxml2
 brew libxslt
 brew libyaml
@@ -78,17 +88,21 @@ brew mcrypt
 brew memcached
 brew mercurial
 brew mhash
+brew nettle
 brew nginx
 brew nkf
 brew node
+brew npth
 brew ocaml
 brew oniguruma
 brew openssl
 brew openssl@1.1
+brew p11-kit
 brew pango
 brew pcre
 brew peco
 brew perl
+brew pinentry
 brew pixman
 brew pkg-config
 brew python
@@ -121,6 +135,7 @@ tap sanemat/font
 brew ricty
 
 # Other Homebrew packages
+brew gpg2
 brew postgres
 
 # Cask applications
