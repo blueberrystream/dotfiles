@@ -2,5 +2,6 @@
 
 npm install -g \
   diff-so-fancy \
-  git-open
+  git-open \
+  prettier
 ndenv rehash

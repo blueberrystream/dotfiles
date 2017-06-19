@@ -78,6 +78,11 @@ NeoBundle 'mustache/vim-mustache-handlebars'
 " check syntax
 NeoBundle 'scrooloose/syntastic'
 
+" formatter
+NeoBundle 'mitermayer/vim-prettier', {
+    \ 'do': 'npm install',
+    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
+
 " installation check
 if neobundle#exists_not_installed_bundles()
   echomsg 'Not installed bundles : ' .
@@ -115,3 +120,6 @@ let g:seiya_auto_enable = 1
 
 " nerdtree
 let NERDTreeShowHidden = 1
+
+" vim-prettier
+let g:prettier#config#print_width = 120
