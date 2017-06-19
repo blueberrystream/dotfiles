@@ -1,12 +1,16 @@
+# View settings
 set main-view = id date:default author:full commit-title:yes,graph,refs,overflow=no
 
 # UI display settings
-set tab-size = 4
+set tab-size = 2
 
 # Settings controlling how content is read from Git
 set ignore-space = at-eol
 set diff-context = 6
 set diff-highlight = true
+
+# User-defined commands
+bind status C !git commit --signoff --gpg-sign
 
 # Misc
 set refresh-interval = 1
