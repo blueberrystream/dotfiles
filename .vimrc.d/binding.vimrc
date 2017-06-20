@@ -1,18 +1,26 @@
-" tab
-nmap <silent> <F4> :tabnew<CR>
-nmap <silent> <F5> :tabn<CR>
-
-" paste mode switch
-set pastetoggle=<F11>
+" escape highlight mode with Esc x3
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 
 " trailing white space
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-:nnoremap <silent> <F3> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+:nnoremap <silent> <F2> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
-" escape highlight mode with Esc x3
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
+" tab
+nnoremap <silent> <F3> :tabnew<CR>
+nnoremap <silent> <F4> :tabp<CR>
+nnoremap <silent> <F5> :tabn<CR>
 
 " toggle number
-nmap <silent> <F10> :<C-u>setlocal number!<CR>
+nnoremap <silent> <F10> :setlocal number!<CR>
 
-nmap <silent> <F12> :echo expand("%:p")<CR>
+" paste mode switch
+nnoremap <silent> <F11> :setlocal paste!<CR>
+
+" show full path
+nnoremap <silent> <F12> :echo expand("%:p")<CR>
+
+" increment
+nnoremap <silent> <C-c> <C-a>
+
+" format
+nnoremap == gg=G''
