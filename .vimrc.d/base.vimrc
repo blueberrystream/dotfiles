@@ -32,7 +32,7 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.scala setfiletype scala
 augroup end
 
-autocmd FileType gitcommit set tw=0
+autocmd FileType gitcommit set textwidth=0
 
 " backup
 set nobackup
@@ -67,7 +67,7 @@ set hlsearch
 
 " show matching bracket
 set showmatch
-au BufWinEnter *.php set mps-=<:>
+autocmd BufWinEnter *.php set mps-=<:>
 
 " invisible characters
 set list

@@ -35,6 +35,8 @@ NeoBundle 'miyakogi/seiya.vim'
 
 NeoBundle 'rking/ag.vim'
 
+NeoBundle 'editorconfig/editorconfig-vim'
+
 " ruby
 NeoBundle 'ruby-matchit'
 NeoBundle 'tpope/vim-endwise'
@@ -98,8 +100,8 @@ NeoBundleCheck
 filetype plugin indent on
 
 " NERDTree
-nmap <silent> <F7> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
+nnoremap <silent> <F7> :NERDTreeToggle<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
@@ -120,4 +122,4 @@ let g:tcommentMapLeaderOp2 = 'gC'
 let g:seiya_auto_enable = 1
 
 " vim-prettier
-let g:prettier#config#print_width = 120
+let g:prettier#config#print_width = 200
