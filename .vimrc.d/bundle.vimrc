@@ -99,6 +99,7 @@ filetype plugin indent on
 
 " NERDTree
 nmap <silent> <F7> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
@@ -117,9 +118,6 @@ let g:tcommentMapLeaderOp2 = 'gC'
 
 " Seiya
 let g:seiya_auto_enable = 1
-
-" nerdtree
-let NERDTreeShowHidden = 1
 
 " vim-prettier
 let g:prettier#config#print_width = 120
