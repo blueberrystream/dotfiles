@@ -37,12 +37,4 @@ touch $HOME/.bashrc.d/local
 touch $HOME/.vimrc.d/local.vimrc
 touch $HOME/.tmux.conf.d/local
 
-$script_dir/scripts/install-anyenv.sh
-$script_dir/scripts/install-cda.sh
-$script_dir/scripts/install-diff-highlight.sh
-$script_dir/scripts/install-dircolors.sh
-$script_dir/scripts/install-enhancd.sh
-[[ $uname == 'Linux' ]] && $script_dir/scripts/install-git-completion.sh
-$script_dir/scripts/install-my-git-subcommands.sh
-$script_dir/scripts/install-tmux-plugins.sh
-$script_dir/scripts/install-vim-plugins.sh
+$script_dir/scripts/update-all.sh
