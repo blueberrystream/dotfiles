@@ -20,6 +20,9 @@ NeoBundle 'Shougo/vimproc.vim', {
 \    },
 \ }
 
+NeoBundle 'Shougo/context_filetype.vim'
+NeoBundle 'osyo-manga/vim-precious'
+
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree'
 
