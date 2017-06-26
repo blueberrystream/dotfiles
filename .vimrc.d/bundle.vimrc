@@ -77,6 +77,9 @@ NeoBundle 'tomtom/tcomment_vim'
 " handlebars
 NeoBundle 'mustache/vim-mustache-handlebars'
 
+" vue
+NeoBundle 'posva/vim-vue'
+
 " check syntax
 NeoBundle 'scrooloose/syntastic'
 
