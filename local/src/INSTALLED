@@ -1,9 +1,11 @@
+asciidoc-8.6.9
 axel
 curl-7.45.0
 dateutils-0.4.1
 gmp-6.1.2
-heroku-client
+heroku
 lesspipe-1.82
+lesspipe-1.83
 libffi-3.2
 libpng-1.6.28
 moreutils
@@ -16,3 +18,4 @@ tig-2.2.1
 tiptop-2.3
 tmux-2.4
 tree-1.7.0
+xsel-1.2.0
