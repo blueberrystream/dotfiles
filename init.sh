@@ -40,3 +40,8 @@ touch $HOME/.vimrc.d/local.vimrc
 touch $HOME/.tmux.conf.d/local
 
 $script_dir/scripts/update-all.sh
+$script_dir/scripts/install-lesspipe.sh
+$script_dir/scripts/install-my-git-subcommands.sh
+$script_dir/scripts/install-tmux-plugins.sh
+
+echo "Please run `exec $SHELL -l`"

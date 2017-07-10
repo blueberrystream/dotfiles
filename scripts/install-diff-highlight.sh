@@ -11,5 +11,7 @@ else
   git pull
 fi
 
-mkdir -p $local_bin
-ln -s $repo_dir/contrib/diff-highlight/diff-highlight $local_bin/
+if [ ! -e $local_bin/diff-highlight ]; then
+  mkdir -p $local_bin
+  ln -s $repo_dir/contrib/diff-highlight/diff-highlight $local_bin/
+fi
