@@ -120,6 +120,13 @@ repo = 'posva/vim-vue'
 # markdown
 [[plugins]]
 repo = 'gabrielelana/vim-markdown'
+depends = ['godlygeek/tabular']
+hook_add = '''
+  let g:markdown_enable_spell_checking = 0
+'''
+
+[[plugins]]
+repo = 'godlygeek/tabular'
 
 # toml
 [[plugins]]
