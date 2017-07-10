@@ -1,0 +1,126 @@
+# basic
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
+hook_add = '''
+  let g:precious_enable_switch_CursorMoved = { '*': 0, 'help': 1 }
+  autocmd MyAutoCmd InsertEnter * :PreciousSwitch
+  autocmd MyAutoCmd InsertLeave * :PreciousReset
+'''
+
+[[plugins]]
+repo = 'kana/vim-fakeclip'
+
+# filer
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  let NERDTreeShowHidden = 1
+  nnoremap <silent> <F7> :NERDTreeToggle<CR>
+  autocmd StdinReadPre * let s:std_in=1
+  autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+'''
+# assist
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'terryma/vim-multiple-cursors'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+hook_add = '''
+  let g:tcommentMapLeader1 = '<C-_>'
+  let g:tcommentMapLeader2 = '<Leader>'
+  let g:tcommentMapLeaderOp1 = 'gc'
+  let g:tcommentMapLeaderOp2 = 'gC'
+'''
+
+# style
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  set laststatus=2
+  let g:lightline = { 'colorscheme': 'solarized' }
+'''
+
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
+hook_add = '''
+  let g:seiya_auto_enable = 1
+'''
+
+# formatting
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+# ruby
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+# rails
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+[[plugins]]
+repo = 'ujihisa/unite-rake'
+
+[[plugins]]
+repo = 'basyura/unite-rails'
+
+# slim
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+# php
+[[plugins]]
+repo = 'beyondwords/vim-twig'
+
+[[plugins]]
+repo = 'jwalton512/vim-blade'
+
+# json
+[[plugins]]
+repo = 'elzr/vim-json'
+
+# Dockerfile
+[[plugins]]
+repo = 'ekalinin/Dockerfile.vim'
+
+# scala
+[[plugins]]
+repo = 'derekwyatt/vim-scala'
+
+# handlebars
+[[plugins]]
+repo = 'mustache/vim-mustache-handlebars'
+
+# vue
+[[plugins]]
+repo = 'posva/vim-vue'
+
+# markdown
+[[plugins]]
+repo = 'gabrielelana/vim-markdown'
+
+# toml
+[[plugins]]
+repo = 'cespare/vim-toml'

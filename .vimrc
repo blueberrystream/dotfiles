@@ -1,6 +1,6 @@
 set shell=bash
 
-source ~/.vimrc.d/bundle.vimrc
+source ~/.vimrc.d/plugins.vimrc
 source ~/.vimrc.d/base.vimrc
 source ~/.vimrc.d/binding.vimrc
 
