@@ -4,5 +4,6 @@ npm install -g \
   diff-so-fancy \
   git-open \
   prettier \
-  yarn
+  yarn \
+  jshint
 ndenv rehash
