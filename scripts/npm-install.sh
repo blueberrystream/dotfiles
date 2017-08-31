@@ -5,5 +5,6 @@ npm install -g \
   git-open \
   prettier \
   yarn \
-  jshint
+  jshint \
+  gtop
 ndenv rehash
