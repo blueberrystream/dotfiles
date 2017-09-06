@@ -6,5 +6,6 @@ npm install -g \
   prettier \
   yarn \
   jshint \
-  gtop
+  gtop \
+  rails-dashboard
 ndenv rehash
