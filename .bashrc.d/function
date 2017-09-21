@@ -16,3 +16,12 @@ if type jq > /dev/null 2>&1; then
     alias jqless-peco='jqless . $(ll-peco)'
   fi
 fi
+
+if type pigz > /dev/null 2>&1; then
+  function targz {
+    tar cf $@ --use-compress-program=pigz
+  }
+  function untargz {
+    tar xf $@ --use-compress-program=pigz
+  }
+fi
