@@ -7,5 +7,6 @@ npm install -g \
   yarn \
   jshint \
   gtop \
-  rails-dashboard
+  rails-dashboard \
+  mdr
 ndenv rehash
