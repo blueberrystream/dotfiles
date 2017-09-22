@@ -37,3 +37,5 @@ alias mysqldump-hacci='mysqldump --extended_insert --single-transaction --quote-
 alias crontab='crontab -i'
 
 alias fig=docker-compose
+
+alias vim-ssh-config='vim ~/.ssh/config'
