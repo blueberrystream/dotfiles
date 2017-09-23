@@ -48,6 +48,9 @@ hook_add = '''
   let g:tcommentMapLeaderOp2 = 'gC'
 '''
 
+[[plugins]]
+repo = 'ConradIrwin/vim-bracketed-paste'
+
 # style
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'

@@ -17,10 +17,17 @@ nnoremap <silent> <F10> :setlocal number!<CR>
 nnoremap <silent> <F11> :setlocal paste!<CR>
 
 " show full path
-nnoremap <silent> <F12> :echo expand("%:p")<CR>
+noremap <silent> <F12> :echo expand("%:p")<CR>
+noremap! <silent> <F12> <Esc>:echo expand("%:p")<CR>
 
 " increment
 nnoremap <silent> <C-c> <C-a>
 
 " format
 nnoremap == gg=G''
+
+" dein
+nnoremap deinu :call dein#update()<CR>
+
+" fakeclip
+vmap <C-c> "+y
