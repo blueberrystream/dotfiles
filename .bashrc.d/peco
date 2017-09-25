@@ -46,4 +46,12 @@ if type peco > /dev/null 2>&1; then
     READLINE_POINT=${#l}
   }
   bind -x '"\C-r": history-peco'
+
+  if type reptyr > /dev/null 2>&1; then
+    # https://qiita.com/yuuAn/items/b3579c6349f662963651
+    function reattach-pty {
+      pid=$(ps uxfww | peco | awk '{print $2}')
+      [[ -n "$pid" ]] && reptyr "$pid"
+    }
+  fi
 fi
