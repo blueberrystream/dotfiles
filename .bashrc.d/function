@@ -25,3 +25,13 @@ if type pigz > /dev/null 2>&1; then
     tar xf $@ --use-compress-program=pigz
   }
 fi
+
+if type pt > /dev/null 2>&1; then
+  function replace-all {
+    pt -l "$1" | xargs sed -i -e "s/$1/$2/g"
+  }
+else
+  function replace-all {
+    grep -l "$1" ./ | xargs sed -i -e "s/$1/$2/g"
+  }
+fi
