@@ -32,6 +32,7 @@
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lg = log --graph
   last = log -1 HEAD
+  log1 = !git --no-pager log --oneline
   info = remote show origin
   su = submodule update
   pt = push --tags
