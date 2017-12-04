@@ -29,6 +29,11 @@ hook_add = '''
   autocmd StdinReadPre * let s:std_in=1
   autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 '''
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+depends = ['nerdtree']
+
 # assist
 [[plugins]]
 repo = 'tpope/vim-surround'
@@ -40,16 +45,13 @@ repo = 'bronson/vim-trailing-whitespace'
 repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]
-repo = 'tomtom/tcomment_vim'
-hook_add = '''
-  let g:tcommentMapLeader1 = '<C-_>'
-  let g:tcommentMapLeader2 = '<Leader>'
-  let g:tcommentMapLeaderOp1 = 'gc'
-  let g:tcommentMapLeaderOp2 = 'gC'
-'''
+repo = 'tpope/vim-commentary'
 
 [[plugins]]
 repo = 'ConradIrwin/vim-bracketed-paste'
+
+[[plugins]]
+repo = 'Raimondi/delimitMate'
 
 # style
 [[plugins]]
@@ -137,3 +139,7 @@ repo = 'godlygeek/tabular'
 # toml
 [[plugins]]
 repo = 'cespare/vim-toml'
+
+# git
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
