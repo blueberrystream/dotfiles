@@ -143,3 +143,11 @@ repo = 'cespare/vim-toml'
 # git
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+# typescript
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+# pug
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
