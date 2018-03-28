@@ -97,6 +97,9 @@ repo = 'basyura/unite-rails'
 # slim
 [[plugins]]
 repo = 'slim-template/vim-slim'
+hook_add = '''
+  autocmd BufRead,BufNewFile *.slim setfiletype slim
+'''
 
 # php
 [[plugins]]
