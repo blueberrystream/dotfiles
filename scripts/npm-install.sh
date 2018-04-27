@@ -8,5 +8,6 @@ npm install -g \
   jshint \
   gtop \
   rails-dashboard \
-  mdr
+  mdr \
+  npm-check-updates
 ndenv rehash
