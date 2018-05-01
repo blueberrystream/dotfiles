@@ -12,6 +12,9 @@ depends = ['context_filetype.vim']
 [[plugins]]
 repo = 'kana/vim-fakeclip'
 
+[[plugins]]
+repo = 'nazo/pt.vim'
+
 # filer
 [[plugins]]
 repo = 'Shougo/unite.vim'
