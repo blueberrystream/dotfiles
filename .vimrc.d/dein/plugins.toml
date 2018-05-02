@@ -51,6 +51,10 @@ repo = 'ConradIrwin/vim-bracketed-paste'
 [[plugins]]
 repo = 'Raimondi/delimitMate'
 
+# git
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
 # style
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
@@ -140,10 +144,6 @@ repo = 'godlygeek/tabular'
 # toml
 [[plugins]]
 repo = 'cespare/vim-toml'
-
-# git
-[[plugins]]
-repo = 'airblade/vim-gitgutter'
 
 # typescript
 [[plugins]]
