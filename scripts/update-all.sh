@@ -17,5 +17,6 @@ $script_dir/install-git-completion.sh
 $script_dir/go-get.sh
 $script_dir/npm-install.sh
 $script_dir/gem-install.sh
+$script_dir/pip-install.sh
 
 echo "Please run `exec $SHELL -l`"

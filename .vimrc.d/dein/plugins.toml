@@ -70,7 +70,7 @@ repo = 'altercation/vim-colors-solarized'
 repo = 'itchyny/lightline.vim'
 hook_add = '''
   set laststatus=2
-  let g:lightline = { 'colorscheme': 'solarized' }
+  let g:lightline = { 'colorscheme': 'solarized', 'component_function': { 'ale': 'ALEGetStatusLine' } }
 '''
 
 [[plugins]]
@@ -88,6 +88,9 @@ repo = 'maksimr/vim-jsbeautify'
 
 [[plugins]]
 repo = 'w0rp/ale'
+hook_add = '''
+  let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+'''
 
 # ruby
 [[plugins]]
