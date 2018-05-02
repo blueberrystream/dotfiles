@@ -55,6 +55,13 @@ repo = 'Raimondi/delimitMate'
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'tpope/vim-rhubarb'
+depends = ['vim-fugitive']
+
 # style
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
