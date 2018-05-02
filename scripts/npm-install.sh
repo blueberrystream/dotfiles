@@ -10,7 +10,6 @@ npm install -g \
   npm-check-updates \
   neovim \
   prettier \
-  jshint \
   eslint \
   pug-lint \
   alex \
