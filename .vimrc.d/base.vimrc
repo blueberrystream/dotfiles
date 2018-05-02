@@ -17,7 +17,9 @@ set showmode
 set ignorecase
 set smartcase
 set mouse=a
-set ttymouse=xterm2
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 
 " file types
 filetype on
