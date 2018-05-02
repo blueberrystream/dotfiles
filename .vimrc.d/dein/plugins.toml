@@ -87,7 +87,7 @@ repo = 'editorconfig/editorconfig-vim'
 repo = 'maksimr/vim-jsbeautify'
 
 [[plugins]]
-repo = 'scrooloose/syntastic'
+repo = 'w0rp/ale'
 
 # ruby
 [[plugins]]
