@@ -77,6 +77,7 @@ export_path $HOME/bin
 
 if [ -f $HOME/.enhancd/enhancd/init.sh ]; then
   export ENHANCD_COMMAND=ecd
+  export ENHANCD_FILTER=peco:fzf
   source $HOME/.enhancd/enhancd/init.sh
 fi
 
