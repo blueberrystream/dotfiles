@@ -15,7 +15,6 @@ rm -f $HOME/.editorconfig
 rm -f $HOME/.gitconfig
 rm -f $HOME/.git-commit.template
 [[ $uname == 'Darwin' ]] && rm -f $HOME/.gitconfig-sourcetree
-rm -f $HOME/.gitignore
 rm -f $HOME/.vimrc
 rm -rf $HOME/.vimrc.d
 rm -f $HOME/.tigrc
@@ -26,7 +25,6 @@ ln -s $script_dir/.bash_profile $HOME/
 ln -s $script_dir/.bashrc $HOME/
 ln -s $script_dir/.bashrc.d $HOME/
 ln -s $script_dir/.editorconfig $HOME/
-ln -s $script_dir/.gitconfig $HOME/
 ln -s $script_dir/.git-commit.template $HOME/
 [[ $uname == 'Darwin' ]] && ln -s $script_dir/.gitconfig-sourcetree $HOME/
 ln -s $script_dir/.vimrc $HOME/
