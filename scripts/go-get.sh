@@ -7,10 +7,11 @@ repos=(
   "github.com/mattn/memo"
   "github.com/jmhobbs/terminal-parrot"
   "github.com/pocke/lemonade"
+  "github.com/junegunn/fzf"
 )
 
 for repo in "${repos[@]}"; do
   go get -u $repo
 done
 
-ln -s $GOPATH/bin/lemonade $HOME/local/bin/xdg-open
+ln -sf $GOPATH/bin/lemonade $HOME/local/bin/xdg-open
