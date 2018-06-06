@@ -21,9 +21,7 @@ fi
 export HISTCONTROL=ignoredups
 
 # prohibit C-s
-if type dircolors > /dev/null 2>&1; then
-  stty stop undef
-fi
+stty stop undef
 
 # for git-prompt
 export GIT_PS1_SHOWUPSTREAM=1
