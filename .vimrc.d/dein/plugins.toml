@@ -15,10 +15,7 @@ repo = 'kana/vim-fakeclip'
 [[plugins]]
 repo = 'nazo/pt.vim'
 
-# filer
-[[plugins]]
-repo = 'Shougo/unite.vim'
-
+# file
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
@@ -27,6 +24,9 @@ hook_add = '''
   autocmd StdinReadPre * let s:std_in=1
   autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 '''
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
 repo = 'jistr/vim-nerdtree-tabs'
@@ -50,6 +50,17 @@ repo = 'ConradIrwin/vim-bracketed-paste'
 
 [[plugins]]
 repo = 'Raimondi/delimitMate'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = ['context_filetype.vim']
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+'''
+
+[[plugins]]
+repo = 'Shougo/neco-syntax'
+depends = ['deoplete.nvim']
 
 # git
 [[plugins]]
