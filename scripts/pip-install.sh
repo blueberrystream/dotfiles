@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install \
+pip install --upgrade \
   gitlint \
   ansible-lint \
   vim-vint \
