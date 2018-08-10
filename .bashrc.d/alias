@@ -14,7 +14,7 @@ alias ln='ln -v'
 alias cd='cdls'
 alias cd..='cd ..'
 
-alias vim='vim -p'
+alias vim=vim
 alias vi=vim
 alias view='vim -R'
 
