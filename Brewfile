@@ -5,21 +5,6 @@ tap argon/mas
 brew mas
 
 tap caskroom/cask
-cask appcleaner
-cask atom
-cask deeper
-cask filezilla
-cask flux
-cask google-cloud-sdk
-cask googleappengine
-cask hosts
-cask keka
-cask macdown
-cask netnewswire
-cask p4merge
-cask p4v
-cask skype
-cask xquartz
 
 tap homebrew/core
 brew adns
@@ -61,6 +46,7 @@ brew heroku
 brew icu4c
 brew imagemagick
 brew imap-uw
+brew jemalloc
 brew jpeg
 brew jq
 brew lesspipe
@@ -77,17 +63,22 @@ brew libpng
 brew libsodium
 brew libssh2
 brew libtasn1
+brew libtermkey
 brew libtiff
 brew libtool
 brew libunistring
 brew libusb
+brew libuv
+brew libvterm
 brew libxml2
 brew libxslt
 brew libyaml
+brew luajit
 brew mcrypt
 brew memcached
 brew mercurial
 brew mhash
+brew msgpack
 brew nettle
 brew nginx
 brew nkf
@@ -118,6 +109,7 @@ brew the_platinum_searcher
 brew the_silver_searcher
 brew tig
 brew tmux
+brew unibilium
 brew unixodbc
 brew vim
 brew webp
@@ -136,9 +128,25 @@ brew ricty
 
 # Other Homebrew packages
 brew gpg2
+brew nvim
 brew postgres
 
 # Cask applications
+cask appcleaner
+cask atom
+cask deeper
+cask filezilla
+cask flux
+cask google-cloud-sdk
+cask googleappengine
+cask hosts
+cask keka
+cask macdown
+cask netnewswire
+cask p4merge
+cask p4v
+cask skype
+cask xquartz
 cask clipmenu
 
 # App Store applications
