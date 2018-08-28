@@ -54,4 +54,8 @@ if type peco > /dev/null 2>&1; then
       [[ -n "$pid" ]] && reptyr "$pid"
     }
   fi
+
+  if type tmuxinator > /dev/null 2>&1; then
+    alias mux-peco='tmuxinator `tmuxinator list | peco`'
+  fi
 fi
