@@ -3,6 +3,13 @@
 script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 uname=`uname`
 
+function echo_and_run() {
+  echo "=================================================="
+  echo $1
+  echo "=================================================="
+  . $script_dir/$1
+}
+
 if [[ $uname == 'Linux' ]]; then
   echo_and_run install-git-completion.sh
   echo_and_run install-lesspipe.sh
@@ -21,10 +28,3 @@ echo_and_run gem-install.sh
 echo_and_run pip-install.sh
 
 echo "Please run 'exec \$SHELL -l'"
-
-function echo_and_run() {
-  echo "=================================================="
-  echo $1
-  echo "=================================================="
-  . $script_dir/$1
-}
