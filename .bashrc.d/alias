@@ -14,9 +14,9 @@ alias ln='ln -v'
 alias cd='cdls'
 alias cd..='cd ..'
 
-alias vim=vim
-alias vi=vim
-alias view='vim -R'
+alias vim=nvim
+alias vi=nvim
+alias view='nvim -R'
 
 alias psgrep='ps aux | grep'
 
