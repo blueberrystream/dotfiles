@@ -12,7 +12,6 @@ lesspipe-1.83
 libffi-3.2
 libgit2-0.26.0
 libpng-1.6.28
-man
 moreutils
 nkf-2.1.4
 nvim-linux64

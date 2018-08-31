@@ -9,6 +9,6 @@ fi
 
 cd $install_dir
 make clean
+git pull
 ./configure --prefix=$prefix --yes
 make PREFIX=$prefix && make install
-

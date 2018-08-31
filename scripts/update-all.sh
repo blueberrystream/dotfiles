@@ -4,19 +4,27 @@ script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 uname=`uname`
 
 if [[ $uname == 'Linux' ]]; then
-  $script_dir/install-git-completion.sh
-  $script_dir/install-lesspipe.sh
+  echo_and_run install-git-completion.sh
+  echo_and_run install-lesspipe.sh
 fi
-$script_dir/install-anyenv.sh
-$script_dir/install-bash-it.sh
-$script_dir/install-cda.sh
-$script_dir/install-dircolors.sh
-$script_dir/install-enhancd.sh
-$script_dir/install-git-completion.sh
+echo_and_run install-anyenv.sh
+echo_and_run install-bash-it.sh
+echo_and_run install-cda.sh
+echo_and_run install-dircolors.sh
+echo_and_run install-enhancd.sh
+echo_and_run install-git-completion.sh
+echo_and_run install-tmux-plugins.sh
 
-$script_dir/go-get.sh
-$script_dir/npm-install.sh
-$script_dir/gem-install.sh
-$script_dir/pip-install.sh
+echo_and_run go-get.sh
+echo_and_run npm-install.sh
+echo_and_run gem-install.sh
+echo_and_run pip-install.sh
 
-echo "Please run `exec $SHELL -l`"
+echo "Please run 'exec \$SHELL -l'"
+
+function echo_and_run() {
+  echo "=================================================="
+  echo $1
+  echo "=================================================="
+  . $script_dir/$1
+}
