@@ -91,3 +91,7 @@ hi DiffAdd ctermfg=cyan ctermbg=black
 hi DiffChange ctermfg=white ctermbg=darkcyan
 hi DiffDelete ctermfg=red ctermbg=darkgray
 hi DiffText ctermfg=white ctermbg=darkgray
+
+" nvim python
+let g:python_host_prog = '/home/hachinohe/.anyenv/envs/pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/home/hachinohe/.anyenv/envs/pyenv/versions/neovim3/bin/python'
