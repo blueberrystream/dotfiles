@@ -2,8 +2,8 @@
 nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 
 " trailing white space
-:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-:nnoremap <silent> <F2> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+nnoremap <silent> <F2> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " tab
 nnoremap <silent> <F3> :tabnew<CR>

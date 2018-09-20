@@ -32,16 +32,16 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.erb setfiletype eruby.html
   autocmd BufRead,BufNewFile Guardfile setfiletype ruby
   autocmd BufRead,BufNewFile *.scala setfiletype scala
+  autocmd FileType gitcommit set textwidth=0
+  autocmd BufWinEnter *.php set mps-=<:>
 augroup end
-
-autocmd FileType gitcommit set textwidth=0
 
 " backup
 set nobackup
 set noswapfile
 
 " encoding
-set enc=utf-8
+set encoding=utf-8
 set fileencodings=utf-8,euc-jp,shift-jis,japan
 
 " color
@@ -69,7 +69,6 @@ set hlsearch
 
 " show matching bracket
 set showmatch
-autocmd BufWinEnter *.php set mps-=<:>
 
 " invisible characters
 set list
