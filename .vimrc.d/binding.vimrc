@@ -31,3 +31,6 @@ nnoremap deinu :call dein#update()<CR>
 
 " fakeclip
 vmap <C-c> "+y
+
+" fzf
+nnoremap <C-f> :FZF<CR>
