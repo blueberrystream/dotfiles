@@ -57,6 +57,7 @@
   pt = push --tags
   rb = rebase
   rbi = rebase --interactive
+  rbim = rebase --interactive origin/master
   rbc = rebase --continue
   rba = rebase --abort
 [log]
