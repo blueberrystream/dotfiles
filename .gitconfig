@@ -56,6 +56,7 @@
   pu = !"git push -u origin $(git branch --contain=@ | awk '{print $2}')"
   pt = push --tags
   rb = rebase
+  rbm = rebase origin/master
   rbi = rebase --interactive
   rbim = rebase --interactive origin/master
   rbc = rebase --continue
