@@ -1,11 +1,3 @@
-if &compatible
-  set nocompatible
-endif
-
-augroup MyAutoCmd
-  autocmd!
-augroup END
-
 let s:dein_dir = expand('~/.vim/bundles')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 let s:dein_toml_file = expand('~/.vimrc.d/dein/plugins.toml')
@@ -32,6 +24,3 @@ endif
 if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
-
-filetype plugin indent on
-syntax enable
