@@ -95,3 +95,9 @@ hi DiffText ctermfg=white ctermbg=darkgray
 " nvim python
 let g:python_host_prog = '/home/hachinohe/.anyenv/envs/pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/home/hachinohe/.anyenv/envs/pyenv/versions/neovim3/bin/python'
+
+" remember cursor
+augroup vimrcEx
+  au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
+  \ exe "normal g`\"" | endif
+augroup END
