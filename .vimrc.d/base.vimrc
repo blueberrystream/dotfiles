@@ -1,3 +1,8 @@
+" encoding
+set encoding=utf-8
+set fileencodings=utf-8,euc-jp,shift-jis,japan
+scriptencoding utf-8
+
 " syntax
 syntax enable
 
@@ -39,10 +44,6 @@ augroup end
 " backup
 set nobackup
 set noswapfile
-
-" encoding
-set encoding=utf-8
-set fileencodings=utf-8,euc-jp,shift-jis,japan
 
 " color
 set t_Co=256
