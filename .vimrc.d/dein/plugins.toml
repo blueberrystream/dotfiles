@@ -184,3 +184,7 @@ repo = 'leafgarland/typescript-vim'
 # pug
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
+
+# elixir
+[[plugins]]
+repo = 'elixir-lang/vim-elixir'
