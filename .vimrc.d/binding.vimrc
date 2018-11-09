@@ -34,3 +34,6 @@ vmap <C-c> "+y
 
 " fzf
 nnoremap <C-f> :FZF<CR>
+
+" insert blank line
+nnoremap 0 o<Esc>
