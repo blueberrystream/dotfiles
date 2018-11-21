@@ -20,6 +20,7 @@ repo = 'nazo/pt.vim'
 repo = 'scrooloose/nerdtree'
 hook_add = '''
   let NERDTreeShowHidden = 1
+  nnoremap <silent> <F6> :NERDTreeFind<CR>
   nnoremap <silent> <F7> :NERDTreeToggle<CR>
   autocmd StdinReadPre * let s:std_in=1
   autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
