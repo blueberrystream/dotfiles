@@ -33,6 +33,12 @@ repo = 'ctrlpvim/ctrlp.vim'
 repo = 'jistr/vim-nerdtree-tabs'
 depends = ['nerdtree']
 
+[[plugins]]
+repo = 'majutsushi/tagbar'
+hook_add = '''
+  nnoremap <silent> <F8> :TagbarToggle<CR>
+'''
+
 # assist
 [[plugins]]
 repo = 'tpope/vim-surround'
