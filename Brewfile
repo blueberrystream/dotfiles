@@ -1,11 +1,6 @@
 
 # tap repositories and their packages
 
-tap argon/mas
-brew mas
-
-tap caskroom/cask
-
 tap homebrew/core
 brew adns
 brew apr
@@ -26,6 +21,7 @@ brew curl
 brew czmq
 brew docbook
 brew docbook-xsl
+brew exa
 brew fontconfig
 brew fontforge
 brew freetype
@@ -42,7 +38,6 @@ brew gnutls
 brew gobject-introspection
 brew groff
 brew harfbuzz
-brew heroku
 brew icu4c
 brew imagemagick
 brew imap-uw
@@ -74,6 +69,7 @@ brew libxml2
 brew libxslt
 brew libyaml
 brew luajit
+brew mas
 brew mcrypt
 brew memcached
 brew mercurial
@@ -120,6 +116,10 @@ brew yarn
 brew zeromq
 brew zlib
 
+tap argon/mas
+
+tap caskroom/cask
+
 tap rcmdnk/file
 brew brew-file
 
@@ -128,12 +128,14 @@ brew ricty
 
 # Other Homebrew packages
 brew gpg2
+brew heroku
 brew nvim
 brew postgres
 
-# Cask applications
+# Other Cask applications
 cask appcleaner
 cask atom
+cask clipmenu
 cask deeper
 cask filezilla
 cask flux
@@ -147,7 +149,6 @@ cask p4merge
 cask p4v
 cask skype
 cask xquartz
-cask clipmenu
 
 # App Store applications
 appstore 944960179 AnyDo (3.2.1)
