@@ -1,0 +1,6 @@
+if type peco > /dev/null 2>&1; then
+  export_path $HOME/.cargo/bin
+
+  alias exaa='exa -lgah --git --group-directories-first --time-style long-iso'
+  alias ll=exaa
+fi

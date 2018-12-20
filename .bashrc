@@ -111,6 +111,7 @@ export_path $GOPATH/bin
 
 [[ -f $HOME/.cda/cda/cda.sh ]] && . $HOME/.cda/cda/cda.sh
 
+[[ -f $HOME/.bashrc.d/cargo ]] && . $HOME/.bashrc.d/cargo
 [[ -f $HOME/.bashrc.d/local ]] && . $HOME/.bashrc.d/local
 [[ -f $HOME/.bashrc.d/peco ]] && . $HOME/.bashrc.d/peco
 [[ -f $HOME/.bashrc.d/function ]] && . $HOME/.bashrc.d/function
