@@ -98,6 +98,7 @@ brew readline
 brew reattach-to-user-namespace
 brew rsync
 brew ruby
+brew speedtest-cli
 brew sqlite
 brew subversion
 brew tbb
