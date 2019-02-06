@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# require peco (https://github.com/peco/peco)
+# usage: doc-sh [SHELL]
+
+id=`docker container ls | peco | awk '{print $1}'`
+[[ -z "$id" ]] && exit
+shell=$1
+[[ -z "$shell" ]] && shell=bash
+docker container exec -it $id $shell
