@@ -8,6 +8,7 @@ repos=(
   "github.com/jmhobbs/terminal-parrot"
   "github.com/pocke/lemonade"
   "github.com/junegunn/fzf"
+  "github.com/skanehira/docui"
 )
 
 for repo in "${repos[@]}"; do
@@ -15,3 +16,7 @@ for repo in "${repos[@]}"; do
 done
 
 ln -sf $GOPATH/bin/lemonade $HOME/local/bin/xdg-open
+
+# https://github.com/skanehira/docui
+cd $GOPATH/src/github.com/skanehira/docui
+GO111MODULE=on go install
