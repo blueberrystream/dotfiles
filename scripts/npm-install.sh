@@ -14,5 +14,6 @@ npm install -g \
   pug-lint \
   alex \
   stylelint \
-  swaglint
+  swaglint \
+  heroku
 ndenv rehash
