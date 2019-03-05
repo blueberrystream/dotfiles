@@ -61,4 +61,12 @@ if type peco > /dev/null 2>&1; then
   if type tmuxinator > /dev/null 2>&1; then
     alias mux-peco='tmuxinator `tmuxinator list | sed -e 1d | sed -e "s/  \+/\n/g" | peco`'
   fi
+
+  if type ghq > /dev/null 2>&1; then
+    alias g='cd $(ghq root)/$(ghq list | peco)'
+
+    if type hub > /dev/null 2>&1; then
+      alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+    fi
+  fi
 fi
