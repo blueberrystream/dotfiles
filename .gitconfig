@@ -7,6 +7,7 @@
   quotepath = false
   editor = vim
   precomposeunicode = true
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
   diff = auto
   status = auto
@@ -80,10 +81,6 @@
   compactionHeuristic = true
 [i18n]
   commitencoding = utf-8
-[pager]
-  log = diff-so-fancy | less
-  show = diff-so-fancy | less
-  diff = diff-so-fancy | less
 [include]
   path = ~/.gitconfig-local
 [commit]
@@ -92,3 +89,17 @@
   showUntrackedFiles = all
 [transfer]
   fsckObjects = true
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "diff"]
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[diff-so-fancy]
+  first-run = false
