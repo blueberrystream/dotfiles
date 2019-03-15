@@ -7,7 +7,7 @@
   quotepath = false
   editor = vim
   precomposeunicode = true
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = diff-so-fancy | less --tabs=4 -RX
 [color]
   diff = auto
   status = auto
@@ -26,10 +26,10 @@
   wip = commit -m wip
   co = checkout
   sco = !git checkout $(git branch | peco)
-  di = diff --word-diff
+  di = diff --color-words
   dc = diff --cached
   s = status --short --branch
-  st = status
+  st = status --branch
   sh = show
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -62,44 +62,34 @@
   rbim = rebase --interactive origin/master
   rbc = rebase --continue
   rba = rebase --abort
-[log]
-  date = local
 [branch]
   autosetuprebase = always
-[push]
-  default = simple
-[pull]
-  rebase = true
-[merge]
-  tool = vimdiff
-  ff = false
-[rebase]
-  autosquash = true
-[diff]
-  tool = vimdiff
-  algorithm = histogram
-  compactionHeuristic = true
-[i18n]
-  commitencoding = utf-8
-[include]
-  path = ~/.gitconfig-local
 [commit]
   template = ~/.git-commit.template
+[diff]
+  algorithm = histogram
+  compactionHeuristic = true
+  renames = true
+  tool = vimdiff
+[i18n]
+  commitencoding = utf-8
+[log]
+  date = local
+[merge]
+  ff = false
+  tool = vimdiff
+[pull]
+  rebase = true
+[push]
+  default = simple
+[rebase]
+  autosquash = true
 [status]
   showUntrackedFiles = all
-[transfer]
-  fsckObjects = true
+[include]
+  path = ~/.gitconfig-local
 [color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
-[color "diff"]
-  meta = yellow
-  frag = magenta bold
-  commit = yellow bold
-  old = red bold
-  new = green bold
-  whitespace = red reverse
+  newNormal = green
+  newHighlight = green 22
 [diff-so-fancy]
   first-run = false
