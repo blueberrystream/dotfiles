@@ -7,7 +7,7 @@
   quotepath = false
   editor = vim
   precomposeunicode = true
-  pager = diff-so-fancy | less --tabs=4 -RX
+  pager = diff-so-fancy | less
 [color]
   diff = auto
   status = auto
