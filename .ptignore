@@ -1,0 +1,6 @@
+.git
+.svn
+vendor
+.vendor
+node_modules
+tags
