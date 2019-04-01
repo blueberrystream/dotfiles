@@ -20,6 +20,7 @@ rm -rf $HOME/.vimrc.d
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -rf $HOME/.tmux.conf.d
+rm -f $HOME/.ptignore
 
 ln -s $script_dir/.bash_profile $HOME/
 ln -s $script_dir/.bashrc $HOME/
@@ -32,6 +33,7 @@ ln -s $script_dir/.vimrc.d $HOME/
 ln -s $script_dir/.tigrc $HOME/
 ln -s $script_dir/.tmux.conf $HOME/
 ln -s $script_dir/.tmux.conf.d $HOME/
+ln -s $script_dir/.ptignore $HOME/
 
 touch $HOME/.bashrc.d/local
 touch $HOME/.vimrc.d/local.vimrc
