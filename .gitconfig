@@ -93,3 +93,5 @@
   newHighlight = green 22
 [diff-so-fancy]
   first-run = false
+[pager]
+  branch = peco
