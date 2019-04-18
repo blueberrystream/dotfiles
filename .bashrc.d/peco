@@ -64,6 +64,7 @@ if type peco > /dev/null 2>&1; then
 
   if type ghq > /dev/null 2>&1; then
     alias g='cd $(ghq root)/$(ghq list | peco)'
+    alias gs='echo $(ghq root)/$(ghq list | peco)'
 
     if type hub > /dev/null 2>&1; then
       alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
