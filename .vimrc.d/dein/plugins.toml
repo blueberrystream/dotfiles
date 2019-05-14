@@ -106,9 +106,6 @@ hook_add = '''
 repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
-repo = 'maksimr/vim-jsbeautify'
-
-[[plugins]]
 repo = 'w0rp/ale'
 hook_add = '''
   let g:ale_set_loclist = 1
