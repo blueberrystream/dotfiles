@@ -87,6 +87,11 @@ depends = ['vim-fugitive']
 # style
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
+hook_add = '''
+  syntax enable
+  set background=dark
+  colorscheme solarized
+'''
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
@@ -112,10 +117,43 @@ hook_add = '''
   let g:ale_set_quickfix = 0
   let g:ale_open_list = 1
   let g:ale_keep_list_window_open = 0
+  let g:ale_echo_msg_error_str = '×'
+  let g:ale_echo_msg_warning_str = '▲'
+  let g:ale_echo_msg_info_str = '※'
+  let g:ale_echo_msg_format = '%severity% %linter% - %s'
+  let g:ale_statusline_format = ['×%d', '▲%d', '✅']
   let g:ale_sign_column_always = 1
-  let g:ale_sign_error = '❌'
-  let g:ale_sign_warning = '▲'
+  let g:ale_sign_error = g:ale_echo_msg_error_str
+  let g:ale_sign_warning = g:ale_echo_msg_warning_str
+  let g:ale_javascript_prettier_use_local_config = 1
   let g:ale_php_phpcs_standard = 'PSR1,PSR2'
+  let g:ale_fixers = {
+    \ 'javascript': ['prettier-eslint'],
+    \ }
+  let g:ale_fix_on_save = 1
+'''
+
+[[plugins]]
+repo = 'maximbaz/lightline-ale'
+depends = ['lightline.vim', 'ale']
+hook_add = '''
+  let g:lightline.component_expand = {
+    \   'linter_checking': 'lightline#ale#checking',
+    \   'linter_warnings': 'lightline#ale#warnings',
+    \   'linter_errors': 'lightline#ale#errors',
+    \   'linter_ok': 'lightline#ale#ok',
+    \ }
+  let g:lightline.component_type = {
+    \   'linter_checking': 'left',
+    \   'linter_warnings': 'warning',
+    \   'linter_errors': 'error',
+    \   'linter_ok': 'left',
+    \ }
+  let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
+  let g:lightline#ale#indicator_checking = '⏳'
+  let g:lightline#ale#indicator_warnings = "▲"
+  let g:lightline#ale#indicator_errors = "×"
+  let g:lightline#ale#indicator_ok = "✅"
 '''
 
 # ruby
