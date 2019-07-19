@@ -4,3 +4,5 @@ vendor
 .vendor
 node_modules
 tags
+package-lock.json
+yarn.lock
