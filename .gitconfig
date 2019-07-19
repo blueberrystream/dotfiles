@@ -25,6 +25,7 @@
   ci = commit -s
   wip = commit -m wip
   co = checkout
+  com = checkout master
   sco = !git checkout $(git branch | peco)
   di = diff --color-words
   dc = diff --cached
