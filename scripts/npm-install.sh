@@ -10,10 +10,11 @@ npm install -g \
   npm-check-updates \
   neovim \
   prettier \
+  @prettier/plugin-ruby \
   eslint \
   pug-lint \
   alex \
   stylelint \
   swaglint \
   heroku
-ndenv rehash
+nodenv rehash
