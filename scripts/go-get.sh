@@ -8,9 +8,9 @@ repos=(
   "github.com/jmhobbs/terminal-parrot"
   "github.com/pocke/lemonade"
   "github.com/junegunn/fzf"
-  "github.com/skanehira/docui"
   "github.com/motemen/ghq"
   "github.com/github/hub"
+  "github.com/skanehira/docui"
 )
 
 for repo in "${repos[@]}"; do
