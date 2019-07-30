@@ -36,6 +36,7 @@ if type peco > /dev/null 2>&1; then
     }
 
     alias tmux-peco='tmux a -t $(tmux-ls)'
+    alias t=tmux-peco
   fi
 
   if type reptyr > /dev/null 2>&1; then
