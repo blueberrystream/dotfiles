@@ -121,7 +121,13 @@ hook_add = '''
 repo = 'itchyny/lightline.vim'
 hook_add = '''
   set laststatus=2
-  let g:lightline = { 'colorscheme': 'solarized' }
+  let g:lightline = {
+    \ 'colorscheme': 'solarized',
+    \ 'component': {
+    \   'lineinfo': '%3l[%L]:%-2v',
+    \   'charvaluehex': '0x%B'
+    \ }
+    \ }
 '''
 
 [[plugins]]
@@ -176,7 +182,14 @@ hook_add = '''
     \   'linter_errors': 'error',
     \   'linter_ok': 'left',
     \ }
-  let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
+  let g:lightline.active = {
+    \ 'right': [
+    \            [ 'lineinfo' ],
+    \            [ 'percent' ],
+    \            [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ],
+    \            [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]
+    \          ]
+    \ }
   let g:lightline#ale#indicator_checking = '⏳'
   let g:lightline#ale#indicator_warnings = "▲"
   let g:lightline#ale#indicator_errors = "×"
