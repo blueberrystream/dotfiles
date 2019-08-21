@@ -10,6 +10,7 @@ repos=(
   "github.com/junegunn/fzf"
   "github.com/motemen/ghq"
   "github.com/github/hub"
+  "github.com/jesseduffield/lazygit"
   "github.com/skanehira/docui"
 )
 
