@@ -157,9 +157,15 @@ hook_add = '''
   let g:ale_sign_warning = g:ale_echo_msg_warning_str
   let g:ale_javascript_prettier_use_local_config = 1
   let g:ale_php_phpcs_standard = 'PSR1,PSR2'
+  let g:ale_linters = {
+    \   'javascript': ['eslint', 'prettier'],
+    \   'vue': ['eslint', 'prettier'],
+    \   'ruby': ['prettier', 'rubocop'],
+    \ }
   let g:ale_fixers = {
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'javascript': ['prettier-eslint'],
+    \   'vue': ['prettier-eslint'],
     \   'ruby': ['prettier', 'rubocop'],
     \ }
   let g:ale_fix_on_save = 1
