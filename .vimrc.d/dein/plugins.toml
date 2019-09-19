@@ -126,8 +126,16 @@ hook_add = '''
     \ 'component': {
     \   'lineinfo': '%3l[%L]:%-2v',
     \   'charvaluehex': '0x%B'
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'GitBranch'
+    \ },
+    \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+    \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
     \ }
-    \ }
+  function! GitBranch()
+    return ' ' . fugitive#head()
+  endfunction
 '''
 
 [[plugins]]
@@ -189,6 +197,7 @@ hook_add = '''
     \   'linter_ok': 'left',
     \ }
   let g:lightline.active = {
+    \ 'left': [ ['mode', 'paste'], ['readonly', 'gitbranch', 'filename', 'modified'] ],
     \ 'right': [
     \            [ 'lineinfo' ],
     \            [ 'percent' ],
