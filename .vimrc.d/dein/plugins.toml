@@ -15,7 +15,13 @@ repo = 'kana/vim-fakeclip'
 [[plugins]]
 repo = 'nazo/pt.vim'
 
-# file
+[[plugins]]
+repo = 'LeafCage/yankround.vim'
+hook_add = '''
+  nnoremap <A-F1> :CtrlPYankRound<CR>
+'''
+
+# filer
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
