@@ -5,10 +5,10 @@ nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 nnoremap <silent> <F2> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
-" tab
-nnoremap <silent> <F3> :tabnew<CR>
-nnoremap <silent> <F4> :tabp<CR>
-nnoremap <silent> <F5> :tabn<CR>
+" ALE
+nnoremap <F3> :let g:ale_fix_on_save = 0<CR>
+nnoremap <F4> :let g:ale_fix_on_save = 1<CR>
+nnoremap <F5> :ALEToggle<CR>
 
 " toggle number
 nnoremap <silent> <F10> :setlocal number!<CR>
