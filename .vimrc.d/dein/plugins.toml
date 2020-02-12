@@ -11,6 +11,9 @@ depends = ['context_filetype.vim']
 
 [[plugins]]
 repo = 'kana/vim-fakeclip'
+hook_add = '''
+  let g:loaded_clipboard_provider = 1
+'''
 
 [[plugins]]
 repo = 'nazo/pt.vim'
