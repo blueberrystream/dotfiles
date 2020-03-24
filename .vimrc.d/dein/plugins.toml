@@ -287,6 +287,9 @@ repo = 'cespare/vim-toml'
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
 
+[[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
+
 # pug
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
@@ -294,3 +297,13 @@ repo = 'digitaltoad/vim-pug'
 # elixir
 [[plugins]]
 repo = 'elixir-lang/vim-elixir'
+
+# javascript
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+
+[[plugins]]
+repo = 'alampros/vim-styled-jsx'
