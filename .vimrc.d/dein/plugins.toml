@@ -307,3 +307,7 @@ repo = 'maxmellon/vim-jsx-pretty'
 
 [[plugins]]
 repo = 'alampros/vim-styled-jsx'
+
+# stylus
+[[plugins]]
+repo = 'iloginow/vim-stylus'
