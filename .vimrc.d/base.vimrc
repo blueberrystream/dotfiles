@@ -35,6 +35,7 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.php setfiletype php
   autocmd BufRead,BufNewFile *.less setfiletype less
   autocmd BufRead,BufNewFile *.erb setfiletype eruby.html
+  autocmd BufRead,BufNewFile *.jb setfiletype ruby
   autocmd BufRead,BufNewFile Guardfile setfiletype ruby
   autocmd BufRead,BufNewFile *.scala setfiletype scala
   autocmd FileType gitcommit set textwidth=0
