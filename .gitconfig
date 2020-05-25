@@ -63,6 +63,7 @@
   rbim = rebase --interactive origin/master
   rbc = rebase --continue
   rba = rebase --abort
+  delete-merged-branch = !"git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d"
 [branch]
   autosetuprebase = always
 [commit]
