@@ -10,7 +10,7 @@ set diff-context = 6
 set diff-highlight = true
 
 # User-defined commands
-bind status C !git commit --signoff --gpg-sign
+bind status C !git ci
 
 # Misc
 set refresh-interval = 1

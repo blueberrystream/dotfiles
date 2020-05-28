@@ -22,7 +22,7 @@
   br = branch
   contains = branch -r --contains
   bc = checkout -b
-  ci = commit -s
+  ci = commit -sS
   wip = commit -m wip
   co = checkout
   com = checkout master
