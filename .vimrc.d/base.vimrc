@@ -38,6 +38,7 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.jb setfiletype ruby
   autocmd BufRead,BufNewFile Guardfile setfiletype ruby
   autocmd BufRead,BufNewFile *.scala setfiletype scala
+  autocmd BufRead,BufNewFile .babelrc setfiletype json
   autocmd FileType gitcommit set textwidth=0
   autocmd BufWinEnter *.php set mps-=<:>
 augroup end
