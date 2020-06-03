@@ -56,6 +56,7 @@
   fp = !"git fetch && git pull"
   pull-dry-run = !"git fetch origin; B=$(git rev-parse --abbrev-ref HEAD); git diff --stat --summary ${B}..origin/${B}"
   pu = !"git push -u origin $(git branch --contain=@ | awk '{print $2}')"
+  puf = push --force-with-lease
   pt = push --tags
   rb = rebase
   rbm = rebase origin/master
