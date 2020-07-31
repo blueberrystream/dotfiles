@@ -52,6 +52,7 @@ brew libevent
 brew libffi
 brew libgcrypt
 brew libgpg-error
+brew libidn2
 brew libksba
 brew libmemcached
 brew libpng
@@ -66,6 +67,7 @@ brew libusb
 brew libuv
 brew libvterm
 brew libxml2
+brew libxmlsec1
 brew libxslt
 brew libyaml
 brew luajit
@@ -80,9 +82,9 @@ brew nginx
 brew nkf
 brew node
 brew npth
+brew oath-toolkit
 brew ocaml
 brew oniguruma
-brew openssl
 brew openssl@1.1
 brew p11-kit
 brew pango
@@ -93,6 +95,7 @@ brew pinentry
 brew pixman
 brew pkg-config
 brew python
+brew python@3.8
 brew re2c
 brew readline
 brew reattach-to-user-namespace
@@ -106,6 +109,7 @@ brew the_platinum_searcher
 brew the_silver_searcher
 brew tig
 brew tmux
+brew unbound
 brew unibilium
 brew unixodbc
 brew vim
@@ -131,6 +135,7 @@ brew ricty
 brew gpg2
 brew heroku
 brew nvim
+brew openssl
 brew postgres
 
 # Other Cask applications
