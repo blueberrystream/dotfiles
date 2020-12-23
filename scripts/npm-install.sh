@@ -1,5 +1,6 @@
 #!/bin/bash
 
+npm install -g npm
 npm install -g \
   diff-so-fancy \
   git-open \
@@ -16,5 +17,6 @@ npm install -g \
   alex \
   stylelint \
   swaglint \
-  heroku
+  heroku \
+  gitmoji-cli
 nodenv rehash
