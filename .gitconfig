@@ -5,7 +5,7 @@
   excludesfile = ~/.gitignore
   autocrlf = false
   quotepath = false
-  editor = vim
+  editor = nvim
   precomposeunicode = true
   pager = diff-so-fancy | less
 [color]

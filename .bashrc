@@ -14,9 +14,7 @@ export LESS_TERMCAP_se=$'\E[0m'          # Ends standout-mode.
 export LESS_TERMCAP_so=$'\E[00;47;30m'   # Begins standout-mode.
 export LESS_TERMCAP_ue=$'\E[0m'          # Ends underline.
 export LESS_TERMCAP_us=$'\E[01;32m'      # Begins underline.
-if type lesspipe.sh > /dev/null; then
-  export LESSOPEN='| $HOME/local/bin/lesspipe.sh %s'
-fi
+export LESSOPEN='| $HOME/local/bin/lesspipe.sh %s'
 
 export HISTCONTROL=ignoredups
 
@@ -83,7 +81,6 @@ uname=`uname`
 case $uname in
   Darwin)
     . $HOME/.bashrc.d/alias ;
-    . $HOME/.bashrc.d/alias-gnu ;
     . $HOME/.bashrc.d/macosx ;
     . $HOME/.bashrc.d/ssh-agent ;
     . $HOME/.bashrc.d/gpg-agent ;;
@@ -97,7 +94,7 @@ case $uname in
     . $HOME/.bashrc.d/windows ;;
 esac
 
-if [ -f $HOME/.anyenv/bin/anyenv ]; then
+if type anyenv > /dev/null; then
   export_path $HOME/.anyenv/bin
   eval "$(anyenv init -)"
 fi

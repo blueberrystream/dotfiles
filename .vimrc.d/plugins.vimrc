@@ -11,7 +11,7 @@ let &runtimepath = s:dein_repo_dir . ',' . &runtimepath
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
+  " call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
 
   call dein#load_toml(s:dein_toml_file, {'lazy': 0})

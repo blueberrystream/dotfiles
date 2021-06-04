@@ -1,5 +1,3 @@
-alias ls='ls --color=auto'
-alias ll='ls -lAp --color=auto --group-directories-first'
 alias lld='ll | grep ^d'
 alias lll='ll | grep ^l'
 alias llf='ll | grep ^-'
@@ -10,8 +8,8 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
 alias ln='ln -v'
-alias chmod='chmod --preserve-root'
-alias chown='chown --preserve-root'
+#alias chmod='chmod --preserve-root'
+#alias chown='chown --preserve-root'
 
 alias cd='cdls'
 alias cd..='cd ..'
@@ -38,7 +36,7 @@ alias mysqldump-hacci='mysqldump --extended-insert --single-transaction --quote-
 
 alias crontab='crontab -i'
 
-alias fig=docker-compose
+alias fig='docker compose'
 alias fig-logs='fig logs -f -t --tail=10'
 
 alias vim-ssh-config='vim ~/.ssh/config'

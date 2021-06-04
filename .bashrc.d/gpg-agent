@@ -1,14 +1,5 @@
-gpg_agent_file=$HOME/.gnupg/.gpg-agent
 if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
-  touch $gpg_agent_file
-  chmod 600 $gpg_agent_file
-  gpg-agent --daemon --use-standard-socket --write-env-file $gpg_agent_file >/dev/null 2>&1
+  gpg-agent --daemon
 fi
 
-function reload-gpg-agent () {
-  . $gpg_agent_file
-  export GPG_TTY=$(tty)
-  gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
-}
-
-reload-gpg-agent
+export GPG_TTY=$(tty)
