@@ -40,3 +40,5 @@ alias fig='docker-compose'
 alias fig-logs='fig logs -f -t --tail=10 --no-log-prefix'
 
 alias vim-ssh-config='vim ~/.ssh/config'
+
+alias gg='ghq get'
