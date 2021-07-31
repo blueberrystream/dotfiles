@@ -18,5 +18,9 @@ npm install -g \
   stylelint \
   swaglint \
   heroku \
-  gitmoji-cli
+  gitmoji-cli \
+  textlint \
+  textlint-rule-preset-ja-spacing \
+  textlint-rule-preset-ja-technical-writing \
+  textlint-rule-spellcheck-tech-word
 nodenv rehash
