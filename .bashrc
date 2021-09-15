@@ -27,14 +27,6 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-# load bash completion
-bash_completion_dir=$HOME/local/etc/bash_completion.d
-if [ -d $bash_completion_dir ]; then
-  for file in $bash_completion_dir/*; do
-    . ${file}
-  done
-fi
-
 PS1='[\[\e[32m\]\u\[\e[00m\]@\[\e[36m\]\h\[\e[00m\]:\[\e[34m\]\W\[\e[00m\]$(__git_ps1)]\n\
 `if [[ \$? = "0" ]]; then echo "\e[0;33m\]"; else echo "\[\e[0;35m\]"; fi`\
 从✖  ｜ ＿ ｜✖从\[\e[00m\] < '
@@ -118,3 +110,6 @@ if [ -f $HOME/dircolors.256dark ]; then
     eval $(dircolors -b $HOME/dircolors.256dark)
   fi
 fi
+
+unset -f have
+unset UNAME USERLAND have
