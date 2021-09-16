@@ -1,6 +1,0 @@
-if type brew > /dev/null 2>&1; then
-  # load bash completion
-  for file in $(brew --prefix)/etc/bash_completion.d/*; do
-    . ${file}
-  done
-fi
