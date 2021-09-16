@@ -1,4 +1,4 @@
 if type exa > /dev/null 2>&1; then
-  alias exaa='exa -lgah --git --group-directories-first --time-style long-iso'
+  alias exaa='exa -lgah --git --group-directories-first --time-style long-iso --icons'
   alias ll=exaa
 fi
