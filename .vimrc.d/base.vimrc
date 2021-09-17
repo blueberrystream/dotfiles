@@ -101,3 +101,6 @@ augroup vimrcEx
   au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
   \ exe "normal g`\"" | endif
 augroup END
+
+" fzf
+set rtp+=/usr/local/opt/fzf

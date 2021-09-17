@@ -113,3 +113,5 @@ if [ -f $HOME/dircolors.256dark ]; then
 fi
 
 [ -f "$HOME/.config/broot/launcher/bash/br" ] && source "$HOME/.config/broot/launcher/bash/br"
+
+[ -f "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
