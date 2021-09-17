@@ -7,7 +7,7 @@
   quotepath = false
   editor = nvim
   precomposeunicode = true
-  pager = diff-so-fancy | less
+  pager = delta
 [color]
   diff = auto
   status = auto
@@ -92,11 +92,6 @@
   showUntrackedFiles = all
 [include]
   path = ~/.gitconfig-local
-[color "diff-highlight"]
-  newNormal = green
-  newHighlight = green 22
-[diff-so-fancy]
-  first-run = false
 [pager]
   branch = peco
 [filter "lfs"]
@@ -104,3 +99,13 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[delta]
+  side-by-side = true
+  line-numbers-left-format = ""
+  line-numbers-right-format = "│ "
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  syntax-theme = Solarized (dark)
+  navigate = true
+[interactive]
+    diffFilter = delta --color-only

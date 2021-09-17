@@ -2,7 +2,6 @@
 
 npm install -g npm
 npm install -g \
-  diff-so-fancy \
   git-open \
   yarn \
   gtop \
