@@ -78,3 +78,5 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
+
+source "$HOME/.config/broot/launcher/bash/br"

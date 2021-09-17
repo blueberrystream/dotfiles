@@ -111,3 +111,5 @@ if [ -f $HOME/dircolors.256dark ]; then
     eval $(dircolors -b $HOME/dircolors.256dark)
   fi
 fi
+
+[ -f "$HOME/.config/broot/launcher/bash/br" ] && source "$HOME/.config/broot/launcher/bash/br"
