@@ -23,5 +23,6 @@ npm install -g \
   textlint-rule-preset-ja-technical-writing \
   textlint-rule-spellcheck-tech-word \
   eslint-config-prettier \
-  eslint-plugin-node
+  eslint-plugin-node \
+  tldr
 nodenv rehash
