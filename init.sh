@@ -1,7 +1,6 @@
 #!/bin/bash
 
 script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
-uname=`uname`
 
 ln -s $script_dir/.bash_profile $HOME/
 ln -s $script_dir/.bashrc $HOME/
@@ -13,6 +12,9 @@ ln -s $script_dir/.tigrc $HOME/
 ln -s $script_dir/.tmux.conf $HOME/
 ln -s $script_dir/.tmux.conf.d $HOME/
 ln -s $script_dir/.ptignore $HOME/
+
+mkdir -p $HOME/.config/bat
+ln -s $script_dir/.config/bat/config $HOME/.config/bat/
 
 touch $HOME/.bashrc.d/local
 touch $HOME/.vimrc.d/local.vimrc
