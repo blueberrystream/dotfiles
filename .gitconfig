@@ -95,10 +95,10 @@
 [pager]
   branch = peco
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
 [delta]
   side-by-side = true
   line-numbers-left-format = ""
@@ -108,4 +108,4 @@
   syntax-theme = Solarized (dark)
   navigate = true
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
