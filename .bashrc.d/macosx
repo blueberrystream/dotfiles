@@ -1,4 +1,6 @@
 if type brew > /dev/null 2>&1; then
+  eval "$(brew shellenv)"
+
   # load bash completion
   for file in $(brew --prefix)/etc/bash_completion.d/*; do
     . ${file}
