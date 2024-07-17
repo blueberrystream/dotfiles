@@ -1,16 +1,8 @@
 if type brew > /dev/null 2>&1; then
   eval "$(brew shellenv)"
 
-  # load bash completion
-  brew_completion=$(brew --prefix 2>/dev/null)/etc/bash_completion
-  if [ $? -eq 0 ] && [ -f "$brew_completion" ];then
-    source $brew_completion
-  fi
-
   # brew-warp function http://rcmdnk.github.io/en/blog/2014/11/15/computer-mac-homebrew/
-  if [ -f $(brew --prefix)/etc/brew-wrap ];then
-    source $(brew --prefix)/etc/brew-wrap
-  fi
+  source $(brew --prefix)/etc/brew-wrap
 
   # homebrew cask http://rcmdnk.github.io/blog/2014/11/22/computer-mac-homebrew/
   export HOMEBREW_CASK_OPTS="--appdir=/Applications"
