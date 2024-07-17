@@ -83,7 +83,7 @@ uname=`uname`
 case $uname in
   Darwin)
     . $HOME/.bashrc.d/alias ;
-    . $HOME/.bashrc.d/alias-gnu ;
+    # . $HOME/.bashrc.d/alias-gnu ;
     . $HOME/.bashrc.d/macosx ;
     . $HOME/.bashrc.d/ssh-agent ;
     . $HOME/.bashrc.d/gpg-agent ;;
