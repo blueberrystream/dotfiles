@@ -5,7 +5,7 @@
   excludesfile = ~/.gitignore
   autocrlf = false
   quotepath = false
-  editor = code
+  editor = "code --wait"
   precomposeunicode = true
   pager = diff-so-fancy | less
 [color]
@@ -70,7 +70,7 @@
   autosetuprebase = always
 [commit]
   template = ~/.git-commit.template
-	gpgsign = true
+  gpgsign = true
 [diff]
   algorithm = histogram
   compactionHeuristic = true
