@@ -11,7 +11,6 @@ brew automake
 brew axel
 brew bash
 brew bash-completion
-brew berkeley-db@5
 brew bison
 brew boost
 brew brotli
@@ -24,14 +23,12 @@ brew curl
 brew czmq
 brew docbook
 brew docbook-xsl
-brew exa
 brew fontconfig
 brew fontforge
 brew fop
 brew freetype
 brew fribidi
 brew gd
-brew gdbm
 brew gettext
 brew gflags
 brew ghostscript
@@ -49,7 +46,6 @@ brew groff
 brew harfbuzz
 brew highway
 brew hwloc
-brew icu4c
 brew imagemagick
 brew imap-uw
 brew imath
@@ -58,12 +54,14 @@ brew jbig2dec
 brew jpeg-turbo
 brew jpeg-xl
 brew jq
+brew leptonica
 brew lesspipe
 brew libarchive
 brew libassuan
 brew libavif
 brew libb2
 brew libde265
+brew libdeflate
 brew libevent
 brew libffi
 brew libgcrypt
@@ -127,22 +125,19 @@ brew oniguruma
 brew openexr
 brew openjdk
 brew openjpeg
-brew openldap
 brew openssl@1.1
 brew openssl@3
 brew p11-kit
 brew pango
-brew pcre
 brew pcre2
 brew peco
-brew perl
 brew pinentry
 brew pixman
-brew pkg-config
 brew popt
 brew psutils
+brew python-packaging
 brew python@3.12
-brew python@3.9
+brew python@3.13
 brew re2c
 brew readline
 brew reattach-to-user-namespace
@@ -156,6 +151,7 @@ brew speedtest-cli
 brew sqlite
 brew subversion
 brew tbb
+brew tesseract
 brew the_platinum_searcher
 brew tig
 brew tmux
@@ -171,7 +167,6 @@ brew wget
 brew woff2
 brew wxwidgets
 brew x265
-brew xmlto
 brew xorgproto
 brew xxhash
 brew xz
@@ -202,23 +197,31 @@ brew brew-file
 tap sanemat/font
 brew ricty
 
+tap teamookla/speedtest
+
+# Other Homebrew packages
+brew exa
+brew icu4c
+brew pkg-config
+
 # App Store applications
 appstore 1575107918 A frames (1.1)
-appstore 944960179 Anydo (5.0.73)
+appstore 944960179 Anydo (5.0.88)
 appstore 836505650 Battery Monitor (2.4.9)
 appstore 588093595 Calculator LCD Mini (1.0)
+appstore 897446215 Canva (1.101.0)
 appstore 411673888 EasyFind (4.9.3)
 appstore 1351639930 Gifski (2.23.1)
-appstore 539883307 LINE (9.1.3)
-appstore 1480068668 Messenger (214.0)
+appstore 539883307 LINE (9.5.0)
+appstore 1480068668 Messenger (226.0)
 appstore 540348655 Monosnap (6.1.0)
-appstore 823766827 OneDrive (24.126.0623)
+appstore 823766827 OneDrive (24.226.1110)
 appstore 568494494 Pocket (1.8.7)
 appstore 439845554 Reeder (1.2)
-appstore 1429033973 RunCat (11.3)
-appstore 1448648921 Seashore (3.37)
-appstore 803453959 Slack (4.39.88)
+appstore 1429033973 RunCat (11.4)
+appstore 1448648921 Seashore (3.40)
+appstore 803453959 Slack (4.41.105)
 appstore 1153157709 Speedtest (1.27)
 appstore 425424353 The Unarchiver (4.3.8)
-appstore 1482454543 Twitter (9.30)
+appstore 409789998 Twitter (4.3.2)
 appstore 428834068 YoruFukurou (2.92)
