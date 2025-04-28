@@ -1,120 +1,81 @@
 # Cask applications
-# Please copy these lines to your Brewfile and use with `brew file install`.
 
-# Main tap repository for brew-cask
-install caskroom/cask/brew-cask
+# Apps installed by cask in homebrew/cask
+cask clipy # /Applications//Applications/Clipy.app
 
-# Apps installed by Cask in brew-cask
-cask install appcleaner #/Applications/AppCleaner.app
-cask install clipmenu #/Applications/ClipMenu.app
-# cask install deeper #/Applications/Deeper.app
-cask install flickr-uploadr #/Applications/Flickr Uploadr.app
-cask install fontforge #/Applications/FontForge.app
-cask install google-chrome #/Applications/Google Chrome.app
-cask install keka #/Applications/Keka.app
-cask install onyx #/Applications/OnyX.app
-cask install p4v #/Applications/p4v.app
-cask install python #/Applications/Python Launcher.app
-cask install skype #/Applications/Skype.app
-cask install teamviewer #/Applications/TeamViewer.app
-cask install virtualbox #/Applications/VirtualBox.app
-cask install xtrafinder #/Applications/XtraFinder.app
-# There are new version for following applications.
-# cask install atom #/Applications/Atom.app
-cask install bettertouchtool #/Applications/BetterTouchTool.app
-cask install filezilla #/Applications/FileZilla.app
-cask install flux #/Applications/Flux.app
-# cask install googleappengine #/Applications/GoogleAppEngineLauncher.app
-cask install hyperswitch #/Applications/HyperSwitch.app
-cask install macdown #/Applications/MacDown.app
-cask install p4merge #/Applications/p4merge.app
-cask install xquartz #/Applications/Utilities/XQuartz.app
+# Cask is found, but no applications are found (could be fonts, system settings, or installed in other directory.)
+cask mitmproxy
 
-# Cask is found, but no applications are found (could be fonts, system settins, or installed in other directory.
-cask install google-cloud-sdk
-cask install hosts
-# There are new version for following applications.
-cask install netnewswire
+# Apps installed directly instead of by cask
+#cask anydo # /Applications//Applications/Anydo.app
+#cask appcleaner # /Applications//Applications/AppCleaner.app
+#cask brave-browser # /Applications//Applications/Brave Browser.app
+#cask canva # /Applications//Applications/Canva.app
+#cask cloudflare-warp # /Applications//Applications/Cloudflare WARP.app
+#cask db-browser-for-sqlite # /Applications//Applications/DB Browser for SQLite.app
+#cask deepl # /Applications//Applications/DeepL.app
+#cask deeper # /Applications//Applications/Deeper.app
+#cask devtoys # /Applications//Applications/DevToys.app
+#cask discord # /Applications//Applications/Discord.app
+#cask easyfind # /Applications//Applications/EasyFind.app
+#cask flux # /Applications//Applications/Flux.app
+#cask ghostty # /Applications//Applications/Ghostty.app
+#cask google-chrome # /Applications//Applications/Google Chrome.app
+#cask grandperspective # /Applications//Applications/GrandPerspective.app
+#cask keka # /Applications//Applications/Keka.app
+#cask keyboardcleantool # /Applications//Applications/KeyboardCleanTool.app
+#cask lyrics-master # /Applications//Applications/Lyrics Master.app
+#cask messenger # /Applications//Applications/Messenger.app
+#cask microsoft-office # /Applications//Applications/OneDrive.app
+#cask onyx # /Applications//Applications/OnyX.app
+#cask opencore-patcher # /Applications//Applications/OpenCore-Patcher.app
+#cask slack # /Applications//Applications/Slack.app
+#cask spotify # /Applications//Applications/Spotify.app
+#cask teamviewer # /Applications//Applications/TeamViewer.app
+#cask the-unarchiver # /Applications//Applications/The Unarchiver.app
+#cask typora # /Applications//Applications/Typora.app
+#cask vlc # /Applications//Applications/VLC.app
+#cask visual-studio-code # /Applications//Applications/Visual Studio Code.app
+#cask xquartz # /Applications/Utilities//Applications/Utilities/XQuartz.app
 
-# Apps installed directly instead of by Cask in brew-cask
-#cask install au-wifi-connect #/Applications/au Wi-Fi接続ツール.app
-#cask install iterm2 #/Applications/iTerm.app
-#cask install powerphotos #/Applications/Photos.app
-#cask install skala-preview #/Applications/Preview.app
+# Apps installed by brew in homebrew/core
 
-# Apps installed from AppStore
-#/Applications/AnyDo.app
-#/Applications/Calculator LCD Mini.app
-#/Applications/EasyFind.app
-#/Applications/Found.app
-#/Applications/GarageBand.app
-#/Applications/LINE.app
-#/Applications/OneDrive.app
-#/Applications/Pocket.app
-#/Applications/Reeder.app
-#/Applications/Slack.app
-#/Applications/The Unarchiver.app
-#/Applications/Twitter.app
-#/Applications/Xcode.app
-#/Applications/YoruFukurou.app
+# Apps installed directly instead of by brew
+#brew gifski # /Applications//Applications/Gifski.app
+
+# Apps installed by brew in teamookla/speedtest
+tap teamookla/speedtest
+brew speedtest # /Applications//Applications/Speedtest.app
 
 # Apps installed but no casks are available
 # (System applications or directory installed.)
-#/Applications/App Store.app
-#/Applications/Automator.app
-#/Applications/Calculator.app
-#/Applications/Calendar.app
-#/Applications/Chess.app
-#/Applications/Contacts.app
-#/Applications/Dashboard.app
-#/Applications/Dictionary.app
-#/Applications/Docker
-#/Applications/DVD Player.app
-#/Applications/FaceTime.app
-#/Applications/FinderPath.app
-#/Applications/Font Book.app
-#/Applications/Game Center.app
-#/Applications/GoogleJapaneseInput.localized
-#/Applications/Growl.app
-#/Applications/GrowlTunes.app
-#/Applications/HardwareGrowler.app
-#/Applications/iBooks.app
-#/Applications/IDLE.app
-#/Applications/Image Capture.app
-#/Applications/iTunes.app
-#/Applications/Launchpad.app
-#/Applications/LightningKeyboard.app
-#/Applications/Mail.app
-#/Applications/Maps.app
-#/Applications/Messages.app
-#/Applications/Mission Control.app
-#/Applications/Monosnap.app
-#/Applications/Notes.app
-#/Applications/Photo Booth.app
-#/Applications/QuickTime Player.app
-#/Applications/Reminders.app
-#/Applications/Safari.app
-#/Applications/Stickies.app
-#/Applications/System Preferences.app
-#/Applications/TextEdit.app
-#/Applications/Time Machine.app
-#/Applications/TinkerTool.app
-#/Users/hacci/Applications/Chrome Apps.localized
-#/Users/hacci/Applications/EasyWine.app
-#/Applications/Utilities/Activity Monitor.app
-#/Applications/Utilities/AirPort Utility.app
-#/Applications/Utilities/Audio MIDI Setup.app
-#/Applications/Utilities/Bluetooth File Exchange.app
-#/Applications/Utilities/Boot Camp Assistant.app
-#/Applications/Utilities/ColorSync Utility.app
-#/Applications/Utilities/Console.app
-#/Applications/Utilities/Digital Color Meter.app
-#/Applications/Utilities/Disk Utility.app
-#/Applications/Utilities/Grab.app
-#/Applications/Utilities/Grapher.app
-#/Applications/Utilities/Keychain Access.app
-#/Applications/Utilities/Migration Assistant.app
-#/Applications/Utilities/Script Editor.app
-#/Applications/Utilities/System Information.app
-#/Applications/Utilities/Terminal.app
-#/Applications/Utilities/VoiceOver Utility.app
+# /Applications//Applications/A frames.app
+# /Applications//Applications/AltTab.app
+# /Applications//Applications/Authy Desktop.app
+# /Applications//Applications/Battery Monitor.app
+# /Applications//Applications/Calculator LCD Mini.app
+# /Applications//Applications/DiskWave.app
+# /Applications//Applications/FileZilla.app
+# /Applications//Applications/FinderPath.app
+# /Applications//Applications/GGD.app
+# /Applications//Applications/GoogleJapaneseInput.localized
+# /Applications//Applications/Growl.app
+# /Applications//Applications/GrowlTunes.app
+# /Applications//Applications/HardwareGrowler.app
+# /Applications//Applications/LINE.app
+# /Applications//Applications/LightningKeyboard.app
+# /Applications//Applications/Monosnap.app
+# /Applications//Applications/Pocket.app
+# /Applications//Applications/Reeder.app
+# /Applications//Applications/RunCat.app
+# /Applications//Applications/Safari.app
+# /Applications//Applications/Seashore.app
+# /Applications//Applications/Snap Camera.app
+# /Applications//Applications/TinkerTool.app
+# /Applications//Applications/Twitter.app
+# /Applications//Applications/Twitter.localized
+# /Applications//Applications/Utilities
+# /Applications//Applications/YoruFukurou.app
+# /Applications//Applications/e-Gov電子申請アプリケーション.app
+# /Applications//Applications/iTerm.app
+# ~/Applications/~/Applications/Chrome Apps.localized
