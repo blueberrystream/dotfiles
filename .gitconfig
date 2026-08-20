@@ -1,20 +1,15 @@
-[user]
-  name = "Dummy User"
-  email = "dummy@email.address"
 [core]
-  excludesfile = ~/.gitignore
   autocrlf = false
-  quotepath = false
-  editor = "code --wait"
-  precomposeunicode = true
+  bare = false
+  filemode = false
+  ignorecase = true
+  logallrefupdates = true
   pager = diff-so-fancy | less
-[color]
-  diff = auto
-  status = auto
-  branch = auto
-  grep = auto
-  interactive = true
-  ui = true
+  precomposeunicode = true
+  quotepath = false
+  repositoryformatversion = 0
+  symlinks = false
+
 [alias]
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
   gen-ignore = !"f() { local s=$1; shift; while [ $# -gt 0 ]; do s="$s,$1"; shift; done; curl "http://gitignore.io/api/$s"; }; f"
@@ -68,9 +63,27 @@
   delete-merged-branch = !"git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d"
 [branch]
   autosetuprebase = always
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  grep = auto
+  interactive = true
+  ui = true
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  commit = yellow
+  old = red
+  new = green
+  whitespace = red reverse
+[color "diff-highlight"]
+  newNormal = green
+  newHighlight = green 22
+  oldNormal = red
+  oldHighlight = red 52
 [commit]
   template = ~/.git-commit.template
-  gpgsign = true
 [diff]
   algorithm = histogram
   compactionHeuristic = true
@@ -83,6 +96,8 @@
 [merge]
   ff = false
   tool = vimdiff
+[pager]
+  branch = peco
 [pull]
   rebase = true
 [push]
@@ -91,12 +106,9 @@
   autosquash = true
 [status]
   showUntrackedFiles = all
+[tag]
+  gpgSign = true
+  forceSignAnnotated = true
+
 [include]
   path = ~/.gitconfig-local
-[color "diff-highlight"]
-  newNormal = green
-  newHighlight = green 22
-[diff-so-fancy]
-  first-run = false
-[pager]
-  branch = peco
