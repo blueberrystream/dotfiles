@@ -12,15 +12,14 @@
 
 [alias]
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
-  gen-ignore = !"f() { local s=$1; shift; while [ $# -gt 0 ]; do s="$s,$1"; shift; done; curl "http://gitignore.io/api/$s"; }; f"
+  gen-ignore = !"f() { local s=$1; shift; while [ $# -gt 0 ]; do s="$s,$1"; shift; done; curl "https://www.toptal.com/developers/gitignore/api/$s"; }; f"
   showuser = config --get-regexp "^user"
   br = branch
   contains = branch -r --contains
   bc = checkout -b
-  ci = commit -sS
+  ci = commit -s
   wip = commit -m wip
   co = checkout
-  com = checkout master
   sco = !git checkout $(git branch | peco)
   di = diff --color-words
   dc = diff --cached
@@ -53,11 +52,10 @@
   pu = !"git push -u origin $(git branch --contain=@ | awk '{print $2}')"
   puf = push --force-with-lease
   pt = push --tags
-  rebase = rebase -S
   rb = rebase
-  rbm = rebase origin/master
+  rbm = rebase origin/main
   rbi = rebase --interactive
-  rbim = rebase --interactive origin/master
+  rbim = rebase --interactive origin/main
   rbc = rebase --continue
   rba = rebase --abort
   delete-merged-branch = !"git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d"
