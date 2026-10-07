@@ -1,0 +1,12 @@
+[tools]
+coreutils = "latest"
+eza = "latest"
+ghq = "latest"
+"github:monochromegane/the_platinum_searcher" = "latest"
+hub = "latest"
+jq = "latest"
+"npm:diff-so-fancy" = "latest"
+peco = "latest"
+ripgrep = "latest"
+usage = "latest"
+uv = "latest"
