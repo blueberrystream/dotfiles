@@ -1,0 +1,11 @@
+[tools]
+deno = "latest"
+eza = "latest"
+gh = "latest"
+ghq = "latest"
+"github:monochromegane/the_platinum_searcher" = "latest"
+jq = "latest"
+peco = "latest"
+ripgrep = "latest"
+usage = "latest"
+uv = "latest"
