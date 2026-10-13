@@ -4,7 +4,8 @@
   filemode = false
   ignorecase = true
   logallrefupdates = true
-  pager = diff-so-fancy | less
+  pager = diff-so-fancy | less -RFX
+  show = diff-so-fancy | less -RFX
   precomposeunicode = true
   quotepath = false
   repositoryformatversion = 0

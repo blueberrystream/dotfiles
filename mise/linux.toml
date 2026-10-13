@@ -1,5 +1,6 @@
 [tools]
 eza = "latest"
+fzf = "latest"
 ghq = "latest"
 "github:monochromegane/the_platinum_searcher" = "latest"
 hub = "latest"
