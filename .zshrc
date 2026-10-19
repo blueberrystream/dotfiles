@@ -29,17 +29,4 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# alias and function
-alias ll='eza -lah --icons --group-directories-first --git'
-
-if (( $+commands[peco] && $+commands[ghq] )); then
-  function g() {
-    local repo=$(ghq list | peco)
-    [[ -n $repo ]] && cd "$(ghq root)/$repo"
-  }
-
-  function gs() {
-    local repo=$(ghq list | peco)
-    [[ -n $repo ]] && echo "$(ghq root)/$repo"
-  }
-fi
+source ./.zshrc-alias
