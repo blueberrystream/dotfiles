@@ -9,7 +9,3 @@ peco = "latest"
 ripgrep = "latest"
 usage = "latest"
 uv = "latest"
-
-[settings]
-minimum_release_age = "1s"
-self_update.auto = true
