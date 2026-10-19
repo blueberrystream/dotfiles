@@ -1,0 +1,7 @@
+export TAKUMI_GUARD_TOKEN=
+
+export PIP_INDEX_URL=https://token:${TAKUMI_GUARD_TOKEN}@pypi.flatt.tech/simple/
+export UV_DEFAULT_INDEX=https://token:${TAKUMI_GUARD_TOKEN}@pypi.flatt.tech/simple/
+export MISE_PIPX_REGISTRY_URL=https://token:${TAKUMI_GUARD_TOKEN}@pypi.flatt.tech/simple/{}/
+
+export GOPROXY=https://golang.flatt.tech
