@@ -9,3 +9,11 @@ jq = "latest"
 peco = "latest"
 usage = "latest"
 uv = "latest"
+
+[tools.docker-compose]
+version = "latest"
+postinstall = "ln -sf $MISE_TOOL_INSTALL_PATH/docker-compose $HOME/.docker/cli-plugins/docker-compose"
+
+[tools."aqua:docker/buildx"]
+version = "latest"
+postinstall = "ln -sf $MISE_TOOL_INSTALL_PATH/docker-cli-plugin-docker-buildx $HOME/.docker/cli-plugins/docker-buildx"
