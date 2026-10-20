@@ -1,9 +1,19 @@
-set -g @tpm_plugins ' \
-  tmux-plugins/tpm \
-  tmux-plugins/tmux-resurrect \
-  tmux-plugins/tmux-copycat \
-  nhdaly/tmux-better-mouse-mode \
-'
+set -g @plugin 'tmux-plugins/tpm'
+
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+set -g @plugin 'tmux-plugins/tmux-copycat'
+
+set -g @plugin 'nhdaly/tmux-better-mouse-mode'
+
+set -g @plugin 'seebi/tmux-colors-solarized'
+set -g @colors-solarized 'dark'
+
+set -g @plugin 'armando-rios/tmux'
+set -g @tmux_transparent "on"
+set -g @tmux_status_show_sysinfo "on"
+set -g @tmux_status_show_cwd "on"
+set -g @tmux_status_format "cwd|sysinfo"
 
 # Initializes TMUX plugin manager.
 # Keep this line at the very bottom of tmux.conf.
