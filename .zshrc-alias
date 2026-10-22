@@ -9,25 +9,24 @@ alias g=go-to-repo
 
 function ssh-peco() {
   local host=$(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/hosts | peco | awk "{print \$2}")
-  [[ -n $host ]] && ssh $host
+  [[ -n $host ]] && echo "ssh $host" && ssh $host
 }
 alias s=ssh-peco
 
 function docker-remove-image() {
   local id=$(docker image list | sort | peco | awk "{print \$3}")
-  echo "docker image remove $id"
-  [[ -n $id ]] && docker image remove $id
+  [[ -n $id ]] && echo "echo docker image remove $id" && docker image remove $id
 }
 alias drmi=docker-remove-image
 
 function docker-exec-sh() {
   local id=$(docker container list | peco | awk "{print \$1}")
-  [[ -n $id ]] && docker exec -it $id sh
+  [[ -n $id ]] && echo "docker exec -it $id sh" && docker exec -it $id sh
 }
 alias dxs=docker-exec-sh
 
 function docker-exec-root-sh() {
   local id=$(docker container list | peco | awk "{print \$1}")
-  [[ -n $id ]] && docker exec -it --user root $id sh
+  [[ -n $id ]] && echo "docker exec -it --user root $id sh" && docker exec -it --user root $id sh
 }
 alias dxrs=docker-exec-root-sh
