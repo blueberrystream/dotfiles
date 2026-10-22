@@ -1,5 +1,6 @@
 alias ll='eza -lah --icons --group-directories-first --git'
 alias fig='docker compose'
+alias gg='ghq get'
 
 function go-to-repo() {
   local repo=$(ghq list | peco)
