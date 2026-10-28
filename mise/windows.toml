@@ -1,6 +1,7 @@
 [tools]
 deno = "latest"
 eza = "latest"
+gcloud = "latest"
 gh = "latest"
 ghq = "latest"
 "github:monochromegane/the_platinum_searcher" = "latest"
