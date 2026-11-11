@@ -29,4 +29,4 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-source ./.zshrc-alias
+source $HOME/.zshrc-alias
