@@ -2,7 +2,6 @@
 eza = "latest"
 fzf = "latest"
 ghq = "latest"
-"github:lemonade-command/lemonade" = "latest"
 "github:monochromegane/the_platinum_searcher" = "latest"
 hub = "latest"
 jq = "latest"
@@ -10,6 +9,7 @@ jq = "latest"
 peco = "latest"
 usage = "latest"
 uv = "latest"
+"go:github.com/lemonade-command/lemonade" = "latest"
 
 [tools.docker-compose]
 version = "latest"
