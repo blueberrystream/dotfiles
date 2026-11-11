@@ -1,0 +1,236 @@
+# name: Auto-update the Clink program files
+# type: enum
+# options: off,check,prompt,auto
+clink.autoupdate = prompt
+
+# name: Selects default key bindings
+# type: enum
+# options: bash,windows
+clink.default_bindings = windows
+
+# name: Strips CR and LF chars on paste
+# type: enum
+# options: delete,space,ampersand,crlf
+clink.paste_crlf = space
+
+# name: Pressing Ctrl-D exits session
+# type: boolean
+cmd.ctrld_exits = True
+
+# name: Argument color
+# type: color
+color.arg = sgr 0;38;2;238;232;213
+
+# name: Argument info color
+# type: color
+color.arginfo = sgr 0;4;38;2;108;113;196
+
+# name: Argmatcher color
+# type: color
+color.argmatcher = sgr 0;1;38;2;133;153;0
+
+# name: Shell command completions
+# type: color
+color.cmd = sgr 0;38;2;238;232;213
+
+# name: Color for < and > redirection symbols
+# type: color
+color.cmdredir = sgr 0;38;2;108;113;196
+
+# name: Color for & and | command separators
+# type: color
+color.cmdsep = sgr 0;38;2;108;113;196
+
+# name: Color for comment row
+# type: color
+color.comment_row = sgr 0;38;2;38;139;210;48;2;7;54;66
+
+# name: Common prefix of completions
+# type: color
+color.common_match_prefix = sgr 0;38;2;238;232;213;48;2;0;43;54
+
+# name: Description completion color
+# type: color
+color.description = sgr 0;38;2;38;139;210
+
+# name: Color for direnv banner messages
+# type: color
+color.direnv_banner = sgr 0;3;38;5;136
+
+# name: Doskey completions
+# type: color
+color.doskey = sgr 0;1;38;2;42;161;152
+
+# name: Color for environment variables
+# type: color
+color.envvars = yellow
+
+# name: Color for executable command word
+# type: color
+color.executable = sgr 0;38;2;38;139;210
+
+# name: Filtered completion color
+# type: color
+color.filtered = sgr 0;38;2;238;232;213
+
+# name: Flag color
+# type: color
+color.flag = sgr 0;38;2;42;161;152
+
+# name: Hidden file completions
+# type: color
+color.hidden = sgr 0;38;2;220;50;47
+
+# name: History expansion color
+# type: color
+color.histexpand = sgr 0;38;2;108;113;196;48;2;7;54;66
+
+# name: Horizontal scroll marker color
+# type: color
+color.horizscroll = sgr 0;38;2;0;43;54;48;2;42;161;152
+
+# name: Input text color
+# type: color
+color.input = sgr 0;38;2;147;161;161
+
+# name: For user-interaction prompts
+# type: color
+color.interact = sgr 0;38;2;238;232;213
+
+# name: Message area color
+# type: color
+color.message = sgr 0;38;2;133;153;0;48;2;7;54;66
+
+# name: Modified history line mark color
+# type: color
+color.modmark = sgr 0;38;2;42;161;152
+
+# name: Color for popup lists and messages
+# type: color
+color.popup = sgr 0;38;2;147;161;161;48;2;7;54;66
+
+# name: Color for popup border
+# type: color
+color.popup_border = sgr 0;38;2;88;110;117;48;2;7;54;66
+
+# name: Color for popup description column(s)
+# type: color
+color.popup_desc = sgr 0;38;2;38;139;210;48;2;7;54;66
+
+# name: Color for popup footer message
+# type: color
+color.popup_footer = sgr 0;38;2;131;148;150;48;2;7;54;66
+
+# name: Color for popup title text
+# type: color
+color.popup_header = sgr 0;38;2;181;137;0;48;2;7;54;66
+
+# name: Color for selected item in popup list
+# type: color
+color.popup_select = 
+
+# name: Color for selected item in popup list
+# type: color
+color.popup_selectdesc = 
+
+# name: Prompt color
+# type: color
+color.prompt = sgr 0;38;2;181;137;0
+
+# name: Readonly file completions
+# type: color
+color.readonly = 
+
+# name: Selected completion color
+# type: color
+color.selected_completion = sgr 0;38;2;7;54;66;48;2;147;161;161
+
+# name: Selection color
+# type: color
+color.selection = sgr 0;38;2;7;54;66;48;2;147;161;161
+
+# name: Color for suggestion text
+# type: color
+color.suggestion = sgr 0;38;2;88;110;117
+
+# name: Color for suggestions in the suggestion list
+# type: color
+color.suggestionlist = sgr 0;38;2;131;148;150
+
+# name: Color for dim text in the suggestion list header
+# type: color
+color.suggestionlist_dim = sgr 0;38;2;88;110;117
+
+# name: Color for highlight in the suggestion list
+# type: color
+color.suggestionlist_highlight = sgr 0;1;38;2;238;232;213
+
+# name: Color for markup in the suggestion list
+# type: color
+color.suggestionlist_markup = sgr 0;38;2;181;137;0
+
+# name: Color for the current selected suggestion
+# type: color
+color.suggestionlist_selected = sgr 0;48;2;7;54;66
+
+# name: Color for transient divider line
+# type: color
+color.transient_divider_line = sgr 38;5;240
+
+# name: Color for duration text in transient line
+# type: color
+color.transient_divider_text = sgr 38;5;214
+
+# name: Unexpected argument color
+# type: color
+color.unexpected = sgr 0;38;2;181;137;0
+
+# name: Color for unrecognized command word
+# type: color
+color.unrecognized = sgr 0;38;2;220;50;47
+
+# name: Prints a frame around command output
+# type: boolean
+command_frame.enable = True
+
+# name: Use default key bindings
+# type: boolean
+fzf.default_bindings = True
+
+# name: Skip adding lines prefixed with whitespace
+# type: boolean
+history.ignore_space = False
+
+# name: The number of history lines to save
+# type: integer
+history.max_lines = 25000
+
+# name: History item timestamps
+# type: enum
+# options: off,save,show
+history.time_stamp = show
+
+# name: Coloring rules for completions
+# type: string
+match.coloring_rules = 
+
+# name: Expand envvars when completing
+# type: boolean
+match.expand_envvars = True
+
+# name: Try substring if no prefix matches
+# type: boolean
+match.substring = True
+
+# name: Enables icons in file completions
+# type: boolean
+matchicons.enable = True
+
+# name: Support Windows' Ctrl-Alt substitute for AltGr
+# type: boolean
+terminal.use_altgr_substitute = True
+
+# name: Show a tip when Clink starts
+# type: boolean
+tips.enable = False
+

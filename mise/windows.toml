@@ -1,14 +1,18 @@
 [tools]
+bat = "latest"
 deno = "latest"
 eza = "latest"
+fzf = "latest"
 gcloud = "latest"
 gh = "latest"
 ghq = "latest"
+"github:chrisant996/dirx" = "latest"
 "github:monochromegane/the_platinum_searcher" = "latest"
 gitui = "latest"
 jq = "latest"
 peco = "latest"
 ripgrep = "latest"
+starship = "latest"
 usage = "latest"
 uv = "latest"
 
@@ -19,3 +23,8 @@ run = [
   'move "C:\Program Files\DMMGamePlayer\resources\GamesPlayAssist.exe" "C:\Program Files\DMMGamePlayer\resources\_GamesPlayAssist.exe"',
   'copy "C:\Users\kid07_000\Apps\qaac\x64\qaac64.exe" "C:\Program Files\DMMGamePlayer\resources\GamesPlayAssist.exe"',
 ]
+
+[env]
+FZF_CTRL_T_COMMAND = "dirx.exe /b /s /X:d /a:-s --bare-relative --icons=always --utf8 -- $$dir"
+FZF_ALT_C_COMMAND = "dirx.exe /b /s /X:d /a:d-s --bare-relative --icons=always --utf8 -- $$dir"
+FZF_ICON_WIDTH = "2"
