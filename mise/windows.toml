@@ -20,8 +20,8 @@ uv = "latest"
 description = "copy fake DMM GamesPlayAssist.exe"
 alias = "copy-gpa"
 run = [
-  'move "C:\Program Files\DMMGamePlayer\resources\GamesPlayAssist.exe" "C:\Program Files\DMMGamePlayer\resources\_GamesPlayAssist.exe"',
-  'copy "C:\Users\kid07_000\Apps\qaac\x64\qaac64.exe" "C:\Program Files\DMMGamePlayer\resources\GamesPlayAssist.exe"',
+  'move "C:\\Program Files\\DMMGamePlayer\\resources\\GamesPlayAssist.exe" "C:\\Program Files\\DMMGamePlayer\\resources\\_GamesPlayAssist.exe"',
+  'copy "%USERPROFILE%\\Apps\\qaac\\x64\\qaac64.exe" "C:\\Program Files\\DMMGamePlayer\\resources\\GamesPlayAssist.exe"',
 ]
 
 [env]
