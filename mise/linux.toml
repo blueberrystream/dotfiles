@@ -9,7 +9,8 @@ jq = "latest"
 peco = "latest"
 usage = "latest"
 uv = "latest"
-"go:github.com/lemonade-command/lemonade" = "latest"
+tmux = "latest"
+gitui = "latest"
 
 [tools.docker-compose]
 version = "latest"
