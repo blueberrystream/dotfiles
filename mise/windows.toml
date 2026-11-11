@@ -4,9 +4,18 @@ eza = "latest"
 gcloud = "latest"
 gh = "latest"
 ghq = "latest"
+"github:lemonade-command/lemonade" = "latest"
 "github:monochromegane/the_platinum_searcher" = "latest"
 jq = "latest"
 peco = "latest"
 ripgrep = "latest"
 usage = "latest"
 uv = "latest"
+
+[tasks.copy-fake-dmm-GamesPlayAssist]
+description = "copy fake DMM GamesPlayAssist.exe"
+alias = "copy-gpa"
+run = [
+  'move "C:\Program Files\DMMGamePlayer\resources\GamesPlayAssist.exe" "C:\Program Files\DMMGamePlayer\resources\_GamesPlayAssist.exe"',
+  'copy "C:\Users\kid07_000\Apps\qaac\x64\qaac64.exe" "C:\Program Files\DMMGamePlayer\resources\GamesPlayAssist.exe"',
+]

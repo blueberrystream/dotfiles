@@ -2,6 +2,7 @@
 eza = "latest"
 fzf = "latest"
 ghq = "latest"
+"github:lemonade-command/lemonade" = "latest"
 "github:monochromegane/the_platinum_searcher" = "latest"
 hub = "latest"
 jq = "latest"
