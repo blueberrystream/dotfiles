@@ -11,6 +11,7 @@ usage = "latest"
 uv = "latest"
 tmux = "latest"
 gitui = "latest"
+starship = "latest"
 
 [tools.docker-compose]
 version = "latest"
