@@ -12,6 +12,7 @@ uv = "latest"
 tmux = "latest"
 gitui = "latest"
 starship = "latest"
+bat = "latest"
 
 [tools.docker-compose]
 version = "latest"
