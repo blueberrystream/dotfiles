@@ -205,6 +205,10 @@ history.ignore_space = False
 # type: integer
 history.max_lines = 25000
 
+# name: Share history between instances
+# type: boolean
+history.shared = True
+
 # name: History item timestamps
 # type: enum
 # options: off,save,show
@@ -233,4 +237,8 @@ terminal.use_altgr_substitute = True
 # name: Show a tip when Clink starts
 # type: boolean
 tips.enable = False
+
+# name: Web search shortcuts
+# type: boolean
+web_search.enable = False
 
