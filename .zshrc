@@ -22,6 +22,7 @@ plugins=(
   gpg-agent
   fzf
   sudo
+  tailscale
   command-not-found
   zsh-autosuggestions
   zsh-syntax-highlighting
