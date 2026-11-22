@@ -1,3 +1,7 @@
+[settings]
+self_update.auto = true
+tool_update.self_update_first = true
+
 [tools]
 eza = "latest"
 fzf = "latest"
