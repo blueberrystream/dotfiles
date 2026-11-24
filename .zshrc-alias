@@ -17,7 +17,7 @@ alias s=ssh-peco
 
 function docker-remove-image() {
   local id=$(docker image list | sort | peco | awk "{print \$3}")
-  [[ -n $id ]] && echo "echo docker image remove $id" && docker image remove $id
+  [[ -n $id ]] && echo "docker image remove $id" && docker image remove $id
 }
 alias drmi=docker-remove-image
 
